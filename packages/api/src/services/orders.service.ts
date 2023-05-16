@@ -31,8 +31,11 @@ const getOrdersStats = async () => {
   }
 };
 
+const track = async () => {};
+
 export const OrdersService = {
   getOrders,
   getOrder,
   getOrdersStats,
+  track,
 };
