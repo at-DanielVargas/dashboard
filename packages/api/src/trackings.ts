@@ -15,11 +15,3 @@ export const trackings = [
   5938564748,
   5279713276,
 ];
-
-export enum EOrderKind {
-  REFUND = 'refund',
-  CANCELLATION = 'cancellation',
-  WARRANTY = 'warranty',
-  ADDITION = 'addition',
-  PROMO = 'promo',
-}

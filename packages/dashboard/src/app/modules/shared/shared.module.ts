@@ -9,6 +9,10 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { HttpClientModule } from '@angular/common/http';
+import {
+  DropdownComponent,
+  GocClickOutsideDirective,
+} from './components/dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     ButtonComponent,
     SidebarComponent,
     TimelineComponent,
+    DropdownComponent,
+    GocClickOutsideDirective,
   ],
   imports: [CommonModule, HttpClientModule, RouterModule],
   exports: [
@@ -29,6 +35,8 @@ import { HttpClientModule } from '@angular/common/http';
     SearchBarComponent,
     SidebarComponent,
     TimelineComponent,
+    DropdownComponent,
+    GocClickOutsideDirective,
   ],
 })
 export class SharedModule {}
