@@ -6,16 +6,15 @@ import {
   getOrderDetailsSuccess,
   getOrders,
   getOrdersError,
-  getOrdersPage,
   getOrdersSuccess,
-} from './dashboard.actions';
+} from './orders.actions';
 import { catchError, map, of, switchMap, withLatestFrom } from 'rxjs';
-import { OrdersService } from '../services/orders.service';
 import { Store, select } from '@ngrx/store';
-import { IAppState } from '../../shared/interfaces/app';
+import { IAppState } from '../../../../shared/interfaces/app';
+import { OrdersService } from '../../../services/orders.service';
 
 @Injectable()
-export class DashboardEffects {
+export class OrdersEffects {
   constructor(
     private actions$: Actions,
     private ordersService: OrdersService,

@@ -1,1 +1,4 @@
-<p>status-group works!</p>
+<div class="status" *ngFor="let status of data">
+  <span class="status-number">{{ status.count }}</span>
+  <span class="status-type">{{ status.label }}</span>
+</div>

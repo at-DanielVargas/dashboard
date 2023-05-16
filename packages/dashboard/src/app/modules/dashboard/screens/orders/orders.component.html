@@ -1,1 +1,23 @@
-<p>orders works!</p>
+<goc-card-container>
+  <h1 header>Ordenes</h1>
+  <goc-status-group></goc-status-group>
+  <div class="table-container">
+    <table class="table is-narrow">
+      <thead>
+        <tr>
+          <th>One</th>
+          <th>Two</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of orders$ | async">
+          <td>{{ order._id }}</td>
+          <td>Four</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="pagination">
+    <p>Paginacion</p>
+  </div>
+</goc-card-container>

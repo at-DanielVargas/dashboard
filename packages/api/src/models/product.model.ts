@@ -1,3 +1,4 @@
+import autopopulate from 'mongoose-autopopulate';
 import mongoosePaginate from 'mongoose-paginate-v2';
 import { model, Schema, Document, PaginateModel } from 'mongoose';
 import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
@@ -40,12 +41,16 @@ const ProductSchema: Schema = new Schema(
     category: {
       type: Schema.Types.ObjectId,
       ref: 'categories',
+      autopopulate: {
+        select: 'name',
+      },
     },
   },
   { timestamps: true, versionKey: false }
 );
 
 ProductSchema.plugin(mongoosePaginate);
+ProductSchema.plugin(autopopulate);
 
 interface ProductDocument extends Document, IProduct {}
 

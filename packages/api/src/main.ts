@@ -1,6 +1,8 @@
-import express from 'express';
+import 'reflect-metadata';
+import express, { Application } from 'express';
+import 'express-async-errors';
 import cors from 'cors';
-
+import morgan from 'morgan';
 import ApiRouter from './routers/index';
 import mongoose from 'mongoose';
 import { ProductModel } from './models/product.model';
@@ -14,7 +16,8 @@ import { TrackingModel } from './models/tracking.model';
 const host = process.env.HOST ?? 'localhost';
 const port = process.env.PORT ? Number(process.env.PORT) : 3001;
 
-const app = express();
+const app: Application = express();
+app.use(morgan('dev'));
 app.use(cors());
 
 app.use('/api/v1', ApiRouter);
@@ -104,6 +107,15 @@ app.get('/seed', async (req, res) => {
     });
   });
   res.send('Database seeded succesfully');
+});
+
+
+app.use((err, req, res, next) => {
+  if (err.message === 'access denied') {
+    res.status(403);
+    res.json({ error: err.message });
+  }
+  next(err);
 });
 
 mongoose

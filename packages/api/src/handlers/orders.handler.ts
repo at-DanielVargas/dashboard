@@ -10,7 +10,17 @@ const getOrder = async (req: Request, res: Response) => {
   res.json(await OrdersService.getOrder(req.params.orderId));
 };
 
+const getOrdersStats = async (req: Request, res: Response) => {
+  res.json(await OrdersService.getOrdersStats());
+};
+
+const track = async (req: Request, res: Response) => {
+  res.json(await OrdersService.track());
+};
+
 export const OrdersHandler = {
   getOrders,
   getOrder,
+  getOrdersStats,
+  track,
 };
