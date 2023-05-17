@@ -15,7 +15,7 @@ const CategorySchema = new Schema(
       type: Schema.Types.String,
     },
   },
-  { timestamps: true, versionKey: false }
+  { timestamps: false, versionKey: false }
 );
 
 export const CategoryModel = model('categories', CategorySchema);

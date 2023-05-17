@@ -4,10 +4,6 @@ import {
   getOrderDetails,
   getOrderDetailsError,
   getOrderDetailsSuccess,
-  getOrders,
-  getOrdersError,
-  getOrdersPage,
-  getOrdersSuccess,
 } from './dashboard.actions';
 import { catchError, map, of, switchMap, withLatestFrom } from 'rxjs';
 import { OrdersService } from '../services/orders.service';

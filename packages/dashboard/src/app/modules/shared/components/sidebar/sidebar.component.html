@@ -1,23 +1,48 @@
-<a routerLink="/dashboard/home" routerLinkActive="active" class="sidebar-link">
-  <img src="/assets/home.svg" width="24px" height="24px" />
+<a
+  *ngFor="let link of links"
+  [routerLink]="link.target"
+  routerLinkActive="bg-white shadow-sm"
+  class="rounded-circle p-2 d-flex justify-content-center align-items-center text-decoration-none"
+>
+  <i [class]="link.icon"></i>
 </a>
-
-<a routerLink="/dashboard/orders" routerLinkActive="active" class="sidebar-link">
+<!-- 
+<a
+  routerLink="/dashboard/orders"
+  routerLinkActive="bg-white shadow-sm"
+  class="rounded-circle p-2"
+>
   <img src="/assets/orders.svg" width="24px" height="24px" />
 </a>
 
-<a routerLink="/dashboard/tracking" routerLinkActive="active" class="sidebar-link">
+<a
+  routerLink="/dashboard/tracking"
+  routerLinkActive="bg-white shadow-sm"
+  class="rounded-circle p-2"
+>
   <img src="/assets/tracking-2.svg" width="24px" height="24px" />
 </a>
 
-<a routerLink="/dashboard/categories" routerLinkActive="active" class="sidebar-link">
+<a
+  routerLink="/dashboard/categories"
+  routerLinkActive="bg-white shadow-sm"
+  class="rounded-circle p-2"
+>
   <img src="/assets/tag.svg" width="24px" height="24px" />
 </a>
 
-<a routerLink="/dashboard/shop" routerLinkActive="active" class="sidebar-link">
+<a
+  routerLink="/dashboard/shop"
+  routerLinkActive="bg-white shadow-sm"
+  class="rounded-circle p-2"
+>
   <img src="/assets/shop.svg" width="24px" height="24px" />
 </a>
 
-<a routerLink="/dashboard/settings" routerLinkActive="active" class="sidebar-link">
+<a
+  routerLink="/dashboard/settings"
+  routerLinkActive="bg-white shadow-sm"
+  class="rounded-circle p-2"
+>
   <img src="/assets/settings.svg" width="24px" height="24px" />
-</a>
+</a> -->

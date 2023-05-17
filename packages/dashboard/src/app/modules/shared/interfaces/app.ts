@@ -27,3 +27,6 @@ export interface IClient {
   lastname: string;
   email: string;
 }
+
+
+export type IPagination = Omit<IPaginatedResponse, 'items'>

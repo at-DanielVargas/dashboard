@@ -1,13 +1,10 @@
 import { IStatus } from '../../../../shared/components/status-group/status-group.component';
+import { IPaginatedResponse } from '../../../../shared/interfaces/app';
 import { IOrder } from '../../../../shared/interfaces/order';
 
-export interface IOrdersState {
+export interface IOrdersState extends IPaginatedResponse<IOrder> {
   kindFilter: string;
   stats: IStatus[] | undefined;
-  orders: Partial<IOrder>[];
-  totalOrders: number;
-  totalPages: number;
-  currentPage: number;
   currentOrder: IOrder | undefined;
   errors: any;
 }

@@ -5,11 +5,8 @@ import { model, PaginateModel, Schema } from 'mongoose';
 export interface IOrder {
   kind: string;
   status: string;
-  items: any[];
-  client: any;
   sendTracking: any;
   collectTracking: any;
-  paginate?: PaginateModel<IOrder>;
 }
 
 export enum EOrderKind {
@@ -18,7 +15,8 @@ export enum EOrderKind {
   WARRANTY = 'warranty',
   ADDITION = 'addition',
   PROMO = 'promo',
-  SALE = 'sale',
+  DELIVERY = 'delivery',
+  COLLECT = 'collect',
 }
 
 export enum EOrderStatus {
@@ -27,6 +25,14 @@ export enum EOrderStatus {
   PENDING = 'pending',
 }
 
+/**
+ * La orden se genera por cada venta, dependiendo del estatus de la venta
+ * 1.- si la venta esta totalmente pagada en automatico se genera una orden de tipo DELIVERY para realizar el envio de los items comprados al cliente, en este punto se debe solicitar una guia de recoleccion para el envio de 
+ * 
+ * 2.- si la venta es cancelada, se debe modificar la orden generada en la venta
+ * 
+ * 3.- 
+ */
 const OrderSchema = new Schema<IOrder>(
   {
     kind: {
@@ -36,15 +42,6 @@ const OrderSchema = new Schema<IOrder>(
     status: {
       type: Schema.Types.String,
       required: true,
-    },
-    items: {
-      type: [
-        {
-          type: Schema.Types.ObjectId,
-          ref: 'order_items',
-          autopopulate: true,
-        },
-      ],
     },
     sendTracking: {
       type: Schema.Types.ObjectId,
@@ -56,13 +53,14 @@ const OrderSchema = new Schema<IOrder>(
       ref: 'tracking',
       autopopulate: true,
     },
-    client: {
-      type: Schema.Types.ObjectId,
-      ref: 'users',
-      autopopulate: { select: 'firstname lastname email' },
-    },
   },
-  { timestamps: true, versionKey: false }
+  {
+    timestamps: {
+      createdAt: 'created_at',
+      updatedAt: 'updated_at',
+    },
+    versionKey: false,
+  }
 );
 
 OrderSchema.plugin(mongoosePaginate);

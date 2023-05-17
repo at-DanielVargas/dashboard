@@ -13,6 +13,9 @@ import {
   DropdownComponent,
   GocClickOutsideDirective,
 } from './components/dropdown/dropdown.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
+import { ContainerComponent } from './components/container/container.component';
+import { ContentComponent } from './components/content/content.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +28,11 @@ import {
     TimelineComponent,
     DropdownComponent,
     GocClickOutsideDirective,
+    PaginationComponent,
+    ContainerComponent,
+    ContentComponent,
   ],
-  imports: [
-    CommonModule,
-    HttpClientModule,
-    RouterModule,
-  ],
+  imports: [CommonModule, HttpClientModule, RouterModule],
   exports: [
     CommonModule,
     HttpClientModule,
@@ -44,6 +46,9 @@ import {
     TimelineComponent,
     DropdownComponent,
     GocClickOutsideDirective,
+    PaginationComponent,
+    ContainerComponent,
+    ContentComponent,
   ],
 })
 export class SharedModule {}

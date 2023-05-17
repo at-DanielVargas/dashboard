@@ -37,29 +37,60 @@ const getOrdersStats = async () => {
 
 const track = async (id: string) => {
   const order = await OrderModel.findById(id);
-  if (order.sendTracking) {
-    axios
+
+  let sendTrackingPromise: Promise<any>;
+  let collectTrackingPromise: Promise<any>;
+
+  if (order && order.sendTracking) {
+    sendTrackingPromise = axios
       .get(trackingServiceUrl(order.sendTracking.trackingNumber))
       .then((response) => {
         TrackingModel.updateOne(
           { _id: order.sendTracking._id },
-          response.data
+          {
+            $set: {
+              ...response.data[0],
+              TrackingNumber: order.sendTracking.TrackingNumber,
+            },
+          }
         ).exec();
       });
   }
 
-  if (order.collectTracking) {
-    axios
+  if (order && order.collectTracking) {
+    collectTrackingPromise = axios
       .get(trackingServiceUrl(order.collectTracking.trackingNumber))
       .then((response) => {
         TrackingModel.updateOne(
-          { _id: order.sendTracking._id },
-          response.data
+          { _id: order.collectTracking._id },
+          {
+            $set: {
+              ...response.data[0],
+              TrackingNumber: order.collectTracking.TrackingNumber,
+            },
+          }
         ).exec();
       });
   }
 
-  return { order };
+  return await Promise.all([sendTrackingPromise, collectTrackingPromise]).then(
+    () => {
+      return OrderModel.findById(id);
+    }
+  );
+};
+
+const getOrdersWithTracking = async (props: AppServiceOptions) => {
+  return await OrderModel.paginate(
+    {
+      ...props.filters,
+      collectTracking: {}
+    },
+    {
+      customLabels: { docs: 'items', totalDocs: 'total' },
+      ...props.pagination,
+    }
+  );
 };
 
 const trackingServiceUrl = (id: string) => {
@@ -71,4 +102,5 @@ export const OrdersService = {
   getOrder,
   getOrdersStats,
   track,
+  getOrdersWithTracking,
 };

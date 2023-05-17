@@ -2,7 +2,7 @@ import { createReducer, on } from '@ngrx/store';
 import { IDashboardState } from './dashboard.state';
 import {
   getOrderDetailsSuccess,
-  getOrdersPage,
+  
   getOrdersSuccess,
   resetOrders,
 } from './dashboard.actions';
@@ -32,16 +32,6 @@ export const dashboardReducer = createReducer(
     ...state,
     currentOrder: action.order,
   })),
-  on(getOrdersPage, (state, action) => {
-    const currentPage =
-      state.currentPage < state.totalPages
-        ? state.currentPage + 1
-        : state.currentPage;
-    return {
-      ...state,
-      currentPage,
-    };
-  }),
 
   on(resetOrders, (state, action) => ({ ...state, ...initialState }))
 );

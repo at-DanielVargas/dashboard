@@ -1,5 +1,6 @@
 import { createAction, props } from '@ngrx/store';
 import { IOrder } from '../../../../shared/interfaces/order';
+import { IPaginatedResponse } from '../../../../shared/interfaces/app';
 
 export enum actionTypes {
   getOrdersStats = '@orders/getOrdersStats',
@@ -9,6 +10,10 @@ export enum actionTypes {
   getOrders = '@orders/getOrders',
   getOrdersSuccess = '@orders/getOrdersSuccess',
   getOrdersError = '@orders/getOrdersError',
+
+  getOrderTracking = '@orders/getOrderTracking',
+  getOrderTrackingSuccess = '@orders/getOrderTrackingSuccess',
+  getOrderTrackingError = '@orders/getOrderTrackingError',
 
   getOrdersPage = '@orders/getOrdersPage',
   getOrdersPageSuccess = '@orders/getOrdersPageSuccess',
@@ -33,19 +38,18 @@ export const setKindFilter = createAction(
   actionTypes.setKindFilter,
   props<{ kind: string }>()
 );
-export const getOrdersPage = createAction(actionTypes.getOrdersPage);
-export const getOrdersPageSuccess = createAction(
-  actionTypes.getOrdersPageSuccess
+export const getOrderTracking = createAction(
+  actionTypes.getOrderTracking,
+  props<{ id: string }>()
+);
+export const getOrderTrackingSuccess = createAction(
+  actionTypes.getOrderTrackingSuccess,
+  props<{ order: IOrder }>()
 );
 
 export const getOrdersSuccess = createAction(
   actionTypes.getOrdersSuccess,
-  props<{
-    orders: Partial<IOrder>[];
-    totalOrders: number;
-    totalPages: number;
-    currentPage: number;
-  }>()
+  props<{ items: IPaginatedResponse<IOrder> }>()
 );
 
 export const getOrdersError = createAction(
@@ -86,4 +90,17 @@ export const getOrdersStatsSuccess = createAction(
 export const getOrdersStatsError = createAction(
   actionTypes.getOrdersStatsError,
   props<{ error: string }>()
+);
+
+export const getOrderTrackingError = createAction(
+  actionTypes.getOrderTrackingError,
+  props<{ error: string }>()
+);
+
+export const getOrdersPage = createAction(
+  actionTypes.getOrdersPage,
+  props<{ page: number }>()
+);
+export const getOrdersPageSuccess = createAction(
+  actionTypes.getOrdersPageSuccess
 );

@@ -4,8 +4,12 @@ import {
   getOrderDetails,
   getOrderDetailsError,
   getOrderDetailsSuccess,
+  getOrderTracking,
+  getOrderTrackingError,
+  getOrderTrackingSuccess,
   getOrders,
   getOrdersError,
+  getOrdersPage,
   getOrdersStats,
   getOrdersStatsError,
   getOrdersStatsSuccess,
@@ -27,16 +31,19 @@ export class OrdersEffects {
 
   getOrders$ = createEffect(() =>
     this.actions$.pipe(
-      ofType(getOrders, setKindFilter),
+      ofType(getOrders, setKindFilter, getOrdersPage),
       withLatestFrom(this.store.select((state) => state.orders.kindFilter)),
-      switchMap(([, kind]) =>
-        this.ordersService.getOrders({ kind }).pipe(
-          map((response) =>
+      withLatestFrom(
+        this.store.pipe(
+          select((state) => state.orders.page),
+          map((page) => String(page))
+        )
+      ),
+      switchMap(([[, kind], page]) =>
+        this.ordersService.getOrders({ kind, page }).pipe(
+          map((items) =>
             getOrdersSuccess({
-              orders: response.items,
-              totalOrders: response.total,
-              totalPages: response.totalPages,
-              currentPage: response.page,
+              items,
             })
           ),
           catchError((error) => of(getOrdersError({ error })))
@@ -68,6 +75,18 @@ export class OrdersEffects {
         this.ordersService.getOrderDetails(action.id).pipe(
           map((response) => getOrderDetailsSuccess({ order: response.order })),
           catchError((error) => of(getOrderDetailsError({ error })))
+        )
+      )
+    )
+  );
+
+  getOrderTracking$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(getOrderTracking),
+      switchMap((action) =>
+        this.ordersService.getOrderTracking(action.id).pipe(
+          map((response) => getOrderTrackingSuccess({ order: response })),
+          catchError((error) => of(getOrderTrackingError({ error })))
         )
       )
     )

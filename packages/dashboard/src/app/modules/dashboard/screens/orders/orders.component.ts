@@ -1,8 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Store, select } from '@ngrx/store';
-import { IAppState } from '../../../shared/interfaces/app';
+import { IAppState, IPagination } from '../../../shared/interfaces/app';
 import {
   getOrders,
+  getOrdersPage,
   getOrdersStats,
   resetOrders,
   setKindFilter,
@@ -20,7 +21,7 @@ import { IStatus } from '../../../shared/components/status-group/status-group.co
 })
 export class OrdersComponent implements OnInit, OnDestroy {
   orders$: Observable<Partial<IOrder>[]> = this.store.pipe(
-    select((state) => state.orders.orders),
+    select((state) => state.orders.items),
     untilDestroyed(this)
   );
 
@@ -31,6 +32,11 @@ export class OrdersComponent implements OnInit, OnDestroy {
 
   currentOrderKind$: Observable<string> = this.store.pipe(
     select((state) => state.orders.kindFilter),
+    untilDestroyed(this)
+  );
+
+  paginationData$: Observable<Partial<IPagination>> = this.store.pipe(
+    select(({ orders }) => orders),
     untilDestroyed(this)
   );
 
@@ -70,5 +76,9 @@ export class OrdersComponent implements OnInit, OnDestroy {
   setKindFilter(kind: string | null | undefined) {
     if (!kind) return;
     this.store.dispatch(setKindFilter({ kind }));
+  }
+
+  changePage(page: number) {
+    this.store.dispatch(getOrdersPage({ page }));
   }
 }

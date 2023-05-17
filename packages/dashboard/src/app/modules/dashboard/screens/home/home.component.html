@@ -1,39 +1,107 @@
-<goc-card-container class="details">
-    <h5>Ventas</h5>
-    <goc-status-group class="mb-3" [data]="(totalSells$|async)||[]"></goc-status-group>
-
-    <div id="divChart">
-        <div class="chart">
-            <canvas baseChart [data]="lineChartData" [options]="lineChartOptions" [type]="lineChartType"></canvas>
-        </div>
+<div class="vstack gap-3">
+  <div class="row gap-2 gap-md-0">
+    <div class="col-12 col-md-3">
+      <goc-card-container>
+        <ng-template #icon><i class="fa-solid fa-sack-dollar"></i></ng-template>
+        <ng-template #title>Total en ventas</ng-template>
+      </goc-card-container>
     </div>
+    <div class="col-12 col-md-3">
+      <goc-card-container>
+        <ng-template #icon
+          ><i class="fa-solid fa-hand-holding-dollar"></i
+        ></ng-template>
+        <ng-template #title>Ganancias</ng-template>
+      </goc-card-container>
+    </div>
+    <div class="col-12 col-md-3">
+      <goc-card-container>
+        <ng-template #icon
+          ><i class="fa-solid fa-cash-register"></i
+        ></ng-template>
+        <ng-template #title>Ventas</ng-template>
+      </goc-card-container>
+    </div>
+    <div class="col-12 col-md-3">
+      <goc-card-container>
+        <div title>Cancelaciones</div>
+      </goc-card-container>
+    </div>
+  </div>
 
-    <h5>Productos con mas ventas</h5>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Producto</th>
-                <th>Precio</th>
-                <th>Venta</th>
-                <th>Ganancia</th>
-                <th>Categoria</th>
-                <th>Ventas</th>
-                <th>Total</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let product of topSellProducts$ | async">
-                <td><span class="text-secondary">{{ product?.sku }}</span></td>
-                <td>{{ product?.name }}</td>
-                <td>{{ product?.price | currency }}</td>
-                <td>{{ ((product?.price ||0) - (product?.supplierPrice ||0)) | currency }}</td>
-                <td>{{ product?.supplierPrice | currency }}</td>
-                <td><span routerLink="/dashboard/categories" class="badge text-bg-primary">{{ product?.category?.name
-                        }}</span></td>
-                <td>{{ product?.purchases }}</td>
-                <td>{{ ((product?.price||0) * (product?.purchases||0)) | currency }}</td>
-            </tr>
-        </tbody>
-    </table>
-</goc-card-container>
+  <div class="row">
+    <div class="col-6">
+      <goc-card-container>
+        <ng-template #content>
+          <canvas
+            baseChart
+            [data]="lineChartData"
+            [options]="lineChartOptions"
+            [type]="lineChartType"
+          ></canvas>
+        </ng-template>
+      </goc-card-container>
+    </div>
+    <div class="col-6"></div>
+  </div>
+</div>
+
+<!-- <div class="details p-3">
+  <div class="bg-white p-3 rounded mb-3">
+    <h5 class="pb-2 border-bottom">Ventas</h5>
+    <goc-status-group [data]="(totalSells$ | async) || []"></goc-status-group>
+  </div>
+
+  <div id="divChart">
+    <div class="chart">
+      <div class="bg-white p-3 rounded">
+        <canvas
+          baseChart
+          [data]="lineChartData"
+          [options]="lineChartOptions"
+          [type]="lineChartType"
+        ></canvas>
+      </div>
+    </div>
+  </div>
+
+  <h5>Productos con mas ventas</h5>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Venta</th>
+        <th>Ganancia</th>
+        <th>Categoria</th>
+        <th>Ventas</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of topSellProducts$ | async">
+        <td>
+          <span class="text-secondary">{{ product?.sku }}</span>
+        </td>
+        <td>{{ product?.name }}</td>
+        <td>{{ product?.price | currency }}</td>
+        <td>
+          {{ (product?.price || 0) - (product?.supplierPrice || 0) | currency }}
+        </td>
+        <td>{{ product?.supplierPrice | currency }}</td>
+        <td>
+          <span
+            routerLink="/dashboard/categories"
+            class="badge text-bg-primary"
+            >{{ product?.category?.name }}</span
+          >
+        </td>
+        <td>{{ product?.purchases }}</td>
+        <td>
+          {{ (product?.price || 0) * (product?.purchases || 0) | currency }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->

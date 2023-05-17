@@ -6,10 +6,6 @@ export enum actionTypes {
   getOrdersSuccess = '@dashboard/getOrdersSuccess',
   getOrdersError = '@dashboard/getOrdersError',
 
-  getOrdersPage = '@dashboard/getOrdersPage',
-  getOrdersPageSuccess = '@dashboard/getOrdersPageSuccess',
-  getOrdersPageError = '@dashboard/getOrdersPageError',
-
   getOrderDetails = '@dashboard/getOrderDetails',
   getOrderDetailsSuccess = '@dashboard/getOrderDetailsSuccess',
   getOrderDetailsError = '@dashboard/getOrderDetailsError',
@@ -24,10 +20,7 @@ export enum actionTypes {
 export const resetOrders = createAction(actionTypes.resetOrders);
 export const getOrders = createAction(actionTypes.getOrders);
 
-export const getOrdersPage = createAction(actionTypes.getOrdersPage);
-export const getOrdersPageSuccess = createAction(
-  actionTypes.getOrdersPageSuccess
-);
+
 
 export const getOrdersSuccess = createAction(
   actionTypes.getOrdersSuccess,

@@ -10,6 +10,7 @@ export interface IProduct {
   price: number;
   supplierPrice: number;
   purchases: number;
+  stock: number;
   category?: any;
   paginate?: PaginateModel<IProduct>;
 }
@@ -38,6 +39,9 @@ const ProductSchema: Schema = new Schema(
     purchases: {
       type: Schema.Types.Number,
     },
+    stock: {
+      type: Schema.Types.Number
+    },
     category: {
       type: Schema.Types.ObjectId,
       ref: 'categories',
@@ -46,7 +50,7 @@ const ProductSchema: Schema = new Schema(
       },
     },
   },
-  { timestamps: true, versionKey: false }
+  { timestamps: false, versionKey: false }
 );
 
 ProductSchema.plugin(mongoosePaginate);

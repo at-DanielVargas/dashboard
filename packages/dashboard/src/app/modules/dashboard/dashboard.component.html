@@ -1,8 +1,16 @@
-<div class="dashboard">
-  <div class="header"></div>
-  <goc-header></goc-header>
-  <div class="content">
-    <goc-sidebar></goc-sidebar>
+<goc-header></goc-header>
+<goc-container>
+  <goc-sidebar
+    [links]="[
+    { icon: 'fa-solid fa-house', target: '/dashboard/home' },
+    { icon: 'fa-solid fa-clipboard', target: '/dashboard/orders' },
+    { icon: 'fa-solid fa-tags', target: '/dashboard/categories' },
+    { icon: 'fa-solid fa-file-invoice-dollar', target: '/dashboard/sales' },
+    { icon: 'fa-solid fa-shop', target: '/dashboard/shop' },
+    { icon: 'fa-solid fa-gear', target: '/dashboard/settings' }
+    ]"
+  ></goc-sidebar>
+  <goc-content>
     <router-outlet></router-outlet>
-  </div>
-</div>
+  </goc-content>
+</goc-container>

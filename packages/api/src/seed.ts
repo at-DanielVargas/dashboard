@@ -6,34 +6,39 @@ import { IUser } from './models/user.model';
 import { EOrderKind, EOrderStatus, IOrder } from './models/order.model';
 import { ITracking } from './models/tracking.model';
 import { trackings } from './trackings';
+import { mldata } from './mlmock';
 
 export const categories = (numOfCategories: number) =>
-  new Array<ICategory>(numOfCategories)
+  new Array<ICategory>(mldata.categories.length)
     .fill({ name: '', description: '' })
-    .map(() => ({
-      name: faker.commerce.department(),
+    .map((c, index) => ({
+      name: mldata.categories[index].name,
       description: faker.commerce.productAdjective(),
     }));
 
 export const products = (numOfProducts: number, productCategory: string) =>
-  new Array<IProduct>(numOfProducts)
+  new Array<IProduct>(mldata.products.length)
     .fill({
       name: '',
       description: '',
       sku: '',
       price: 0,
+      stock: 0,
       supplierPrice: 0,
       purchases: 0,
     })
-    .map(() => {
-      const price = Number(faker.finance.amount(200, 1500, 0));
+    .map((product, index) => {
+      const price = mldata.products[index].price;
       return {
-        name: faker.commerce.productName(),
+        name: mldata.products[index].title,
         description: faker.commerce.productDescription(),
-        sku: faker.string.nanoid(6).toUpperCase(),
-        price,
+        sku:
+          mldata.products[index].inventory_id ||
+          faker.string.nanoid(6).toUpperCase(),
+        price: mldata.products[index].price,
         supplierPrice: Number(faker.finance.amount(10, price, 0)),
-        purchases: Number(faker.string.numeric({ length: 3, exclude: ['0'] })),
+        purchases: mldata.products[index].sold_quantity,
+        stock: mldata.products[index].available_quantity,
         category: productCategory,
       };
     });
@@ -69,12 +74,18 @@ export const orders = (numOfOrders: number, clientId: string) =>
       client: '',
       sendTracking: '',
       collectTracking: '',
+      created_at: new Date(),
+      updated_at: new Date(),
     })
     .map(() => {
       return {
         kind: faker.helpers.arrayElement(Object.values(EOrderKind)),
         status: faker.helpers.arrayElement(Object.values(EOrderStatus)),
         client: clientId,
+        created_at: faker.date.between({
+          from: '2020-01-01T00:00:00.000Z',
+          to: '2023-05-14T00:00:00.000Z',
+        }),
       };
     });
 

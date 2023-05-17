@@ -64,7 +64,11 @@ const TrackingSchema = new Schema<ITracking>(
       Residential: { type: Schema.Types.Boolean },
     },
   },
-  { timestamps: true, versionKey: false }
+  {
+    timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
+    versionKey: false,
+    strict: false
+  }
 );
 
 export const TrackingModel = model('tracking', TrackingSchema);

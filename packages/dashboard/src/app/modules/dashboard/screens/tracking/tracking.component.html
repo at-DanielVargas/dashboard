@@ -1,3 +1,73 @@
-<goc-card-container>
-    <h5>Orden</h5>
+<div class="list">ordenes</div>
+<goc-card-container class="details">
+  <h5>Estatus de paqueteria</h5>
+  <div class="hstack border-bottom">
+    <div class="h-100 w-50 flex-fill p-2">
+      <div class="hstack gap-3">
+        <div>
+          <small>Paqueteria de recoleccion</small>
+          <h4>{{ (collectTracking$ | async)?.CourierName || '--' }}</h4>
+        </div>
+        <div>
+          <small>Servicio</small>
+          <h4>{{ (collectTracking$ | async)?.CourierService || '--' }}</h4>
+        </div>
+      </div>
+    </div>
+    <div class="vr mx-2"></div>
+    <div class="h-100 w-50 flex-fill p-2">
+      <div class="hstack gap-3">
+        <div>
+          <small>Paqueteria de recoleccion</small>
+          <h4>{{ (sendTracking$ | async)?.CourierName || '--' }}</h4>
+        </div>
+        <div>
+          <small>Servicio</small>
+          <h4>{{ (sendTracking$ | async)?.CourierService || '--' }}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hstack border-bottom mb-2">
+    <div class="h-100 w-50 flex-fill p-2">
+      <div class="hstack gap-3">
+        <div>
+          <small>Remitente</small>
+          <h6>{{ (collectTracking$ | async)?.Sender?.Name || '--' }}</h6>
+        </div>
+        <div class="vr mx-2"></div>
+        <div>
+          <small>Destinatario</small>
+          <h6>{{ (collectTracking$ | async)?.Recipient?.Name || '--' }}</h6>
+        </div>
+      </div>
+    </div>
+    <div class="vr mx-2"></div>
+    <div class="h-100 w-50 flex-fill p-2">
+      <div class="hstack gap-3">
+        <div>
+          <small>Remitente</small>
+          <h4>{{ (sendTracking$ | async)?.CourierName || '--' }}</h4>
+        </div>
+        <div>
+          <small>Destinatario</small>
+          <h4>{{ (sendTracking$ | async)?.CourierService || '--' }}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hstack">
+    <div class="w-50">
+      <goc-timeline
+        [timelineData]="(collectTracking$ | async)?.History"
+      ></goc-timeline>
+    </div>
+    <div class="w-50">
+      <goc-timeline
+        [timelineData]="(sendTracking$ | async)?.History"
+      ></goc-timeline>
+    </div>
+  </div>
 </goc-card-container>

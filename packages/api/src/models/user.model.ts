@@ -26,7 +26,7 @@ const UserSchema = new Schema<IUser>(
       required: true,
     },
   },
-  { timestamps: true, versionKey: false }
+  { timestamps: false, versionKey: false }
 );
 
 export const UserModel = model('users', UserSchema);
