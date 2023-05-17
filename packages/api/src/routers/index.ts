@@ -2,9 +2,11 @@ import { Router } from 'express';
 import OrdersRouter from './orders.routes';
 import ProductsRouter from './products.routes';
 import { PaginationMiddleware } from '../middlewares/pagination.middleware';
+import { FiltersMiddleware } from '../middlewares/filters.middleware';
 
 const ApiRouter = Router();
 ApiRouter.use(PaginationMiddleware);
+ApiRouter.use(FiltersMiddleware);
 ApiRouter.use('/products', ProductsRouter);
 ApiRouter.use('/orders', OrdersRouter);
 

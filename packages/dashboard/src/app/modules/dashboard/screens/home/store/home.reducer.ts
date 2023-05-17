@@ -1,14 +1,17 @@
 import { createReducer, on } from '@ngrx/store';
 import { IHomeState } from './home.state';
 import {
-  getOrdersStatsSuccess,
+  getSellsProfitSuccess,
   getTopSellsSuccess,
   resetHomeState,
 } from './home.actions';
+import { OrderLabel } from '../../../../shared/constants';
 
 export const initialState: IHomeState = {
-  stats: undefined,
   tops: [],
+  sells: 0,
+  products: 0,
+  profit: 0,
   errors: undefined,
 };
 
@@ -18,9 +21,11 @@ export const homeReducer = createReducer(
     ...state,
     tops: action.top,
   })),
-  on(getOrdersStatsSuccess, (state, action) => ({
+  on(getSellsProfitSuccess, (state, action) => ({
     ...state,
-    stats: action.stats,
+    profit: action.profit,
+    sells: action.sells,
+    products: action.products,
   })),
   on(resetHomeState, (state, action) => ({ ...state, ...initialState }))
 );

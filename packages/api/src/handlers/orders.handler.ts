@@ -3,7 +3,13 @@ import { OrdersService } from '../services/orders.service';
 import { AppRequest } from '../interfaces';
 
 const getOrders = async (req: AppRequest, res: Response) => {
-  res.json(await OrdersService.getOrders({ pagination: req.pagination }));
+  console.log(req.filters);
+  res.json(
+    await OrdersService.getOrders({
+      pagination: req.pagination,
+      filters: { ...req.filters },
+    })
+  );
 };
 
 const getOrder = async (req: Request, res: Response) => {
@@ -15,7 +21,7 @@ const getOrdersStats = async (req: Request, res: Response) => {
 };
 
 const track = async (req: Request, res: Response) => {
-  res.json(await OrdersService.track());
+  res.json(await OrdersService.track(req.params.orderId));
 };
 
 export const OrdersHandler = {

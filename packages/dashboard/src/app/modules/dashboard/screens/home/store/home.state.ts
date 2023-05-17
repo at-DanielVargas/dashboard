@@ -1,7 +1,9 @@
 import { IProduct } from '../../../../shared/interfaces/product';
 
 export interface IHomeState {
-  stats: Record<string, number> | undefined;
   tops: IProduct[] | undefined;
+  sells: number;
+  products: number;
+  profit: number;
   errors: any;
 }

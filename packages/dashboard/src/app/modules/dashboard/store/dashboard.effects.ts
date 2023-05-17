@@ -22,26 +22,6 @@ export class DashboardEffects {
     private store: Store<IAppState>
   ) {}
 
-  getOrders$ = createEffect(() =>
-    this.actions$.pipe(
-      ofType(getOrders),
-      withLatestFrom(this.store.select((state) => state.dashboard.currentPage)),
-      switchMap(([action, page]) =>
-        this.ordersService.getOrders({ page }).pipe(
-          map((response) =>
-            getOrdersSuccess({
-              orders: response.items,
-              totalOrders: response.total,
-              totalPages: response.totalPages,
-              currentPage: response.page,
-            })
-          ),
-          catchError((error) => of(getOrdersError({ error })))
-        )
-      )
-    )
-  );
-
   getOrderDetails$ = createEffect(() =>
     this.actions$.pipe(
       ofType(getOrderDetails),

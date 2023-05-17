@@ -1,4 +1,4 @@
 <div class="status" *ngFor="let status of data">
   <span class="status-number">{{ status.count }}</span>
-  <span class="status-type">{{ status.label }}</span>
+  <span class="status-type" [style.color]="status.color">{{ status.label }}</span>
 </div>

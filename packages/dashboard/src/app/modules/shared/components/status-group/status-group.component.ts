@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 export interface IStatus {
-  count: number;
-  label: string;
-  color?: string;
+  count: string | null;
+  label: string | null;
+  color?: string | null;
+  key?: string | null;
 }
 
 @Component({

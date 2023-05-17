@@ -5,9 +5,8 @@ import { Store, select } from '@ngrx/store';
 import { IAppState } from '../../../../shared/interfaces/app';
 import { OrdersService } from '../../../services/orders.service';
 import {
-  getOrdersStats,
-  getOrdersStatsError,
-  getOrdersStatsSuccess,
+  getSellsProfitError,
+  getSellsProfitSuccess,
   getTopSells,
   getTopSellsSuccess,
 } from './home.actions';
@@ -22,30 +21,31 @@ export class HomeEffects {
     private store: Store<IAppState>
   ) {}
 
-  getOrdersStats$ = createEffect(() =>
-    this.actions$.pipe(
-      ofType(getOrdersStats),
-      withLatestFrom(this.store.select((state) => state.dashboard.currentPage)),
-      switchMap(([action, page]) =>
-        this.ordersService.getOrdersStats().pipe(
-          map((response) =>
-            getOrdersStatsSuccess({
-              stats: response,
-            })
-          ),
-          catchError((error) => of(getOrdersStatsError({ error })))
-        )
-      )
-    )
-  );
-
   getTopSells$ = createEffect(() =>
     this.actions$.pipe(
       ofType(getTopSells),
       switchMap((action) =>
         this.productsService.getTopSells().pipe(
           map((response) => getTopSellsSuccess({ top: response })),
-          catchError((error) => of(getOrdersStatsError(error)))
+          catchError((error) => of(getSellsProfitError(error)))
+        )
+      )
+    )
+  );
+
+  getSellsProfit$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(getTopSells),
+      switchMap((action) =>
+        this.productsService.getSellsProfit().pipe(
+          map((response) =>
+            getSellsProfitSuccess({
+              profit: response.totalProfit,
+              sells: response.totalSells,
+              products: response.total,
+            })
+          ),
+          catchError((error) => of(getSellsProfitError(error)))
         )
       )
     )

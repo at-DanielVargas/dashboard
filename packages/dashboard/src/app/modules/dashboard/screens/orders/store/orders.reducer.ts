@@ -3,11 +3,16 @@ import { IOrdersState } from './orders.state';
 import {
   getOrderDetailsSuccess,
   getOrdersPage,
+  getOrdersStatsSuccess,
   getOrdersSuccess,
   resetOrders,
+  setKindFilter,
 } from './orders.actions';
+import { OrderLabel } from '../../../../shared/constants';
 
 export const initialState: IOrdersState = {
+  kindFilter: 'refund',
+  stats: undefined,
   orders: [],
   totalOrders: 0,
   currentOrder: undefined,
@@ -37,6 +42,21 @@ export const ordersReducer = createReducer(
     return {
       ...state,
       currentPage,
+    };
+  }),
+
+  on(setKindFilter, (state, action) => ({ ...state, kindFilter: action.kind })),
+
+  on(getOrdersStatsSuccess, (state, action) => {
+    const stats = Object.entries(action.stats).map(([key, value]) => ({
+      count: String(value),
+      label: OrderLabel[key],
+      key,
+    }));
+
+    return {
+      ...state,
+      stats,
     };
   }),
 

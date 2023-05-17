@@ -6,7 +6,11 @@ import {
   getOrderDetailsSuccess,
   getOrders,
   getOrdersError,
+  getOrdersStats,
+  getOrdersStatsError,
+  getOrdersStatsSuccess,
   getOrdersSuccess,
+  setKindFilter,
 } from './orders.actions';
 import { catchError, map, of, switchMap, withLatestFrom } from 'rxjs';
 import { Store, select } from '@ngrx/store';
@@ -23,10 +27,10 @@ export class OrdersEffects {
 
   getOrders$ = createEffect(() =>
     this.actions$.pipe(
-      ofType(getOrders),
-      withLatestFrom(this.store.select((state) => state.dashboard.currentPage)),
-      switchMap(([action, page]) =>
-        this.ordersService.getOrders({ page }).pipe(
+      ofType(getOrders, setKindFilter),
+      withLatestFrom(this.store.select((state) => state.orders.kindFilter)),
+      switchMap(([, kind]) =>
+        this.ordersService.getOrders({ kind }).pipe(
           map((response) =>
             getOrdersSuccess({
               orders: response.items,
@@ -36,6 +40,22 @@ export class OrdersEffects {
             })
           ),
           catchError((error) => of(getOrdersError({ error })))
+        )
+      )
+    )
+  );
+
+  getOrdersStats$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(getOrdersStats),
+      switchMap(() =>
+        this.ordersService.getOrdersStats().pipe(
+          map((response) =>
+            getOrdersStatsSuccess({
+              stats: response,
+            })
+          ),
+          catchError((error) => of(getOrdersStatsError({ error })))
         )
       )
     )

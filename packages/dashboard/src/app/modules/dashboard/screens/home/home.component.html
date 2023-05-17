@@ -1,29 +1,39 @@
 <goc-card-container class="details">
-  <h1 header>Inicio</h1>
-  <goc-status-group [data]="(orderStats$ | async) || []"></goc-status-group>
+    <h5>Ventas</h5>
+    <goc-status-group class="mb-3" [data]="(totalSells$|async)||[]"></goc-status-group>
 
-  <div id="divChart">
-    <canvas id="cancelations"></canvas>
-    <canvas id="sales"></canvas>
-  </div>
+    <div id="divChart">
+        <div class="chart">
+            <canvas baseChart [data]="lineChartData" [options]="lineChartOptions" [type]="lineChartType"></canvas>
+        </div>
+    </div>
 
-  <h3>Productos con mas ventas</h3>
-  <table class="table is-narrow">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Producto</th>
-        <th>Categoria</th>
-        <th>Ventas</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let product of topSellProducts$ | async">
-        <td>{{ product?.sku }}</td>
-        <td>{{ product?.name }}</td>
-        <td>{{ product?.category?.name }}</td>
-        <td>{{ product?.purchases }}</td>
-      </tr>
-    </tbody>
-  </table>
+    <h5>Productos con mas ventas</h5>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Venta</th>
+                <th>Ganancia</th>
+                <th>Categoria</th>
+                <th>Ventas</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of topSellProducts$ | async">
+                <td><span class="text-secondary">{{ product?.sku }}</span></td>
+                <td>{{ product?.name }}</td>
+                <td>{{ product?.price | currency }}</td>
+                <td>{{ ((product?.price ||0) - (product?.supplierPrice ||0)) | currency }}</td>
+                <td>{{ product?.supplierPrice | currency }}</td>
+                <td><span routerLink="/dashboard/categories" class="badge text-bg-primary">{{ product?.category?.name
+                        }}</span></td>
+                <td>{{ product?.purchases }}</td>
+                <td>{{ ((product?.price||0) * (product?.purchases||0)) | currency }}</td>
+            </tr>
+        </tbody>
+    </table>
 </goc-card-container>

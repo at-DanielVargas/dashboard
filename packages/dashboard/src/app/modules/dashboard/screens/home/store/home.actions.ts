@@ -1,21 +1,22 @@
 import { createAction, props } from '@ngrx/store';
-import { IOrder } from '../../../../shared/interfaces/order';
+
 import { IProduct } from '../../../../shared/interfaces/product';
 
 export enum actionTypes {
-  getOrdersStats = '@dashboard/getOrdersStats',
-  getOrdersStatsSuccess = '@dashboard/getOrdersStatsSuccess',
-  getOrdersStatsError = '@dashboard/getOrdersStatsError',
+  getTopSells = '@home/getTopSells',
+  getTopSellsSuccess = '@home/getTopSellsSuccess',
+  getTopSellsError = '@home/getTopSellsError',
 
-  getTopSells = '@dashboard/getTopSells',
-  getTopSellsSuccess = '@dashboard/getTopSellsSuccess',
-  getTopSellsError = '@dashboard/getTopSellsError',
+  getSellsProfit = '@home/getSellsProfit',
+  getSellsProfitSuccess = '@home/getSellsProfitSuccess',
+  getSellsProfitError = '@home/getSellsProfitError',
 
-  resetHomeState = '@dashboard/resetOrders',
+  resetHomeState = '@home/resetOrders',
 }
 
-export const getOrdersStats = createAction(actionTypes.getOrdersStats);
 export const getTopSells = createAction(actionTypes.getTopSells);
+export const getSellsProfit = createAction(actionTypes.getSellsProfit);
+
 export const resetHomeState = createAction(actionTypes.resetHomeState);
 
 export const getTopSellsSuccess = createAction(
@@ -25,14 +26,16 @@ export const getTopSellsSuccess = createAction(
   }>()
 );
 
-export const getOrdersStatsSuccess = createAction(
-  actionTypes.getOrdersStatsSuccess,
+export const getSellsProfitSuccess = createAction(
+  actionTypes.getSellsProfitSuccess,
   props<{
-    stats: Record<string, number>;
+    profit: number;
+    sells: number;
+    products: number;
   }>()
 );
 
-export const getOrdersStatsError = createAction(
-  actionTypes.getOrdersStatsError,
+export const getSellsProfitError = createAction(
+  actionTypes.getSellsProfitError,
   props<{ error: string }>()
 );

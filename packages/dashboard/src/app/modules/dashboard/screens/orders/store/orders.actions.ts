@@ -2,28 +2,37 @@ import { createAction, props } from '@ngrx/store';
 import { IOrder } from '../../../../shared/interfaces/order';
 
 export enum actionTypes {
-  getOrders = '@dashboard/getOrders',
-  getOrdersSuccess = '@dashboard/getOrdersSuccess',
-  getOrdersError = '@dashboard/getOrdersError',
+  getOrdersStats = '@orders/getOrdersStats',
+  getOrdersStatsSuccess = '@orders/getOrdersStatsSuccess',
+  getOrdersStatsError = '@orders/getOrdersStatsError',
 
-  getOrdersPage = '@dashboard/getOrdersPage',
-  getOrdersPageSuccess = '@dashboard/getOrdersPageSuccess',
-  getOrdersPageError = '@dashboard/getOrdersPageError',
+  getOrders = '@orders/getOrders',
+  getOrdersSuccess = '@orders/getOrdersSuccess',
+  getOrdersError = '@orders/getOrdersError',
 
-  getOrderDetails = '@dashboard/getOrderDetails',
-  getOrderDetailsSuccess = '@dashboard/getOrderDetailsSuccess',
-  getOrderDetailsError = '@dashboard/getOrderDetailsError',
+  getOrdersPage = '@orders/getOrdersPage',
+  getOrdersPageSuccess = '@orders/getOrdersPageSuccess',
+  getOrdersPageError = '@orders/getOrdersPageError',
 
-  setOrder = '@dashboard/setOrder',
-  setOrderSuccess = '@dashboard/setOrderSuccess',
-  setOrderError = '@dashboard/setOrderError',
+  getOrderDetails = '@orders/getOrderDetails',
+  getOrderDetailsSuccess = '@orders/getOrderDetailsSuccess',
+  getOrderDetailsError = '@orders/getOrderDetailsError',
 
-  resetOrders = '@dashboard/resetOrders',
+  setOrder = '@orders/setOrder',
+  setOrderSuccess = '@orders/setOrderSuccess',
+  setOrderError = '@orders/setOrderError',
+
+  setKindFilter = '@orders/setKindFilter',
+
+  resetOrders = '@orders/resetOrders',
 }
 
 export const resetOrders = createAction(actionTypes.resetOrders);
 export const getOrders = createAction(actionTypes.getOrders);
-
+export const setKindFilter = createAction(
+  actionTypes.setKindFilter,
+  props<{ kind: string }>()
+);
 export const getOrdersPage = createAction(actionTypes.getOrdersPage);
 export const getOrdersPageSuccess = createAction(
   actionTypes.getOrdersPageSuccess
@@ -63,5 +72,18 @@ export const getOrderDetailsSuccess = createAction(
 
 export const getOrderDetailsError = createAction(
   actionTypes.getOrderDetailsError,
+  props<{ error: string }>()
+);
+
+export const getOrdersStats = createAction(actionTypes.getOrdersStats);
+export const getOrdersStatsSuccess = createAction(
+  actionTypes.getOrdersStatsSuccess,
+  props<{
+    stats: Record<string, number>;
+  }>()
+);
+
+export const getOrdersStatsError = createAction(
+  actionTypes.getOrdersStatsError,
   props<{ error: string }>()
 );

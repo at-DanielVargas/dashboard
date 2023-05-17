@@ -8,6 +8,7 @@ export enum EOrderKind {
   WARRANTY = 'warranty',
   ADDITION = 'addition',
   PROMO = 'promo',
+  SALE = 'sale',
 }
 
 export interface IOrder {

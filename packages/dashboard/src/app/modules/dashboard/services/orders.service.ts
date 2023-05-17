@@ -11,12 +11,12 @@ export class OrdersService {
   constructor(private httpClient: HttpClient) {}
 
   getOrders({
-    page,
+    kind,
   }: {
-    page: number;
+    kind: string;
   }): Observable<IPaginatedResponse<IOrder>> {
     return this.httpClient.get<IPaginatedResponse<IOrder>>(
-      `http://localhost:3001/api/v1/orders?page=${page}`
+      `http://localhost:3001/api/v1/orders?kind=${kind}`
     );
   }
 

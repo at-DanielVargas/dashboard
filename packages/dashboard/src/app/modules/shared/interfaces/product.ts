@@ -12,3 +12,9 @@ export interface IProduct {
   createdAt: string;
   updatedAt: string;
 }
+
+export interface ISellsProfit {
+  totalSells: number;
+  totalProfit: number;
+  total: number;
+}
