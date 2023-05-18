@@ -6,7 +6,7 @@ const getProducts = async (req: AppRequest, res: Response) => {
   res.json(
     await ProductsService.getProducts({
       pagination: req.pagination,
-      filters: { ...req.filters }
+      filters: { ...req.filters },
     })
   );
 };
@@ -19,8 +19,14 @@ const getProfit = async (req: Request, res: Response) => {
   res.json(await ProductsService.getProfit());
 };
 
+const createProduct = async (req: Request, res: Response) => {
+  // console.log(req.body);
+  res.send();
+};
+
 export const ProductsHandler = {
   getProducts,
   getTopSellsProducts,
   getProfit,
+  createProduct,
 };

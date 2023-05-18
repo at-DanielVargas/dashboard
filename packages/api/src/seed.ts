@@ -69,20 +69,18 @@ export const orders = (numOfOrders: number, clientId: string) =>
   new Array<IOrder>(numOfOrders)
     .fill({
       kind: '',
-      items: [],
       status: '',
-      client: '',
       sendTracking: '',
       collectTracking: '',
-      created_at: new Date(),
-      updated_at: new Date(),
+      createdAt: new Date(),
+      updatedAt: new Date(),
     })
     .map(() => {
       return {
         kind: faker.helpers.arrayElement(Object.values(EOrderKind)),
         status: faker.helpers.arrayElement(Object.values(EOrderStatus)),
         client: clientId,
-        created_at: faker.date.between({
+        createdAt: faker.date.between({
           from: '2020-01-01T00:00:00.000Z',
           to: '2023-05-14T00:00:00.000Z',
         }),

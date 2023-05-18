@@ -40,7 +40,7 @@ const ProductSchema: Schema = new Schema(
       type: Schema.Types.Number,
     },
     stock: {
-      type: Schema.Types.Number
+      type: Schema.Types.Number,
     },
     category: {
       type: Schema.Types.ObjectId,
@@ -63,7 +63,11 @@ export const ProductModel = model<
   PaginateModel<ProductDocument>
 >('products', ProductSchema);
 
-export class CreateProductDto {
+export class CreateProductDto implements Omit<IProduct, 'pagination'> {
+  @IsNumber()
+  @IsNotEmpty()
+  readonly stock: number;
+
   @IsString()
   @IsNotEmpty()
   readonly name: string;

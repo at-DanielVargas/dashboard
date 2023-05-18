@@ -7,6 +7,8 @@ export interface IOrder {
   status: string;
   sendTracking: any;
   collectTracking: any;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 export enum EOrderKind {
@@ -55,10 +57,7 @@ const OrderSchema = new Schema<IOrder>(
     },
   },
   {
-    timestamps: {
-      createdAt: 'created_at',
-      updatedAt: 'updated_at',
-    },
+    timestamps: true,
     versionKey: false,
   }
 );

@@ -9,21 +9,30 @@ export function validateDto<T>(dtoClass: new () => T) {
     res: Response,
     next: NextFunction
   ) {
+    
     const validationDto = plainToClass(
       ValidationDto,
       { data: req.body },
       { excludeExtraneousValues: true }
     );
+
+
+    console.log(ValidationDto)
+    
+
     const dto = plainToClass(dtoClass, validationDto.data, {
       excludeExtraneousValues: true,
     });
-    const errors = await validate(dto as object);
 
-    if (errors.length > 0) {
-      res.status(400).json({ errors });
-    } else {
-      req.dto = dto;
+    console.log(req.body)
+
+    // const errors = await validate(dto as object);
+
+    // if (errors.length > 0) {
+    //   res.status(400).json({ errors });
+    // } else {
+    //   req.dto = dto;
       next();
-    }
+    // }
   };
 }

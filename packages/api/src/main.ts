@@ -75,28 +75,28 @@ app.get('/seed', async (req, res) => {
                   });
                 }
 
-                if ([EOrderKind.SALE].includes(userOrder.kind as EOrderKind)) {
-                  const collectTracking = new TrackingModel({
-                    ...tracking(),
-                  });
-                  const sendTracking = new TrackingModel({
-                    ...tracking(),
-                  });
+                // if ([EOrderKind.SALE].includes(userOrder.kind as EOrderKind)) {
+                //   const collectTracking = new TrackingModel({
+                //     ...tracking(),
+                //   });
+                //   const sendTracking = new TrackingModel({
+                //     ...tracking(),
+                //   });
 
-                  sendTracking.save().then((insertedSendTracking) => {
-                    OrderModel.findOneAndUpdate(
-                      { _id: userOrder._id },
-                      { sendTracking: insertedSendTracking._id }
-                    ).exec();
-                  });
+                //   sendTracking.save().then((insertedSendTracking) => {
+                //     OrderModel.findOneAndUpdate(
+                //       { _id: userOrder._id },
+                //       { sendTracking: insertedSendTracking._id }
+                //     ).exec();
+                //   });
 
-                  collectTracking.save().then((insertedCollectTracking) => {
-                    OrderModel.findOneAndUpdate(
-                      { _id: userOrder._id },
-                      { collectTracking: insertedCollectTracking._id }
-                    ).exec();
-                  });
-                }
+                //   collectTracking.save().then((insertedCollectTracking) => {
+                //     OrderModel.findOneAndUpdate(
+                //       { _id: userOrder._id },
+                //       { collectTracking: insertedCollectTracking._id }
+                //     ).exec();
+                //   });
+                // }
                 OrderModel.findOneAndUpdate(
                   { _id: userOrder._id },
                   userOrder
