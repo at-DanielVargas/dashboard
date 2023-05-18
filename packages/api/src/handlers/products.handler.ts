@@ -1,32 +1,50 @@
 import { Response, Request } from 'express';
-import { ProductsService } from '../services/products.service';
-import { AppRequest } from '../interfaces';
+import { ProductsRepository } from '../repositories/products.repository';
+import { AppRequest, Handler, IRepositoryResult } from '../interfaces';
 
-const getProducts = async (req: AppRequest, res: Response) => {
-  res.json(
-    await ProductsService.getProducts({
-      pagination: req.pagination,
-      filters: { ...req.filters },
-    })
-  );
-};
+export class ProductsHandler implements Handler {
+  private repository: ProductsRepository;
 
-const getTopSellsProducts = async (req: Request, res: Response) => {
-  res.json(await ProductsService.getTopSellsProducts());
-};
+  constructor() {
+    this.repository = new ProductsRepository();
+  }
+  public show = async (req: Request, res: Response) => {
+    const { error, data }: IRepositoryResult = await this.repository.show(
+      req.params.id
+    );
+    if (error) {
+      res.status(error.statusCode).json(error.details);
+    } else {
+      res.send(data);
+    }
+  };
 
-const getProfit = async (req: Request, res: Response) => {
-  res.json(await ProductsService.getProfit());
-};
+  public index = async (req: AppRequest, res: Response) => {
+    res.json(
+      await this.repository.index({
+        pagination: req.pagination,
+        filters: { ...req.filters },
+      })
+    );
+  };
 
-const createProduct = async (req: Request, res: Response) => {
-  // console.log(req.body);
-  res.send();
-};
+  public getTopSellsProducts = async (req: Request, res: Response) => {
+    res.json(await this.repository.getTopSellsProducts());
+  };
 
-export const ProductsHandler = {
-  getProducts,
-  getTopSellsProducts,
-  getProfit,
-  createProduct,
-};
+  public getProfit = async (req: Request, res: Response) => {
+    res.json(await this.repository.getProfit());
+  };
+
+  public create = async (req: Request, res: Response) => {
+    res.send('asdfasd');
+  };
+
+  public update = async (req: Request, res: Response) => {
+    res.send();
+  };
+
+  public destroy = async (req: Request, res: Response) => {
+    res.send();
+  };
+}

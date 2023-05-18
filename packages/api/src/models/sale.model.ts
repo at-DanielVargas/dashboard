@@ -5,12 +5,25 @@ import { PaginateModel, Schema, model } from 'mongoose';
 export interface ISale {
   items: Omit<ISale, 'items'>[];
   client: any;
+  status: ESaleStatus;
   paginate?: PaginateModel<ISale>;
   created_at: Date;
   updated_at: Date;
 }
 
+export enum ESaleStatus {
+  DUE = 'due',
+  PAYED = 'payed',
+  PENDING = 'pending',
+  CANCELLED = 'cancelled',
+}
+
 const SaleSchema = new Schema<ISale>({
+  status: {
+    type: Schema.Types.String,
+    enum: ESaleStatus,
+    default: ESaleStatus.DUE,
+  },
   items: {
     type: [
       {

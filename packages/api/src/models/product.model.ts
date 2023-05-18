@@ -1,7 +1,8 @@
 import autopopulate from 'mongoose-autopopulate';
 import mongoosePaginate from 'mongoose-paginate-v2';
 import { model, Schema, Document, PaginateModel } from 'mongoose';
-import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
+import { number, object, string } from 'yup';
+import { Shape } from '../interfaces';
 
 export interface IProduct {
   name: string;
@@ -63,33 +64,13 @@ export const ProductModel = model<
   PaginateModel<ProductDocument>
 >('products', ProductSchema);
 
-export class CreateProductDto implements Omit<IProduct, 'pagination'> {
-  @IsNumber()
-  @IsNotEmpty()
-  readonly stock: number;
-
-  @IsString()
-  @IsNotEmpty()
-  readonly name: string;
-
-  @IsString()
-  readonly description: string;
-
-  @IsString()
-  @IsNotEmpty()
-  readonly sku: string;
-
-  @IsNumber()
-  @IsNotEmpty()
-  readonly price: number;
-
-  @IsNumber()
-  @IsNotEmpty()
-  readonly supplierPrice: number;
-
-  @IsNumber()
-  purchases: number;
-
-  @IsString()
-  category?: any;
-}
+export const CreateProductDto = object<Shape<IProduct>>({
+  name: string().required(),
+  description: string().required(),
+  sku: string().required(),
+  price: number().required(),
+  supplierPrice: number().required(),
+  purchases: number().default(0),
+  stock: number().required(),
+  category: string().optional(),
+});

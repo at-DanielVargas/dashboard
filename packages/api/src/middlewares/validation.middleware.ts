@@ -1,38 +1,23 @@
-import { plainToClass } from 'class-transformer';
-import { validate } from 'class-validator';
-import { Response, NextFunction } from 'express';
-import { AppRequest, ValidationDto } from '../interfaces';
+import { Request, Response, NextFunction } from 'express';
+import { Schema } from 'yup';
+import { HTTP_STATUS } from '../constants/http';
 
-export function validateDto<T>(dtoClass: new () => T) {
-  return async function (
-    req: AppRequest<T>,
+export const validateRequest = (schema: Schema<any>) => {
+  return async (
+    req: Request,
     res: Response,
     next: NextFunction
-  ) {
-    
-    const validationDto = plainToClass(
-      ValidationDto,
-      { data: req.body },
-      { excludeExtraneousValues: true }
-    );
-
-
-    console.log(ValidationDto)
-    
-
-    const dto = plainToClass(dtoClass, validationDto.data, {
-      excludeExtraneousValues: true,
-    });
-
-    console.log(req.body)
-
-    // const errors = await validate(dto as object);
-
-    // if (errors.length > 0) {
-    //   res.status(400).json({ errors });
-    // } else {
-    //   req.dto = dto;
+  ): Promise<void> => {
+    try {
+      await schema.validate(req.body, { strict: true });
       next();
-    // }
+    } catch (error) {
+      res.status(HTTP_STATUS.UNPROCESSABLE_ENTITY).json({
+        error: {
+          type: 'Validation',
+          details: error.errors,
+        },
+      });
+    }
   };
-}
+};

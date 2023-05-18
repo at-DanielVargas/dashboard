@@ -9,15 +9,15 @@ import { trackings } from './trackings';
 import { mldata } from './mlmock';
 
 export const categories = (numOfCategories: number) =>
-  new Array<ICategory>(mldata.categories.length)
+  new Array<ICategory>(numOfCategories)
     .fill({ name: '', description: '' })
-    .map((c, index) => ({
-      name: mldata.categories[index].name,
-      description: faker.commerce.productAdjective(),
+    .map(() => ({
+      name: faker.commerce.productAdjective(),
+      description: faker.lorem.lines(),
     }));
 
 export const products = (numOfProducts: number, productCategory: string) =>
-  new Array<IProduct>(mldata.products.length)
+  new Array<IProduct>(numOfProducts)
     .fill({
       name: '',
       description: '',
@@ -30,15 +30,13 @@ export const products = (numOfProducts: number, productCategory: string) =>
     .map((product, index) => {
       const price = mldata.products[index].price;
       return {
-        name: mldata.products[index].title,
+        name: faker.commerce.productName(),
         description: faker.commerce.productDescription(),
-        sku:
-          mldata.products[index].inventory_id ||
-          faker.string.nanoid(6).toUpperCase(),
-        price: mldata.products[index].price,
+        sku: faker.string.nanoid(6).toUpperCase(),
+        price,
         supplierPrice: Number(faker.finance.amount(10, price, 0)),
-        purchases: mldata.products[index].sold_quantity,
-        stock: mldata.products[index].available_quantity,
+        purchases: faker.helpers.rangeToNumber({ min: 1, max: 17 }),
+        stock: faker.helpers.rangeToNumber({ min: 1, max: 1785 }),
         category: productCategory,
       };
     });

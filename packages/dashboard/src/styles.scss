@@ -1,40 +1,8 @@
-:root {
-  --app-container: #f3f6fd;
-  --main-color: #1f1c2e;
-  --secondary-color: #4a4a4a;
-  --link-color: #1f1c2e;
-  --link-color-hover: #c3cff4;
-  --link-color-active: #fff;
-  --link-color-active-bg: #1f1c2e;
-  --projects-section: #fff;
-  --message-box-hover: #fafcff;
-  --message-box-border: #e9ebf0;
-  --more-list-bg: #fff;
-  --more-list-bg-hover: #f6fbff;
-  --more-list-shadow: rgba(209, 209, 209, 0.4);
-  --button-bg: #1f1c24;
-  --search-area-bg: #fff;
-  --star: #1ff1c2e;
-  --message-btn: #fff;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+$primaryColor: hotpink;
+$theme-colors: (
+  primary: $primaryColor,
+);
+$font-family-sans-serif: 'Plus Jakarta Sans', sans-serif;
+$font-size-base: .9rem;
 
-body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 700;
-}
+@import 'node_modules/bootstrap/scss/bootstrap';

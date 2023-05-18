@@ -1,12 +1,21 @@
 import { Router } from 'express';
 import { OrdersHandler } from '../handlers/orders.handler';
 
-const OrdersRouter = Router();
+export class OrdersRouter {
+  public router: Router;
+  private ordersHandler: OrdersHandler;
 
-OrdersRouter.get('/', OrdersHandler.getOrders);
-OrdersRouter.get('/stats', OrdersHandler.getOrdersStats);
-OrdersRouter.get('/with-tracking', OrdersHandler.getOrdersWithTracking);
-OrdersRouter.get('/:orderId', OrdersHandler.getOrder);
-OrdersRouter.get('/:orderId/tracking', OrdersHandler.track);
+  constructor() {
+    this.router = Router();
+    this.ordersHandler = new OrdersHandler();
+    this.setupRoutes();
+  }
 
-export default OrdersRouter;
+  private setupRoutes() {
+    this.router.get('/', this.ordersHandler.getOrders);
+    this.router.get('/stats', this.ordersHandler.getOrdersStats);
+    this.router.get('/with-tracking', this.ordersHandler.getOrdersWithTracking);
+    this.router.get('/:orderId', this.ordersHandler.getOrder);
+    this.router.get('/:orderId/tracking', this.ordersHandler.track);
+  }
+}

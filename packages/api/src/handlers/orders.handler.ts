@@ -1,41 +1,41 @@
 import { Request, Response } from 'express';
-import { OrdersService } from '../services/orders.service';
+import { OrdersRepository } from '../repositories/orders.repository';
 import { AppRequest } from '../interfaces';
 
-const getOrders = async (req: AppRequest, res: Response) => {
-  res.json(
-    await OrdersService.getOrders({
-      pagination: req.pagination,
-      filters: { ...req.filters },
-    })
-  );
-};
+export class OrdersHandler {
+  private repository: OrdersRepository;
 
-const getOrder = async (req: Request, res: Response) => {
-  res.json(await OrdersService.getOrder(req.params.orderId));
-};
+  constructor() {
+    this.repository = new OrdersRepository();
+  }
 
-const getOrdersStats = async (req: Request, res: Response) => {
-  res.json(await OrdersService.getOrdersStats());
-};
+  public getOrders = async (req: AppRequest, res: Response) => {
+    res.json(
+      await this.repository.getOrders({
+        pagination: req.pagination,
+        filters: { ...req.filters },
+      })
+    );
+  };
 
-const track = async (req: Request, res: Response) => {
-  res.json(await OrdersService.track(req.params.orderId));
-};
+  public getOrder = async (req: Request, res: Response) => {
+    res.json(await this.repository.getOrder(req.params.orderId));
+  };
 
-const getOrdersWithTracking = async (req: AppRequest, res: Response) => {
-  res.json(
-    await OrdersService.getOrdersWithTracking({
-      pagination: req.pagination,
-      filters: { ...req.filters },
-    })
-  );
-};
+  public getOrdersStats = async (req: Request, res: Response) => {
+    res.json(await this.repository.getOrdersStats());
+  };
 
-export const OrdersHandler = {
-  getOrders,
-  getOrder,
-  getOrdersStats,
-  track,
-  getOrdersWithTracking,
-};
+  public track = async (req: Request, res: Response) => {
+    res.json(await this.repository.track(req.params.orderId));
+  };
+
+  public getOrdersWithTracking = async (req: AppRequest, res: Response) => {
+    res.json(
+      await this.repository.getOrdersWithTracking({
+        pagination: req.pagination,
+        filters: { ...req.filters },
+      })
+    );
+  };
+}
