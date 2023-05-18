@@ -1,4 +1,4 @@
-import { model, Schema } from 'mongoose';
+import { model, PaginateModel, Schema } from 'mongoose';
 
 export interface ITrackingAddress {
   ZipCode: string;
@@ -20,6 +20,7 @@ export interface ITracking {
   TrackingNumber: string;
   Status: string;
   TrackingStatus: string;
+  paginate?: PaginateModel<ITracking>;
 }
 
 const TrackingSchema = new Schema<ITracking>(

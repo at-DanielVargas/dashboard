@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { AppRequest } from '../interfaces';
+import { AppRequest, IRepositoryResult } from '../interfaces';
 import { CategoryRepository } from '../repositories/categories.repository';
 
 export class CategoriesHandler {
@@ -10,12 +10,11 @@ export class CategoriesHandler {
   }
 
   public index = async (req: AppRequest, res: Response) => {
-    res.json(
-      await this.repository.index({
-        pagination: req.pagination,
-        filters: { ...req.filters },
-      })
-    );
+    const { error, data }: IRepositoryResult = await this.repository.index({
+      pagination: req.pagination,
+      filters: { ...req.filters },
+    });
+    res.json();
   };
 
   public show = async (req: Request, res: Response) => {
@@ -28,7 +27,7 @@ export class CategoriesHandler {
   };
 
   public create = async (req: Request, res: Response) => {
-    const {error, created} = await this.repository.create(req.body)
+    const { error, created } = await this.repository.create(req.body);
     res.json({ message: 'Hello from categories handler create method' });
   };
 
