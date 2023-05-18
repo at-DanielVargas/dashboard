@@ -37,6 +37,14 @@ export class ProductsHandler implements Handler {
   };
 
   public create = async (req: Request, res: Response) => {
+    const {error, data} = await this.repository.create(req.body);
+
+    if (error) {
+      res.status
+    } else {
+
+    }
+
     res.send('asdfasd');
   };
 
