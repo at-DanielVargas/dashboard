@@ -66,7 +66,7 @@ export const ProductModel = model<
 
 export const CreateProductDto = object<Shape<IProduct>>({
   name: string().required(),
-  description: string().required(),
+  description: string().optional(),
   sku: string().required(),
   price: number().required(),
   supplierPrice: number().required(),

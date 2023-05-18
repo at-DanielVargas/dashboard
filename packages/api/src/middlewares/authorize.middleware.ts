@@ -18,7 +18,11 @@ export const authenticate = (
 export const authorize = (permissions: string[]) => {
   return (req: Request, res: Response, next: NextFunction): void => {
     // pendiente implementar logica de obtencion de permisos
-    const userPermissions: string[] = ['admin', 'create_category'];
+    const userPermissions: string[] = [
+      'admin',
+      'create_category',
+      'create_product',
+    ];
 
     const hasPermission = permissions.some((permission) =>
       userPermissions.includes(permission)

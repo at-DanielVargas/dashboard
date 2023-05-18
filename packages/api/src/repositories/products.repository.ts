@@ -1,4 +1,5 @@
 import { HTTP_STATUS } from '../constants/http';
+import { RepositoryResult } from '../helpers/RepositoryResult';
 import { AppServiceOptions, IRepositoryResult } from '../interfaces';
 import { IProduct, ProductModel } from '../models/product.model';
 
@@ -15,26 +16,33 @@ export class ProductsRepository {
     );
   }
 
-  public async show(id: string): Promise<IRepositoryResult<IProduct>> {
+  public async create(product): Promise<RepositoryResult> {
+    try {
+      return new RepositoryResult(await ProductModel.create(product), null);
+    } catch (error) {
+      return new RepositoryResult(null, {
+        statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,
+        details: error,
+      });
+    }
+  }
+
+  public async show(id: string): Promise<RepositoryResult> {
     try {
       const data = await ProductModel.findById(id);
-
       if (!data) {
-        return {
-          error: { statusCode: HTTP_STATUS.NOT_FOUND, details: 'Not Found.' },
-          data: null,
-        };
+        return new RepositoryResult(data);
       } else {
-        return { error: null, data };
+        return new RepositoryResult(null, {
+          statusCode: HTTP_STATUS.NOT_FOUND,
+          details: 'Not found',
+        });
       }
     } catch (error) {
-      return {
-        error: {
-          statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,
-          details: error,
-        },
-        data: null,
-      };
+      return new RepositoryResult(null, {
+        statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,
+        details: error,
+      });
     }
   }
 

@@ -19,12 +19,12 @@ export class CategoriesRouter {
     this.router.get('/', this.categoriesHandler.index);
     this.router.get('/seed', authorize(['super_admin']), async (req, res) => {
       const cr = new CategoryRepository();
-      const { error, created } = await cr.create(categories(30));
+      const { error, data } = await cr.create(categories(30));
       if (error) {
         res.status(HTTP_STATUS.IM_A_TEAPOT).json({ error });
         return;
       }
-      res.json(created);
+      res.json(data);
     });
     this.router.get('/:id', this.categoriesHandler.show);
     this.router.post(

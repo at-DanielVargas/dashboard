@@ -1,7 +1,8 @@
 import { Router } from 'express';
 import { ProductsHandler } from '../handlers/products.handler';
 import { validateRequest } from '../middlewares/validation.middleware';
-import { CreateProductDto, IProduct } from '../models/product.model';
+import { CreateProductDto } from '../models/product.model';
+import { authenticate, authorize } from '../middlewares/authorize.middleware';
 
 export class ProductsRouter {
   public router: Router;
@@ -16,7 +17,8 @@ export class ProductsRouter {
   private setupRoutes() {
     this.router.post(
       '/',
-      validateRequest(CreateProductDto),
+      [authenticate, authorize(['create_product']),
+      validateRequest(CreateProductDto)],
       this.productsHandler.create
     );
     this.router.get('/', this.productsHandler.index);
