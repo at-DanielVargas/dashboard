@@ -17,16 +17,35 @@ export class ProductsRouter {
   private setupRoutes() {
     this.router.post(
       '/',
-      [authenticate, authorize(['create_product']),
-      validateRequest(CreateProductDto)],
+      [
+        authenticate,
+        authorize(['create_product', 'super_admin']),
+        validateRequest(CreateProductDto),
+      ],
       this.productsHandler.create
     );
     this.router.get('/', this.productsHandler.index);
     this.router.get('/best', this.productsHandler.getTopSellsProducts);
     this.router.get('/total-profit', this.productsHandler.getProfit);
     this.router.get('/:id', this.productsHandler.show);
-    this.router.put('/:id', this.productsHandler.update);
-    this.router.delete('/:id', this.productsHandler.destroy);
+    this.router.put(
+      '/:id',
+      [
+        authenticate,
+        authorize(['update_product', 'super_admin']),
+        validateRequest(CreateProductDto),
+      ],
+      this.productsHandler.update
+    );
+    this.router.delete(
+      '/:id',
+      [
+        authenticate,
+        authorize(['delete_product', 'super_admin']),
+        validateRequest(CreateProductDto),
+      ],
+      this.productsHandler.destroy
+    );
     this.router.get('/:id/profit', this.productsHandler.getProfit);
   }
 }

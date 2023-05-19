@@ -1,6 +1,6 @@
 import { HTTP_STATUS } from '../constants/http';
 import { RepositoryResult } from '../helpers/RepositoryResult';
-import { AppServiceOptions, IRepositoryResult } from '../interfaces';
+import { AppServiceOptions } from '../interfaces';
 import { IProduct, ProductModel } from '../models/product.model';
 
 export class ProductsRepository {
@@ -16,7 +16,7 @@ export class ProductsRepository {
     );
   }
 
-  public async create(product): Promise<RepositoryResult> {
+  public async create(product: IProduct): Promise<RepositoryResult> {
     try {
       return new RepositoryResult(await ProductModel.create(product), null);
     } catch (error) {
@@ -39,6 +39,33 @@ export class ProductsRepository {
         });
       }
     } catch (error) {
+      return new RepositoryResult(null, {
+        statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,
+        details: error,
+      });
+    }
+  }
+
+  public async update(id: string, data: IProduct): Promise<RepositoryResult> {
+    try {
+      return new RepositoryResult(
+        await ProductModel.findByIdAndUpdate(id, { $set: data }, { new: true })
+      );
+    } catch (error) {
+      return new RepositoryResult(null, {
+        statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,
+        details: error,
+      });
+    }
+  }
+
+  public async destroy(id: string): Promise<RepositoryResult> {
+    try {
+      return new RepositoryResult(
+        await ProductModel.deleteOne({ _id: id }, { new: true })
+      );
+    } catch (error) {
+      console.log(error);
       return new RepositoryResult(null, {
         statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,
         details: error,

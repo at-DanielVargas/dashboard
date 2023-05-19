@@ -37,22 +37,29 @@ export class ProductsHandler implements Handler {
   };
 
   public create = async (req: Request, res: Response) => {
-    const {error, data} = await this.repository.create(req.body);
-
+    const { error, data } = await this.repository.create(req.body);
     if (error) {
-      res.status
-    } else {
-
+      return res.status(error.statusCode).json({ details: error.details });
     }
-
-    res.send('asdfasd');
+    return res.send(data);
   };
 
   public update = async (req: Request, res: Response) => {
-    res.send();
+    const { error, data } = await this.repository.update(
+      req.params.id,
+      req.body
+    );
+    if (error) {
+      return res.status(error.statusCode).json(error.details);
+    }
+    return res.json(data);
   };
 
   public destroy = async (req: Request, res: Response) => {
-    res.send();
+    const { error, data } = await this.repository.destroy(req.params.id);
+    if (error) {
+      return res.status(error.statusCode).json(error.details);
+    }
+    return res.json(data);
   };
 }

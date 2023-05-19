@@ -64,13 +64,13 @@ export const ProductModel = model<
   PaginateModel<ProductDocument>
 >('products', ProductSchema);
 
-export const CreateProductDto = object<Shape<IProduct>>({
+export const CreateProductDto = object().shape<Shape<IProduct>>({
   name: string().required(),
   description: string().optional(),
   sku: string().required(),
   price: number().required(),
   supplierPrice: number().required(),
-  purchases: number().default(0),
+  purchases: number().positive(),
   stock: number().required(),
   category: string().optional(),
 });

@@ -1,6 +1,6 @@
 import { HTTP_STATUS } from '../constants/http';
 import { RepositoryResult } from '../helpers/RepositoryResult';
-import { AppServiceOptions, IRepositoryResult } from '../interfaces';
+import { AppServiceOptions } from '../interfaces';
 import { CategoryModel, ICategory } from '../models/category.model';
 
 export class CategoryRepository {
@@ -34,14 +34,13 @@ export class CategoryRepository {
   public show = async (id: string): Promise<RepositoryResult> => {
     try {
       const data = await CategoryModel.findById(id);
-      if (data) {
-        return new RepositoryResult(data);
-      } else {
+      if (!data) {
         return new RepositoryResult(null, {
           statusCode: HTTP_STATUS.NOT_FOUND,
           details: 'Not Found',
         });
       }
+      return new RepositoryResult(data);
     } catch (error) {
       return new RepositoryResult(null, {
         statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,
@@ -66,7 +65,7 @@ export class CategoryRepository {
   public update = async (id: string, data): Promise<RepositoryResult> => {
     try {
       return new RepositoryResult(
-        await CategoryModel.findByIdAndUpdate(id, { $set: data })
+        await CategoryModel.findByIdAndUpdate(id, { $set: data }, { new: true })
       );
     } catch (error) {
       return new RepositoryResult(null, {
@@ -75,5 +74,17 @@ export class CategoryRepository {
       });
     }
   };
-  public destroy = async () => {};
+  public destroy = async (id: string) => {
+    try {
+      return new RepositoryResult(
+        await CategoryModel.deleteOne({ _id: id }, { new: true })
+      );
+    } catch (error) {
+      console.log(error);
+      return new RepositoryResult(null, {
+        statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,
+        details: error,
+      });
+    }
+  };
 }

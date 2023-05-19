@@ -5,6 +5,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import { ApiRouter } from './routers/index';
 import mongoose from 'mongoose';
+
 // import { ProductModel } from './models/product.model';
 // import { categories, orders, products, tracking, users } from './seed';
 // import { CategoryModel } from './models/category.model';
@@ -191,6 +192,8 @@ import mongoose from 'mongoose';
 //   });
 const host = process.env.HOST ?? 'localhost';
 const port = process.env.PORT ? Number(process.env.PORT) : 3001;
+
+
 class App {
   private app: Application;
 

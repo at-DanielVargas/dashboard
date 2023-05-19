@@ -20,8 +20,7 @@ export const authorize = (permissions: string[]) => {
     // pendiente implementar logica de obtencion de permisos
     const userPermissions: string[] = [
       'admin',
-      'create_category',
-      'create_product',
+      'super_admin',
     ];
 
     const hasPermission = permissions.some((permission) =>

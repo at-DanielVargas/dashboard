@@ -1,6 +1,8 @@
 import autopopulate from 'mongoose-autopopulate';
 import mongoosePaginate from 'mongoose-paginate-v2';
 import { model, PaginateModel, Schema } from 'mongoose';
+import { object, string } from 'yup';
+import { Shape } from '../interfaces';
 
 export interface ICategory {
   name: string;
@@ -31,3 +33,9 @@ export const CategoryModel = model<
   CategoryDocument,
   PaginateModel<CategoryDocument>
 >('categories', CategorySchema);
+
+export const CreateCategoryDto = object<Shape<ICategory>>({
+  name: string().required(),
+  description: string().optional(),
+});
+
