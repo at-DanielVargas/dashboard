@@ -20,12 +20,15 @@ export class ProductsHandler implements Handler {
   };
 
   public index = async (req: AppRequest, res: Response) => {
-    res.json(
-      await this.repository.index({
-        pagination: req.pagination,
-        filters: { ...req.filters },
-      })
-    );
+    const { error, data } = await this.repository.index({
+      pagination: req.pagination,
+      filters: { ...req.filters },
+    });
+    if (error) {
+      res.status(error.statusCode).json(error.details);
+    } else {
+      res.send(data);
+    }
   };
 
   public getTopSellsProducts = async (req: Request, res: Response) => {
@@ -38,6 +41,18 @@ export class ProductsHandler implements Handler {
 
   public create = async (req: Request, res: Response) => {
     const { error, data } = await this.repository.create(req.body);
+    if (error) {
+      return res.status(error.statusCode).json({ details: error.details });
+    }
+    return res.send(data);
+  };
+
+  public search = async (req: AppRequest, res: Response) => {
+    const { error, data } = await this.repository.search({
+      pagination: req.pagination,
+      filters: { ...req.filters },
+      search: req.search,
+    });
     if (error) {
       return res.status(error.statusCode).json({ details: error.details });
     }
@@ -57,6 +72,14 @@ export class ProductsHandler implements Handler {
 
   public destroy = async (req: Request, res: Response) => {
     const { error, data } = await this.repository.destroy(req.params.id);
+    if (error) {
+      return res.status(error.statusCode).json(error.details);
+    }
+    return res.json(data);
+  };
+
+  public seed = async (req: Request, res: Response) => {
+    const { error, data } = this.repository.seed();
     if (error) {
       return res.status(error.statusCode).json(error.details);
     }

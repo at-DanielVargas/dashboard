@@ -14,9 +14,10 @@ export const FiltersMiddleware = (
     ? {
         ...excludeProperties(
           createNestedObject(req.query as Record<string, string>),
-          ['page', 'limit']
+          ['page', 'limit', 'search']
         ),
       }
     : {};
+  req.search = String(req.query.search);
   next();
 };

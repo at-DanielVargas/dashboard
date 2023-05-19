@@ -15,6 +15,14 @@ export class ProductsRouter {
   }
 
   private setupRoutes() {
+    this.router.get(
+      '/seed',
+      [authorize(['super_admin'])],
+      this.productsHandler.seed
+    );
+    // ruta para la busqueda de productos por nombre
+    this.router.get('/q', this.productsHandler.search);
+    // Ruta para la creacion de productos
     this.router.post(
       '/',
       [
@@ -24,10 +32,31 @@ export class ProductsRouter {
       ],
       this.productsHandler.create
     );
+    // listado de productos
     this.router.get('/', this.productsHandler.index);
-    this.router.get('/best', this.productsHandler.getTopSellsProducts);
-    this.router.get('/total-profit', this.productsHandler.getProfit);
+    // se obtienen los productos con las mayores ventas
+    this.router.get(
+      '/top-products',
+      [
+        authenticate,
+        authorize(['sales_manager', 'super_admin']),
+        validateRequest(CreateProductDto),
+      ],
+      this.productsHandler.getTopSellsProducts
+    );
+    // se obtienen los datos de ganancias de las ventas totales de la plataforma
+    this.router.get(
+      '/revenue',
+      [
+        authenticate,
+        authorize(['sales_manager', 'super_admin']),
+        validateRequest(CreateProductDto),
+      ],
+      this.productsHandler.getProfit
+    );
+    // obtiene los datos de un producto
     this.router.get('/:id', this.productsHandler.show);
+    // actualiza el producto
     this.router.put(
       '/:id',
       [
@@ -37,6 +66,7 @@ export class ProductsRouter {
       ],
       this.productsHandler.update
     );
+    // elimina el producto
     this.router.delete(
       '/:id',
       [
@@ -46,6 +76,7 @@ export class ProductsRouter {
       ],
       this.productsHandler.destroy
     );
+    // obtiene las ganancias de un producto espesifico
     this.router.get('/:id/profit', this.productsHandler.getProfit);
   }
 }

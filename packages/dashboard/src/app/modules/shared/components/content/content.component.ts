@@ -8,7 +8,7 @@ export class ContentComponent {
   @HostBinding('class')
   get classes(): Record<string, boolean> {
     return {
-      ...['p-3', 'w-100'].reduce((a, c) => ({ ...a, [c]: true }), {}),
+      ...['p-3', 'w-100', 'bg-light'].reduce((a, c) => ({ ...a, [c]: true }), {}),
     };
   }
 }

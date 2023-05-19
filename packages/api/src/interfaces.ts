@@ -4,6 +4,7 @@ import * as yup from 'yup';
 
 export interface AppRequest<T = undefined> extends Request {
   filters?: Record<string, string>;
+  search?: string;
   pagination: {
     page: number;
     limit: number;
@@ -50,4 +51,4 @@ export type Shape<Fields> = {
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface AppServiceOptions
-  extends Pick<AppRequest, 'pagination' | 'filters'> {}
+  extends Partial<Pick<AppRequest, 'pagination' | 'filters' | 'search'>> {}

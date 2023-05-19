@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
+import { arrayCssToRecordBoolean } from 'packages/dashboard/src/app/utils/arrayCssToRecordBoolen';
 
 @Component({
   selector: 'goc-header',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
+@HostBinding('class')
+  get classes(): Record<string, boolean> {
+    return arrayCssToRecordBoolean(['text-bg-dark']);
+  }
 }

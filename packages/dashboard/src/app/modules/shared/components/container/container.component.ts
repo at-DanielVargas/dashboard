@@ -14,7 +14,6 @@ export class ContainerComponent {
         'w-100',
         'vh-100',
         'overflow-hidden',
-        'bg-light',
       ].reduce((a, c) => ({ ...a, [c]: true }), {}),
     };
   }

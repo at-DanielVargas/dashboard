@@ -1,17 +1,17 @@
 <goc-header></goc-header>
 <goc-container>
-  <goc-sidebar
-    [links]="[
+  <goc-sidebar [links]="[
     { icon: 'fa-solid fa-house', target: '/dashboard/home' },
     { icon: 'fa-solid fa-clipboard', target: '/dashboard/orders' },
+    {icon: 'fa-solid fa-truck-fast', target: '/dashboard/tracking'},
     { icon: 'fa-solid fa-boxes-stacked', target: '/dashboard/products' },
     { icon: 'fa-solid fa-tags', target: '/dashboard/categories' },
     { icon: 'fa-solid fa-file-invoice-dollar', target: '/dashboard/sales' },
     { icon: 'fa-solid fa-shop', target: '/dashboard/shop' },
     { icon: 'fa-solid fa-gear', target: '/dashboard/settings' }
-    ]"
-  ></goc-sidebar>
+    ]"></goc-sidebar>
   <goc-content>
+    <goc-breadcrumb></goc-breadcrumb> 
     <router-outlet></router-outlet>
   </goc-content>
 </goc-container>

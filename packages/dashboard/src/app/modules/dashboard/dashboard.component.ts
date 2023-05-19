@@ -16,7 +16,6 @@ export class DashboardComponent {
         'w-100',
         'vh-100',
         'overflow-hidden',
-        'bg-body-tertiary'
       ].reduce((a, c) => ({ ...a, [c]: true }), {}),
     };
   }

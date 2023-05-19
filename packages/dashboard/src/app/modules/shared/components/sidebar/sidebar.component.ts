@@ -1,4 +1,5 @@
 import { Component, HostBinding, Input } from '@angular/core';
+import { arrayCssToRecordBoolean } from 'packages/dashboard/src/app/utils/arrayCssToRecordBoolen';
 
 export interface ISidebarLink {
   icon: string;
@@ -15,11 +16,6 @@ export class SidebarComponent {
 
   @HostBinding('class')
   get classes(): Record<string, boolean> {
-    return {
-      ...['px-4', 'py-lg-3', 'gap-4', 'vstack', 'd-none', 'd-lg-flex'].reduce(
-        (a, c) => ({ ...a, [c]: true }),
-        {}
-      ),
-    };
+    return arrayCssToRecordBoolean(['vstack', 'd-none', 'd-lg-flex']);
   }
 }

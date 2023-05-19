@@ -16,6 +16,7 @@ import {
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { ContainerComponent } from './components/container/container.component';
 import { ContentComponent } from './components/content/content.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ContentComponent } from './components/content/content.component';
     PaginationComponent,
     ContainerComponent,
     ContentComponent,
+    BreadcrumbComponent,
   ],
   imports: [CommonModule, HttpClientModule, RouterModule],
   exports: [
@@ -49,6 +51,7 @@ import { ContentComponent } from './components/content/content.component';
     PaginationComponent,
     ContainerComponent,
     ContentComponent,
+    BreadcrumbComponent,
   ],
 })
 export class SharedModule {}

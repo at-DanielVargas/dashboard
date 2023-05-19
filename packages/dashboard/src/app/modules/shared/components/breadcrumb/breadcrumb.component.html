@@ -1,0 +1,11 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
+        <li class="breadcrumb-item" *ngFor="let breadcrumb of breadcrumbs; let last = last"
+            [ngClass]="{ active: last }">
+            <a class="link-body-emphasis" [routerLink]="breadcrumb.url">
+                <i class="fa-solid fa-house"></i>
+                <span>{{breadcrumb.label}}</span>
+            </a>
+        </li>
+    </ol>
+</nav>
