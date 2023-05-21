@@ -1,23 +1,13 @@
-import { NextFunction, Response } from 'express';
-import { AppRequest } from '../interfaces';
-import {
-  createNestedObject,
-  excludeProperties,
-} from '../helpers/getObjectFromqueryParam';
+import { NextFunction, Response } from 'express'
+import { AppRequest } from '../interfaces'
+import { createNestedObject, excludeProperties } from '../helpers/getObjectFromqueryParam'
 
-export const FiltersMiddleware = (
-  req: AppRequest,
-  res: Response,
-  next: NextFunction
-) => {
+export const FiltersMiddleware = (req: AppRequest, res: Response, next: NextFunction) => {
   req.filters = req.query
     ? {
-        ...excludeProperties(
-          createNestedObject(req.query as Record<string, string>),
-          ['page', 'limit', 'search']
-        ),
+        ...excludeProperties(createNestedObject(req.query as Record<string, string>), ['page', 'limit', 'search'])
       }
-    : {};
-  req.search = String(req.query.search);
-  next();
-};
+    : {}
+  req.search = String(req.query.search)
+  next()
+}

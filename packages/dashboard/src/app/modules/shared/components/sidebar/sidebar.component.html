@@ -6,13 +6,20 @@
 
 <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
   <li class="nav-item">
-    <a *ngFor="let link of links" [routerLink]="link.target" routerLinkActive="bg-light"
-      class="nav-link py-3 rounded-0" aria-current="page" data-bs-toggle="tooltip"
-      data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
+    <a
+      *ngFor="let link of links"
+      [routerLink]="link.target"
+      routerLinkActive="bg-light"
+      class="nav-link py-3 rounded-0"
+      aria-current="page"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      aria-label="Home"
+      data-bs-original-title="Home"
+    >
       <i [class]="link.icon"></i>
     </a>
   </li>
-
 </ul>
 
 <!-- 

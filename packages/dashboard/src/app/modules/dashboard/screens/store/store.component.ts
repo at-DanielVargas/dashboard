@@ -1,10 +1,8 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'goc-store',
   templateUrl: './store.component.html',
   styleUrls: ['./store.component.scss']
 })
-export class StoreComponent {
-
-}
+export class StoreComponent {}

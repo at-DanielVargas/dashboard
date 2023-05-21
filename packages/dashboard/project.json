@@ -15,10 +15,7 @@
         "main": "packages/dashboard/src/main.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "packages/dashboard/tsconfig.app.json",
-        "assets": [
-          "packages/dashboard/src/favicon.ico",
-          "packages/dashboard/src/assets"
-        ],
+        "assets": ["packages/dashboard/src/favicon.ico", "packages/dashboard/src/assets"],
         "styles": ["packages/dashboard/src/styles.scss"],
         "scripts": []
       },
@@ -74,10 +71,7 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "packages/dashboard/**/*.ts",
-          "packages/dashboard/**/*.html"
-        ]
+        "lintFilePatterns": ["packages/dashboard/**/*.ts", "packages/dashboard/**/*.html"]
       }
     },
     "test": {

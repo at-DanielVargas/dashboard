@@ -60,14 +60,10 @@
 
   <div class="hstack">
     <div class="w-50">
-      <goc-timeline
-        [timelineData]="(collectTracking$ | async)?.History"
-      ></goc-timeline>
+      <goc-timeline [timelineData]="(collectTracking$ | async)?.History"></goc-timeline>
     </div>
     <div class="w-50">
-      <goc-timeline
-        [timelineData]="(sendTracking$ | async)?.History"
-      ></goc-timeline>
+      <goc-timeline [timelineData]="(sendTracking$ | async)?.History"></goc-timeline>
     </div>
   </div>
 </goc-card-container>

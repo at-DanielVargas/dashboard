@@ -1,90 +1,77 @@
-import { HTTP_STATUS } from '../constants/http';
-import { RepositoryResult } from '../helpers/RepositoryResult';
-import { AppServiceOptions } from '../interfaces';
-import { CategoryModel, ICategory } from '../models/category.model';
+import { HTTP_STATUS } from '../constants/http'
+import { RepositoryResult } from '../helpers/RepositoryResult'
+import { AppServiceOptions } from '../interfaces'
+import { CategoryModel, ICategory } from '../models/category.model'
 
 export class CategoryRepository {
-  /**
-   * Se obtienen todos los productos existentes
-   */
-  public index = async (
-    props: AppServiceOptions
-  ): Promise<RepositoryResult> => {
+  public index = async (props: AppServiceOptions): Promise<RepositoryResult> => {
     try {
       const data = await CategoryModel.paginate(
         {
-          ...props.filters,
+          ...props.filters
         },
         {
           customLabels: { docs: 'items', totalDocs: 'total' },
-          ...props.pagination,
+          ...props.pagination
         }
-      );
-      return new RepositoryResult(data);
+      )
+      return new RepositoryResult(data)
     } catch (error) {
       return new RepositoryResult(null, {
         statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,
-        details: error,
-      });
+        details: error
+      })
     }
-  };
-  /**
-   * se obtiene un solo producto
-   */
+  }
+
   public show = async (id: string): Promise<RepositoryResult> => {
     try {
-      const data = await CategoryModel.findById(id);
+      const data = await CategoryModel.findById(id)
       if (!data) {
         return new RepositoryResult(null, {
           statusCode: HTTP_STATUS.NOT_FOUND,
-          details: 'Not Found',
-        });
+          details: 'Not Found'
+        })
       }
-      return new RepositoryResult(data);
+      return new RepositoryResult(data)
     } catch (error) {
       return new RepositoryResult(null, {
         statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,
-        details: error,
-      });
+        details: error
+      })
     }
-  };
+  }
 
-  public create = async (
-    data: ICategory | ICategory[]
-  ): Promise<RepositoryResult> => {
+  public create = async (data: ICategory | ICategory[]): Promise<RepositoryResult> => {
     try {
-      const categories = Array.isArray(data) ? [...data] : [data];
-      return new RepositoryResult(await CategoryModel.insertMany(categories));
+      const categories = Array.isArray(data) ? [...data] : [data]
+      return new RepositoryResult(await CategoryModel.insertMany(categories))
     } catch (error) {
       return new RepositoryResult(null, {
         statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,
-        details: error,
-      });
+        details: error
+      })
     }
-  };
+  }
   public update = async (id: string, data): Promise<RepositoryResult> => {
     try {
-      return new RepositoryResult(
-        await CategoryModel.findByIdAndUpdate(id, { $set: data }, { new: true })
-      );
+      return new RepositoryResult(await CategoryModel.findByIdAndUpdate(id, { $set: data }, { new: true }))
     } catch (error) {
       return new RepositoryResult(null, {
         statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,
-        details: error,
-      });
+        details: error
+      })
     }
-  };
+  }
   public destroy = async (id: string) => {
     try {
-      return new RepositoryResult(
-        await CategoryModel.deleteOne({ _id: id }, { new: true })
-      );
+      return new RepositoryResult(await CategoryModel.deleteOne({ _id: id }, { new: true }))
     } catch (error) {
-      console.log(error);
+      console.log(error)
       return new RepositoryResult(null, {
         statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,
-        details: error,
-      });
+        details: error
+      })
     }
-  };
+  }
 }

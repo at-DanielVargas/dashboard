@@ -7,10 +7,9 @@ export const mldata = {
       original_price: 899,
       inventory_id: 'FLWL19307',
       category_id: 'MLM49283',
-      thumbnail:
-        'http://http2.mlstatic.com/D_829841-MLA45741350251_042021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_829841-MLA45741350251_042021-I.jpg',
       sold_quantity: 5,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM1355363099',
@@ -19,10 +18,9 @@ export const mldata = {
       original_price: 2410,
       inventory_id: 'MKMG23647',
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_656377-MLA32148991440_092019-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_656377-MLA32148991440_092019-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM2037797210',
@@ -31,23 +29,20 @@ export const mldata = {
       original_price: 2999,
       inventory_id: 'EQYA41191',
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_801369-MLA46178257337_052021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_801369-MLA46178257337_052021-I.jpg',
       sold_quantity: 50,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1608635656',
-      title:
-        'Silla Ejecutiva Oficina Ergonomica Sillón Para Escritorio Color Negro',
+      title: 'Silla Ejecutiva Oficina Ergonomica Sillón Para Escritorio Color Negro',
       price: 759,
       original_price: 1299,
       inventory_id: 'UMUG14325',
       category_id: 'MLM437196',
-      thumbnail:
-        'http://http2.mlstatic.com/D_851669-MLM51249916530_082022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_851669-MLM51249916530_082022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1386055676',
@@ -56,10 +51,9 @@ export const mldata = {
       original_price: 3999,
       inventory_id: 'OBBY67179',
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_632137-MLA53124799923_012023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_632137-MLA53124799923_012023-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1463915125',
@@ -68,10 +62,9 @@ export const mldata = {
       original_price: 9999,
       inventory_id: 'TFCH26115',
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_838699-MLA50498230536_062022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_838699-MLA50498230536_062022-I.jpg',
       sold_quantity: 25,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM2008045618',
@@ -80,10 +73,9 @@ export const mldata = {
       original_price: 499,
       inventory_id: null,
       category_id: 'MLM6777',
-      thumbnail:
-        'http://http2.mlstatic.com/D_797288-MLA43711395325_102020-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_797288-MLA43711395325_102020-I.jpg',
       sold_quantity: 0,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM1318858971',
@@ -92,10 +84,9 @@ export const mldata = {
       original_price: 899,
       inventory_id: 'KKOU42888',
       category_id: 'MLM123325',
-      thumbnail:
-        'http://http2.mlstatic.com/D_909953-MLA43711395321_102020-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_909953-MLA43711395321_102020-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1331165845',
@@ -104,10 +95,9 @@ export const mldata = {
       original_price: 2999,
       inventory_id: 'LOLG77013',
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_896100-MLA40423610078_012020-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_896100-MLA40423610078_012020-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1740820149',
@@ -116,10 +106,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: null,
       category_id: 'MLM128037',
-      thumbnail:
-        'http://http2.mlstatic.com/D_624879-MLM50158109022_062022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_624879-MLM50158109022_062022-I.jpg',
       sold_quantity: 100,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM841568363',
@@ -128,10 +117,9 @@ export const mldata = {
       original_price: 6999,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_887958-MLA44100019693_112020-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_887958-MLA44100019693_112020-I.jpg',
       sold_quantity: 500,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1982658720',
@@ -140,10 +128,9 @@ export const mldata = {
       original_price: 6999,
       inventory_id: 'WJIT86592',
       category_id: 'MLM118435',
-      thumbnail:
-        'http://http2.mlstatic.com/D_822052-MLM49240611675_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_822052-MLM49240611675_032022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1432183598',
@@ -152,23 +139,20 @@ export const mldata = {
       original_price: 2999,
       inventory_id: 'YUZF70340',
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_670853-MLA52223663678_102022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_670853-MLA52223663678_102022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1715465015',
-      title:
-        'Bicicleta Fija Svelfik Spin Fit Para Spinning Color Negro Y Naranja',
+      title: 'Bicicleta Fija Svelfik Spin Fit Para Spinning Color Negro Y Naranja',
       price: 3999,
       original_price: 5999,
       inventory_id: 'JDMV30140',
       category_id: 'MLM3095',
-      thumbnail:
-        'http://http2.mlstatic.com/D_626760-MLA50408499576_062022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_626760-MLA50408499576_062022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM771998657',
@@ -177,10 +161,9 @@ export const mldata = {
       original_price: 1024,
       inventory_id: 'XOTN34524',
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_677663-MLA41491489363_042020-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_677663-MLA41491489363_042020-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM2199571464',
@@ -189,23 +172,20 @@ export const mldata = {
       original_price: 3103,
       inventory_id: null,
       category_id: 'MLM118435',
-      thumbnail:
-        'http://http2.mlstatic.com/D_778637-MLM49240760109_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_778637-MLM49240760109_032022-I.jpg',
       sold_quantity: 0,
-      available_quantity: 150,
+      available_quantity: 150
     },
     {
       id: 'MLM843852662',
-      title:
-        'Procesador De Alimentos Stay Elit Natural Bullet X9 Bull-02 250w Gris 110v',
+      title: 'Procesador De Alimentos Stay Elit Natural Bullet X9 Bull-02 250w Gris 110v',
       price: 1049.3,
       original_price: 1499,
       inventory_id: 'KDKQ53057',
       category_id: 'MLM120507',
-      thumbnail:
-        'http://http2.mlstatic.com/D_849448-MLA44038948974_112020-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_849448-MLA44038948974_112020-I.jpg',
       sold_quantity: 250,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM1630969659',
@@ -214,23 +194,20 @@ export const mldata = {
       original_price: null,
       inventory_id: 'PLGV28055',
       category_id: 'MLM185257',
-      thumbnail:
-        'http://http2.mlstatic.com/D_819725-MLM49581248697_042022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_819725-MLM49581248697_042022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1479622150',
-      title:
-        'Escritorio Gamer Libitium Desk-01 Acero, Fibra De Carbono De 105cm X 78cm X 60cm Negro Y Rojo',
+      title: 'Escritorio Gamer Libitium Desk-01 Acero, Fibra De Carbono De 105cm X 78cm X 60cm Negro Y Rojo',
       price: 2579,
       original_price: 2999,
       inventory_id: null,
       category_id: 'MLM437180',
-      thumbnail:
-        'http://http2.mlstatic.com/D_668579-MLA51047295943_082022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_668579-MLA51047295943_082022-I.jpg',
       sold_quantity: 150,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1560660962',
@@ -239,10 +216,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: 'ZBDP20480',
       category_id: 'MLM184818',
-      thumbnail:
-        'http://http2.mlstatic.com/D_846383-MLA50416843897_062022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_846383-MLA50416843897_062022-I.jpg',
       sold_quantity: 150,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1864971535',
@@ -251,10 +227,9 @@ export const mldata = {
       original_price: 3299,
       inventory_id: 'ZAZV29928',
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_872925-MLA53640236395_022023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_872925-MLA53640236395_022023-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1498035669',
@@ -263,10 +238,9 @@ export const mldata = {
       original_price: 12799,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_892227-MLA51325940780_082022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_892227-MLA51325940780_082022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1968066324',
@@ -275,10 +249,9 @@ export const mldata = {
       original_price: 6299,
       inventory_id: null,
       category_id: 'MLM3095',
-      thumbnail:
-        'http://http2.mlstatic.com/D_966470-MLA47613710899_092021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_966470-MLA47613710899_092021-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1719993780',
@@ -287,140 +260,119 @@ export const mldata = {
       original_price: 5999,
       inventory_id: null,
       category_id: 'MLM3095',
-      thumbnail:
-        'http://http2.mlstatic.com/D_934487-MLA51459652750_092022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_934487-MLA51459652750_092022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 200,
+      available_quantity: 200
     },
     {
       id: 'MLM1967917962',
-      title:
-        'Silla De Escritorio Libitium Gamer Ergonómica  Negra Y Roja Con Tapizado De Cuero Sintético',
+      title: 'Silla De Escritorio Libitium Gamer Ergonómica  Negra Y Roja Con Tapizado De Cuero Sintético',
       price: 1999,
       original_price: 4078.98,
       inventory_id: 'HFEB30350',
       category_id: 'MLM187264',
-      thumbnail:
-        'http://http2.mlstatic.com/D_649503-MLA44385090626_122020-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_649503-MLA44385090626_122020-I.jpg',
       sold_quantity: 1,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1324023734',
-      title:
-        'Bicicleta Fija Svelfik Bici-03 Para Spinning Color Negro Y Naranja',
+      title: 'Bicicleta Fija Svelfik Bici-03 Para Spinning Color Negro Y Naranja',
       price: 3749,
       original_price: 4999,
       inventory_id: 'AVOX16520',
       category_id: 'MLM3095',
-      thumbnail:
-        'http://http2.mlstatic.com/D_774544-MLA53988745388_022023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_774544-MLA53988745388_022023-I.jpg',
       sold_quantity: 50,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM905251288',
-      title:
-        'Silla De Escritorio Libitium Gamer Ergonómica  Negra Y Dorada Con Tapizado De Cuero Sintético',
+      title: 'Silla De Escritorio Libitium Gamer Ergonómica  Negra Y Dorada Con Tapizado De Cuero Sintético',
       price: 1999,
       original_price: 2999,
       inventory_id: 'PKKZ28119',
       category_id: 'MLM187264',
-      thumbnail:
-        'http://http2.mlstatic.com/D_657421-MLA44385182563_122020-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_657421-MLA44385182563_122020-I.jpg',
       sold_quantity: 50,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1719553218',
-      title:
-        'Depilador Skinbelle Cejas Bello Brows Depilas Portátil Fácil Color Blanco',
+      title: 'Depilador Skinbelle Cejas Bello Brows Depilas Portátil Fácil Color Blanco',
       price: 99,
       original_price: 191,
       inventory_id: 'ERQZ06103',
       category_id: 'MLM185257',
-      thumbnail:
-        'http://http2.mlstatic.com/D_771853-MLM47993943512_102021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_771853-MLM47993943512_102021-I.jpg',
       sold_quantity: 25,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1868530859',
-      title:
-        'Silla De Escritorio Libitium Gamer Ergonómica  Negra Y Azul Con Tapizado De Cuero Sintético',
+      title: 'Silla De Escritorio Libitium Gamer Ergonómica  Negra Y Azul Con Tapizado De Cuero Sintético',
       price: 1999,
       original_price: 4078.98,
       inventory_id: 'DMUE30299',
       category_id: 'MLM187264',
-      thumbnail:
-        'http://http2.mlstatic.com/D_910433-MLA44385182876_122020-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_910433-MLA44385182876_122020-I.jpg',
       sold_quantity: 1,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1865252847',
-      title:
-        'Limpiador De Vapor Pisos Muebles Mop Express X9 Sanitizador Color Verde',
+      title: 'Limpiador De Vapor Pisos Muebles Mop Express X9 Sanitizador Color Verde',
       price: 1499,
       original_price: 1799,
       inventory_id: 'HGRL27483',
       category_id: 'MLM156012',
-      thumbnail:
-        'http://http2.mlstatic.com/D_600989-MLM48558105300_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_600989-MLM48558105300_122021-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1967917950',
-      title:
-        'Silla De Escritorio Libitium Gamer Ergonómica  Negra Y Verde Con Tapizado De Cuero Sintético',
+      title: 'Silla De Escritorio Libitium Gamer Ergonómica  Negra Y Verde Con Tapizado De Cuero Sintético',
       price: 1999,
       original_price: 4078.98,
       inventory_id: 'DJST29729',
       category_id: 'MLM187264',
-      thumbnail:
-        'http://http2.mlstatic.com/D_846823-MLA44385182548_122020-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_846823-MLA44385182548_122020-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM929301732',
-      title:
-        'Caminadora Eléctrica Svelfik Runtech-max Cami-04 110v Color  Negro',
+      title: 'Caminadora Eléctrica Svelfik Runtech-max Cami-04 110v Color  Negro',
       price: 12699,
       original_price: 15999,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_930941-MLA46170117026_052021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_930941-MLA46170117026_052021-I.jpg',
       sold_quantity: 25,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1437042188',
-      title:
-        'Caminadora Eléctrica Svelfik Runtech-max Cami-02 110v Color  Negro',
+      title: 'Caminadora Eléctrica Svelfik Runtech-max Cami-02 110v Color  Negro',
       price: 12199,
       original_price: 13999,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_870362-MLA49268766020_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_870362-MLA49268766020_032022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM944526391',
-      title:
-        'Caminadora Eléctrica Svelfik Runtech-pro Cami-03 110v Color  Negro',
+      title: 'Caminadora Eléctrica Svelfik Runtech-pro Cami-03 110v Color  Negro',
       price: 11999,
       original_price: 18499,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_789660-MLA46169867390_052021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_789660-MLA46169867390_052021-I.jpg',
       sold_quantity: 25,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM2132215466',
@@ -429,10 +381,9 @@ export const mldata = {
       original_price: 3499,
       inventory_id: 'JOMW05284',
       category_id: 'MLM2531',
-      thumbnail:
-        'http://http2.mlstatic.com/D_710739-MLU54961141270_042023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_710739-MLU54961141270_042023-I.jpg',
       sold_quantity: 1,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1701295291',
@@ -441,10 +392,9 @@ export const mldata = {
       original_price: 3999,
       inventory_id: null,
       category_id: 'MLM184818',
-      thumbnail:
-        'http://http2.mlstatic.com/D_720360-MLA50482528342_062022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_720360-MLA50482528342_062022-I.jpg',
       sold_quantity: 2,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1701797391',
@@ -453,10 +403,9 @@ export const mldata = {
       original_price: 4999,
       inventory_id: null,
       category_id: 'MLM184818',
-      thumbnail:
-        'http://http2.mlstatic.com/D_638948-MLA51046034541_082022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_638948-MLA51046034541_082022-I.jpg',
       sold_quantity: 1,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM2195017178',
@@ -465,10 +414,9 @@ export const mldata = {
       original_price: 6999,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_684563-MLA45548811075_042021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_684563-MLA45548811075_042021-I.jpg',
       sold_quantity: 0,
-      available_quantity: 200,
+      available_quantity: 200
     },
     {
       id: 'MLM831233045',
@@ -477,10 +425,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: null,
       category_id: 'MLM11041',
-      thumbnail:
-        'http://http2.mlstatic.com/D_927442-MLM48601643295_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_927442-MLM48601643295_122021-I.jpg',
       sold_quantity: 5000,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1336978820',
@@ -489,10 +436,9 @@ export const mldata = {
       original_price: 799,
       inventory_id: null,
       category_id: 'MLM159150',
-      thumbnail:
-        'http://http2.mlstatic.com/D_702644-MLM48560936243_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_702644-MLM48560936243_122021-I.jpg',
       sold_quantity: 5000,
-      available_quantity: 100,
+      available_quantity: 100
     },
     {
       id: 'MLM896365828',
@@ -501,10 +447,9 @@ export const mldata = {
       original_price: 13999,
       inventory_id: 'QJKM28427',
       category_id: 'MLM191366',
-      thumbnail:
-        'http://http2.mlstatic.com/D_899851-MLM48601482490_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_899851-MLM48601482490_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1358080697',
@@ -513,10 +458,9 @@ export const mldata = {
       original_price: 799,
       inventory_id: null,
       category_id: 'MLM159150',
-      thumbnail:
-        'http://http2.mlstatic.com/D_694022-MLM48557931340_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_694022-MLM48557931340_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1336959441',
@@ -525,10 +469,9 @@ export const mldata = {
       original_price: 799,
       inventory_id: null,
       category_id: 'MLM159150',
-      thumbnail:
-        'http://http2.mlstatic.com/D_694022-MLM48557931340_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_694022-MLM48557931340_122021-I.jpg',
       sold_quantity: 5000,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM835509786',
@@ -537,10 +480,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: null,
       category_id: 'MLM11041',
-      thumbnail:
-        'http://http2.mlstatic.com/D_865119-MLM48601642408_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_865119-MLM48601642408_122021-I.jpg',
       sold_quantity: 5000,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1746898402',
@@ -549,10 +491,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: 'JSMF01178',
       category_id: 'MLM178299',
-      thumbnail:
-        'http://http2.mlstatic.com/D_955328-MLM49077532992_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_955328-MLM49077532992_022022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1373607078',
@@ -561,10 +502,9 @@ export const mldata = {
       original_price: 8999,
       inventory_id: 'DPPZ85230',
       category_id: 'MLM191366',
-      thumbnail:
-        'http://http2.mlstatic.com/D_922718-MLM50698832833_072022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_922718-MLM50698832833_072022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1329204223',
@@ -573,10 +513,9 @@ export const mldata = {
       original_price: 17599,
       inventory_id: 'LQYQ30070',
       category_id: 'MLM191366',
-      thumbnail:
-        'http://http2.mlstatic.com/D_633417-MLM50136392635_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_633417-MLM50136392635_052022-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1385624397',
@@ -585,10 +524,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: null,
       category_id: 'MLM11041',
-      thumbnail:
-        'http://http2.mlstatic.com/D_657501-MLM48863038098_012022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_657501-MLM48863038098_012022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM836473291',
@@ -597,10 +535,9 @@ export const mldata = {
       original_price: 2999,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_675676-MLM49214290693_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_675676-MLM49214290693_022022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM756427929',
@@ -609,10 +546,9 @@ export const mldata = {
       original_price: 1499,
       inventory_id: null,
       category_id: 'MLM21171',
-      thumbnail:
-        'http://http2.mlstatic.com/D_960129-MLM48690650206_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_960129-MLM48690650206_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1427175141',
@@ -621,10 +557,9 @@ export const mldata = {
       original_price: 499,
       inventory_id: null,
       category_id: 'MLM189529',
-      thumbnail:
-        'http://http2.mlstatic.com/D_945040-MLM50057316205_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_945040-MLM50057316205_052022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1369319412',
@@ -633,10 +568,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: null,
       category_id: 'MLM11041',
-      thumbnail:
-        'http://http2.mlstatic.com/D_662607-MLM49875648999_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_662607-MLM49875648999_052022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1468794529',
@@ -645,10 +579,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: null,
       category_id: 'MLM128037',
-      thumbnail:
-        'http://http2.mlstatic.com/D_751296-MLM48692147386_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_751296-MLM48692147386_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1381132695',
@@ -657,10 +590,9 @@ export const mldata = {
       original_price: 1099,
       inventory_id: null,
       category_id: 'MLM118812',
-      thumbnail:
-        'http://http2.mlstatic.com/D_626977-MLM50972674133_082022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_626977-MLM50972674133_082022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1367373295',
@@ -669,10 +601,9 @@ export const mldata = {
       original_price: 7108,
       inventory_id: 'JOOL69051',
       category_id: 'MLM191366',
-      thumbnail:
-        'http://http2.mlstatic.com/D_767923-MLM49273588482_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_767923-MLM49273588482_032022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1367464409',
@@ -681,10 +612,9 @@ export const mldata = {
       original_price: 1299,
       inventory_id: null,
       category_id: 'MLM437196',
-      thumbnail:
-        'http://http2.mlstatic.com/D_851669-MLM51249916530_082022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_851669-MLM51249916530_082022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1514566571',
@@ -693,10 +623,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: null,
       category_id: 'MLM189762',
-      thumbnail:
-        'http://http2.mlstatic.com/D_954928-MLM51697463474_092022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_954928-MLM51697463474_092022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM892034369',
@@ -705,10 +634,9 @@ export const mldata = {
       original_price: 9999,
       inventory_id: null,
       category_id: 'MLM189363',
-      thumbnail:
-        'http://http2.mlstatic.com/D_955608-MLM48485222757_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_955608-MLM48485222757_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 100,
+      available_quantity: 100
     },
     {
       id: 'MLM1428575074',
@@ -717,10 +645,9 @@ export const mldata = {
       original_price: 15999,
       inventory_id: 'UAYH28980',
       category_id: 'MLM191366',
-      thumbnail:
-        'http://http2.mlstatic.com/D_899851-MLM48601482490_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_899851-MLM48601482490_122021-I.jpg',
       sold_quantity: 50,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM588730259',
@@ -729,10 +656,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: 'GFMA35176',
       category_id: 'MLM178299',
-      thumbnail:
-        'http://http2.mlstatic.com/D_955328-MLM49077532992_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_955328-MLM49077532992_022022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1393565307',
@@ -741,10 +667,9 @@ export const mldata = {
       original_price: 1699,
       inventory_id: null,
       category_id: 'MLM434394',
-      thumbnail:
-        'http://http2.mlstatic.com/D_949343-MLM49234391835_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_949343-MLM49234391835_022022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM906455766',
@@ -753,10 +678,9 @@ export const mldata = {
       original_price: 3999,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_938548-MLM48698668425_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_938548-MLM48698668425_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM869569364',
@@ -765,10 +689,9 @@ export const mldata = {
       original_price: 2499,
       inventory_id: null,
       category_id: 'MLM437180',
-      thumbnail:
-        'http://http2.mlstatic.com/D_917066-MLM52913228881_122022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_917066-MLM52913228881_122022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1332633932',
@@ -777,10 +700,9 @@ export const mldata = {
       original_price: 2899,
       inventory_id: null,
       category_id: 'MLM31515',
-      thumbnail:
-        'http://http2.mlstatic.com/D_932644-MLM48558184518_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_932644-MLM48558184518_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1747006833',
@@ -789,10 +711,9 @@ export const mldata = {
       original_price: 2099,
       inventory_id: 'AZAW29176',
       category_id: 'MLM434394',
-      thumbnail:
-        'http://http2.mlstatic.com/D_838318-MLM48601357847_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_838318-MLM48601357847_122021-I.jpg',
       sold_quantity: 150,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1367156707',
@@ -801,10 +722,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: null,
       category_id: 'MLM11041',
-      thumbnail:
-        'http://http2.mlstatic.com/D_657501-MLM48863038098_012022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_657501-MLM48863038098_012022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM1358459616',
@@ -813,10 +733,9 @@ export const mldata = {
       original_price: 3999,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_619184-MLM50099999592_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_619184-MLM50099999592_052022-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1382365277',
@@ -825,10 +744,9 @@ export const mldata = {
       original_price: 5999,
       inventory_id: null,
       category_id: 'MLM2531',
-      thumbnail:
-        'http://http2.mlstatic.com/D_913289-MLM49471976434_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_913289-MLM49471976434_032022-I.jpg',
       sold_quantity: 200,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM930352541',
@@ -837,10 +755,9 @@ export const mldata = {
       original_price: 2099,
       inventory_id: 'ARUT29842',
       category_id: 'MLM434394',
-      thumbnail:
-        'http://http2.mlstatic.com/D_838318-MLM48601357847_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_838318-MLM48601357847_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1517950747',
@@ -849,10 +766,9 @@ export const mldata = {
       original_price: 2699,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_996714-MLM52216563344_102022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_996714-MLM52216563344_102022-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM804178260',
@@ -861,10 +777,9 @@ export const mldata = {
       original_price: 1699,
       inventory_id: 'UKLL30268',
       category_id: 'MLM434394',
-      thumbnail:
-        'http://http2.mlstatic.com/D_985651-MLM49234385768_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_985651-MLM49234385768_022022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM1735838749',
@@ -873,10 +788,9 @@ export const mldata = {
       original_price: 9999,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_753679-MLM53090911175_122022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_753679-MLM53090911175_122022-I.jpg',
       sold_quantity: 50,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1732577962',
@@ -885,10 +799,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: null,
       category_id: 'MLM437180',
-      thumbnail:
-        'http://http2.mlstatic.com/D_917066-MLM52913228881_122022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_917066-MLM52913228881_122022-I.jpg',
       sold_quantity: 200,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM835550518',
@@ -897,10 +810,9 @@ export const mldata = {
       original_price: 1699,
       inventory_id: 'AEQO13296',
       category_id: 'MLM434394',
-      thumbnail:
-        'http://http2.mlstatic.com/D_798286-MLM49234368887_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_798286-MLM49234368887_022022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM944520122',
@@ -909,10 +821,9 @@ export const mldata = {
       original_price: 699,
       inventory_id: null,
       category_id: 'MLM49283',
-      thumbnail:
-        'http://http2.mlstatic.com/D_759182-MLM49303370017_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_759182-MLM49303370017_032022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1744364059',
@@ -921,10 +832,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: null,
       category_id: 'MLM431787',
-      thumbnail:
-        'http://http2.mlstatic.com/D_867397-MLM53162925786_012023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_867397-MLM53162925786_012023-I.jpg',
       sold_quantity: 100,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1527694533',
@@ -933,10 +843,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: 'SDDE12393',
       category_id: 'MLM189615',
-      thumbnail:
-        'http://http2.mlstatic.com/D_684540-MLM51853759556_102022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_684540-MLM51853759556_102022-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1367137451',
@@ -945,10 +854,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: null,
       category_id: 'MLM11041',
-      thumbnail:
-        'http://http2.mlstatic.com/D_860966-MLM49122087097_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_860966-MLM49122087097_022022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1472906268',
@@ -957,10 +865,9 @@ export const mldata = {
       original_price: 799,
       inventory_id: null,
       category_id: 'MLM437190',
-      thumbnail:
-        'http://http2.mlstatic.com/D_607704-MLM50972767636_082022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_607704-MLM50972767636_082022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1385577364',
@@ -969,10 +876,9 @@ export const mldata = {
       original_price: 799,
       inventory_id: null,
       category_id: 'MLM11041',
-      thumbnail:
-        'http://http2.mlstatic.com/D_657501-MLM48863038098_012022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_657501-MLM48863038098_012022-I.jpg',
       sold_quantity: 250,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM1384228840',
@@ -981,10 +887,9 @@ export const mldata = {
       original_price: 7999,
       inventory_id: 'JBIR28933',
       category_id: 'MLM191366',
-      thumbnail:
-        'http://http2.mlstatic.com/D_799025-MLM49215602493_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_799025-MLM49215602493_022022-I.jpg',
       sold_quantity: 50,
-      available_quantity: 100,
+      available_quantity: 100
     },
     {
       id: 'MLM1321495275',
@@ -993,10 +898,9 @@ export const mldata = {
       original_price: 2899,
       inventory_id: null,
       category_id: 'MLM31515',
-      thumbnail:
-        'http://http2.mlstatic.com/D_935972-MLM48558187523_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_935972-MLM48558187523_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM848614986',
@@ -1005,10 +909,9 @@ export const mldata = {
       original_price: 4599,
       inventory_id: null,
       category_id: 'MLM3095',
-      thumbnail:
-        'http://http2.mlstatic.com/D_983057-MLM49077670061_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_983057-MLM49077670061_022022-I.jpg',
       sold_quantity: 250,
-      available_quantity: 100,
+      available_quantity: 100
     },
     {
       id: 'MLM1427603495',
@@ -1017,10 +920,9 @@ export const mldata = {
       original_price: 399,
       inventory_id: null,
       category_id: 'MLM189529',
-      thumbnail:
-        'http://http2.mlstatic.com/D_945040-MLM50057316205_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_945040-MLM50057316205_052022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1735875517',
@@ -1029,10 +931,9 @@ export const mldata = {
       original_price: 9999,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_906207-MLM53089861406_122022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_906207-MLM53089861406_122022-I.jpg',
       sold_quantity: 25,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM699922847',
@@ -1041,10 +942,9 @@ export const mldata = {
       original_price: 1499,
       inventory_id: null,
       category_id: 'MLM120507',
-      thumbnail:
-        'http://http2.mlstatic.com/D_631897-MLM48690510756_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_631897-MLM48690510756_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM690754240',
@@ -1053,10 +953,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: null,
       category_id: 'MLM3095',
-      thumbnail:
-        'http://http2.mlstatic.com/D_766167-MLM48995754915_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_766167-MLM48995754915_022022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM583517891',
@@ -1065,10 +964,9 @@ export const mldata = {
       original_price: 1099,
       inventory_id: null,
       category_id: 'MLM119884',
-      thumbnail:
-        'http://http2.mlstatic.com/D_712281-MLM48690500830_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_712281-MLM48690500830_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1478840210',
@@ -1077,10 +975,9 @@ export const mldata = {
       original_price: 3499,
       inventory_id: null,
       category_id: 'MLM180940',
-      thumbnail:
-        'http://http2.mlstatic.com/D_999807-MLM51760335032_092022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_999807-MLM51760335032_092022-I.jpg',
       sold_quantity: 250,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1405700494',
@@ -1089,10 +986,9 @@ export const mldata = {
       original_price: 8999,
       inventory_id: null,
       category_id: 'MLM191366',
-      thumbnail:
-        'http://http2.mlstatic.com/D_864445-MLM50699007315_072022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_864445-MLM50699007315_072022-I.jpg',
       sold_quantity: 100,
-      available_quantity: 100,
+      available_quantity: 100
     },
     {
       id: 'MLM1432206355',
@@ -1101,10 +997,9 @@ export const mldata = {
       original_price: 1399,
       inventory_id: null,
       category_id: 'MLM3095',
-      thumbnail:
-        'http://http2.mlstatic.com/D_795578-MLM50185413891_062022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_795578-MLM50185413891_062022-I.jpg',
       sold_quantity: 150,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM746531055',
@@ -1113,10 +1008,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: null,
       category_id: 'MLM159150',
-      thumbnail:
-        'http://http2.mlstatic.com/D_625730-MLM48560789642_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_625730-MLM48560789642_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM944968565',
@@ -1125,10 +1019,9 @@ export const mldata = {
       original_price: 15999,
       inventory_id: 'ZEAS28458',
       category_id: 'MLM191366',
-      thumbnail:
-        'http://http2.mlstatic.com/D_898687-MLM48601482521_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_898687-MLM48601482521_122021-I.jpg',
       sold_quantity: 100,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM921551207',
@@ -1137,10 +1030,9 @@ export const mldata = {
       original_price: 2699,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_661993-MLM48698615741_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_661993-MLM48698615741_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1382864726',
@@ -1149,10 +1041,9 @@ export const mldata = {
       original_price: 7999,
       inventory_id: 'IWGL13086',
       category_id: 'MLM191366',
-      thumbnail:
-        'http://http2.mlstatic.com/D_857438-MLM49190639452_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_857438-MLM49190639452_022022-I.jpg',
       sold_quantity: 100,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM720511145',
@@ -1161,10 +1052,9 @@ export const mldata = {
       original_price: 2999,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_862010-MLM69382575260_052023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_862010-MLM69382575260_052023-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM595265592',
@@ -1173,10 +1063,9 @@ export const mldata = {
       original_price: 1899,
       inventory_id: null,
       category_id: 'MLM184769',
-      thumbnail:
-        'http://http2.mlstatic.com/D_800233-MLM48995895857_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_800233-MLM48995895857_022022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1388939624',
@@ -1185,10 +1074,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: null,
       category_id: 'MLM4840',
-      thumbnail:
-        'http://http2.mlstatic.com/D_971654-MLM52286491006_112022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_971654-MLM52286491006_112022-I.jpg',
       sold_quantity: 200,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1572746076',
@@ -1197,10 +1085,9 @@ export const mldata = {
       original_price: 1299,
       inventory_id: null,
       category_id: 'MLM123264',
-      thumbnail:
-        'http://http2.mlstatic.com/D_982812-MLM52402232656_112022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_982812-MLM52402232656_112022-I.jpg',
       sold_quantity: 100,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM926972845',
@@ -1209,10 +1096,9 @@ export const mldata = {
       original_price: 1599,
       inventory_id: null,
       category_id: 'MLM31568',
-      thumbnail:
-        'http://http2.mlstatic.com/D_832969-MLM48690428898_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_832969-MLM48690428898_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1470143664',
@@ -1221,10 +1107,9 @@ export const mldata = {
       original_price: 2999,
       inventory_id: null,
       category_id: 'MLM417640',
-      thumbnail:
-        'http://http2.mlstatic.com/D_863881-MLM50929549042_072022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_863881-MLM50929549042_072022-I.jpg',
       sold_quantity: 150,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM938583179',
@@ -1233,10 +1118,9 @@ export const mldata = {
       original_price: 3299,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_780636-MLM50495546876_062022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_780636-MLM50495546876_062022-I.jpg',
       sold_quantity: 150,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM912670083',
@@ -1245,10 +1129,9 @@ export const mldata = {
       original_price: 1437,
       inventory_id: null,
       category_id: 'MLM120507',
-      thumbnail:
-        'http://http2.mlstatic.com/D_766581-MLM50056115895_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_766581-MLM50056115895_052022-I.jpg',
       sold_quantity: 150,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM883339923',
@@ -1257,10 +1140,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: null,
       category_id: 'MLM11041',
-      thumbnail:
-        'http://http2.mlstatic.com/D_859606-MLM48601457989_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_859606-MLM48601457989_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1430012654',
@@ -1269,10 +1151,9 @@ export const mldata = {
       original_price: 2299,
       inventory_id: null,
       category_id: 'MLM417640',
-      thumbnail:
-        'http://http2.mlstatic.com/D_985058-MLM51561060868_092022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_985058-MLM51561060868_092022-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1431542381',
@@ -1281,10 +1162,9 @@ export const mldata = {
       original_price: 2999,
       inventory_id: null,
       category_id: 'MLM157937',
-      thumbnail:
-        'http://http2.mlstatic.com/D_745744-MLM50173126464_062022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_745744-MLM50173126464_062022-I.jpg',
       sold_quantity: 200,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM930957231',
@@ -1293,10 +1173,9 @@ export const mldata = {
       original_price: 1949,
       inventory_id: null,
       category_id: 'MLM118812',
-      thumbnail:
-        'http://http2.mlstatic.com/D_836335-MLM49130779783_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_836335-MLM49130779783_022022-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1376337148',
@@ -1305,10 +1184,9 @@ export const mldata = {
       original_price: 4999,
       inventory_id: null,
       category_id: 'MLM2531',
-      thumbnail:
-        'http://http2.mlstatic.com/D_611491-MLM49459419670_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_611491-MLM49459419670_032022-I.jpg',
       sold_quantity: 50,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM944515275',
@@ -1317,10 +1195,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: 'WPZJ77888',
       category_id: 'MLM178299',
-      thumbnail:
-        'http://http2.mlstatic.com/D_786728-MLM44045212443_112020-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_786728-MLM44045212443_112020-I.jpg',
       sold_quantity: 500,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM906469384',
@@ -1329,10 +1206,9 @@ export const mldata = {
       original_price: 1599,
       inventory_id: null,
       category_id: 'MLM31568',
-      thumbnail:
-        'http://http2.mlstatic.com/D_988996-MLM48690333937_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_988996-MLM48690333937_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1470089377',
@@ -1341,10 +1217,9 @@ export const mldata = {
       original_price: 1499,
       inventory_id: null,
       category_id: 'MLM437196',
-      thumbnail:
-        'http://http2.mlstatic.com/D_827805-MLM50929463317_072022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_827805-MLM50929463317_072022-I.jpg',
       sold_quantity: 150,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1376262644',
@@ -1353,10 +1228,9 @@ export const mldata = {
       original_price: 4999,
       inventory_id: null,
       category_id: 'MLM2531',
-      thumbnail:
-        'http://http2.mlstatic.com/D_758713-MLM49773674577_042022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_758713-MLM49773674577_042022-I.jpg',
       sold_quantity: 100,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1577465601',
@@ -1365,10 +1239,9 @@ export const mldata = {
       original_price: 3399,
       inventory_id: null,
       category_id: 'MLM417640',
-      thumbnail:
-        'http://http2.mlstatic.com/D_894496-MLM51293505835_082022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_894496-MLM51293505835_082022-I.jpg',
       sold_quantity: 100,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM835553590',
@@ -1377,10 +1250,9 @@ export const mldata = {
       original_price: 610.98,
       inventory_id: null,
       category_id: 'MLM49283',
-      thumbnail:
-        'http://http2.mlstatic.com/D_611896-MLM49303171935_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_611896-MLM49303171935_032022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM1872113041',
@@ -1389,10 +1261,9 @@ export const mldata = {
       original_price: 1699,
       inventory_id: null,
       category_id: 'MLM434394',
-      thumbnail:
-        'http://http2.mlstatic.com/D_859284-MLM49234420600_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_859284-MLM49234420600_022022-I.jpg',
       sold_quantity: 25,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1427301554',
@@ -1401,10 +1272,9 @@ export const mldata = {
       original_price: 1299,
       inventory_id: null,
       category_id: 'MLM437196',
-      thumbnail:
-        'http://http2.mlstatic.com/D_737360-MLM51249990360_082022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_737360-MLM51249990360_082022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM588730384',
@@ -1413,10 +1283,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: null,
       category_id: 'MLM178299',
-      thumbnail:
-        'http://http2.mlstatic.com/D_671305-MLM49077640570_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_671305-MLM49077640570_022022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM553175494',
@@ -1425,10 +1294,9 @@ export const mldata = {
       original_price: 1024,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_618384-MLM45843684622_052021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_618384-MLM45843684622_052021-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1387171304',
@@ -1437,10 +1305,9 @@ export const mldata = {
       original_price: 3999,
       inventory_id: null,
       category_id: 'MLM184818',
-      thumbnail:
-        'http://http2.mlstatic.com/D_999875-MLM49502409836_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_999875-MLM49502409836_032022-I.jpg',
       sold_quantity: 50,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1364200630',
@@ -1449,10 +1316,9 @@ export const mldata = {
       original_price: 3599,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_916737-MLM48579871843_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_916737-MLM48579871843_122021-I.jpg',
       sold_quantity: 25,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1491455644',
@@ -1461,10 +1327,9 @@ export const mldata = {
       original_price: 3999,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_809555-MLM51696232051_092022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_809555-MLM51696232051_092022-I.jpg',
       sold_quantity: 25,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM906479160',
@@ -1473,10 +1338,9 @@ export const mldata = {
       original_price: 9999,
       inventory_id: null,
       category_id: 'MLM189363',
-      thumbnail:
-        'http://http2.mlstatic.com/D_761921-MLM48560675885_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_761921-MLM48560675885_122021-I.jpg',
       sold_quantity: 100,
-      available_quantity: 150,
+      available_quantity: 150
     },
     {
       id: 'MLM1720147602',
@@ -1485,10 +1349,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: null,
       category_id: 'MLM189615',
-      thumbnail:
-        'http://http2.mlstatic.com/D_684540-MLM51853759556_102022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_684540-MLM51853759556_102022-I.jpg',
       sold_quantity: 25,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM699924718',
@@ -1497,10 +1360,9 @@ export const mldata = {
       original_price: 1449,
       inventory_id: null,
       category_id: 'MLM120507',
-      thumbnail:
-        'http://http2.mlstatic.com/D_736172-MLM50056241353_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_736172-MLM50056241353_052022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM927631965',
@@ -1509,10 +1371,9 @@ export const mldata = {
       original_price: 2099,
       inventory_id: 'INEV30441',
       category_id: 'MLM434394',
-      thumbnail:
-        'http://http2.mlstatic.com/D_931065-MLM48601601064_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_931065-MLM48601601064_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM843339041',
@@ -1521,10 +1382,9 @@ export const mldata = {
       original_price: 549,
       inventory_id: null,
       category_id: 'MLM436427',
-      thumbnail:
-        'http://http2.mlstatic.com/D_790988-MLM46235260209_062021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_790988-MLM46235260209_062021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM583531705',
@@ -1533,10 +1393,9 @@ export const mldata = {
       original_price: 2599,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_701081-MLM45760807047_042021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_701081-MLM45760807047_042021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1428361250',
@@ -1545,10 +1404,9 @@ export const mldata = {
       original_price: 9999,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_840736-MLM50092376790_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_840736-MLM50092376790_052022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM894035710',
@@ -1557,10 +1415,9 @@ export const mldata = {
       original_price: 4999,
       inventory_id: null,
       category_id: 'MLM3095',
-      thumbnail:
-        'http://http2.mlstatic.com/D_839406-MLM52931582727_122022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_839406-MLM52931582727_122022-I.jpg',
       sold_quantity: 50,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM583531759',
@@ -1569,10 +1426,9 @@ export const mldata = {
       original_price: 2410,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_603422-MLM48690653009_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_603422-MLM48690653009_122021-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM924304552',
@@ -1581,10 +1437,9 @@ export const mldata = {
       original_price: 1699,
       inventory_id: 'HHXZ29698',
       category_id: 'MLM434394',
-      thumbnail:
-        'http://http2.mlstatic.com/D_859284-MLM49234420600_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_859284-MLM49234420600_022022-I.jpg',
       sold_quantity: 250,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM1369378425',
@@ -1593,10 +1448,9 @@ export const mldata = {
       original_price: 3999,
       inventory_id: null,
       category_id: 'MLM184818',
-      thumbnail:
-        'http://http2.mlstatic.com/D_604923-MLM49502406780_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_604923-MLM49502406780_032022-I.jpg',
       sold_quantity: 25,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1489268947',
@@ -1605,10 +1459,9 @@ export const mldata = {
       original_price: 799,
       inventory_id: 'TGAL30366',
       category_id: 'MLM157905',
-      thumbnail:
-        'http://http2.mlstatic.com/D_944377-MLM54896931739_042023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_944377-MLM54896931739_042023-I.jpg',
       sold_quantity: 150,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM954792334',
@@ -1617,10 +1470,9 @@ export const mldata = {
       original_price: 2999,
       inventory_id: 'ZYIO30089',
       category_id: 'MLM434394',
-      thumbnail:
-        'http://http2.mlstatic.com/D_949343-MLM49234391835_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_949343-MLM49234391835_022022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM1810427885',
@@ -1629,10 +1481,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: null,
       category_id: 'MLM31558',
-      thumbnail:
-        'http://http2.mlstatic.com/D_721630-MLM53691190740_022023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_721630-MLM53691190740_022023-I.jpg',
       sold_quantity: 25,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM793066681',
@@ -1641,10 +1492,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: null,
       category_id: 'MLM11041',
-      thumbnail:
-        'http://http2.mlstatic.com/D_737685-MLM48601603428_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_737685-MLM48601603428_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1735733388',
@@ -1653,10 +1503,9 @@ export const mldata = {
       original_price: 9999,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_906207-MLM53089861406_122022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_906207-MLM53089861406_122022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM1385466116',
@@ -1665,10 +1514,9 @@ export const mldata = {
       original_price: 3103,
       inventory_id: null,
       category_id: 'MLM118435',
-      thumbnail:
-        'http://http2.mlstatic.com/D_778637-MLM49240760109_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_778637-MLM49240760109_032022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 150,
+      available_quantity: 150
     },
     {
       id: 'MLM1736855739',
@@ -1677,10 +1525,9 @@ export const mldata = {
       original_price: 5999,
       inventory_id: null,
       category_id: 'MLM2531',
-      thumbnail:
-        'http://http2.mlstatic.com/D_913289-MLM49471976434_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_913289-MLM49471976434_032022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM837721771',
@@ -1689,10 +1536,9 @@ export const mldata = {
       original_price: 5999,
       inventory_id: null,
       category_id: 'MLM187264',
-      thumbnail:
-        'http://http2.mlstatic.com/D_856221-MLM48690619258_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_856221-MLM48690619258_122021-I.jpg',
       sold_quantity: 250,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM861147870',
@@ -1701,10 +1547,9 @@ export const mldata = {
       original_price: 6999,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_881593-MLM53398938511_012023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_881593-MLM53398938511_012023-I.jpg',
       sold_quantity: 150,
-      available_quantity: 200,
+      available_quantity: 200
     },
     {
       id: 'MLM1387149099',
@@ -1713,10 +1558,9 @@ export const mldata = {
       original_price: 3149,
       inventory_id: null,
       category_id: 'MLM184818',
-      thumbnail:
-        'http://http2.mlstatic.com/D_741508-MLM49502425547_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_741508-MLM49502425547_032022-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM744366942',
@@ -1725,10 +1569,9 @@ export const mldata = {
       original_price: 906,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_618736-MLM45843808088_052021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_618736-MLM45843808088_052021-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM944505626',
@@ -1737,10 +1580,9 @@ export const mldata = {
       original_price: 1599,
       inventory_id: null,
       category_id: 'MLM31568',
-      thumbnail:
-        'http://http2.mlstatic.com/D_939303-MLM45713451671_042021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_939303-MLM45713451671_042021-I.jpg',
       sold_quantity: 100,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1749033553',
@@ -1749,10 +1591,9 @@ export const mldata = {
       original_price: 2499,
       inventory_id: null,
       category_id: 'MLM184818',
-      thumbnail:
-        'http://http2.mlstatic.com/D_604657-MLM53199864553_012023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_604657-MLM53199864553_012023-I.jpg',
       sold_quantity: 5,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM753162074',
@@ -1761,10 +1602,9 @@ export const mldata = {
       original_price: 249,
       inventory_id: 'JJMG27215',
       category_id: 'MLM8178',
-      thumbnail:
-        'http://http2.mlstatic.com/D_735339-MLM48483550261_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_735339-MLM48483550261_122021-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM837836500',
@@ -1773,10 +1613,9 @@ export const mldata = {
       original_price: 1599,
       inventory_id: null,
       category_id: 'MLM31568',
-      thumbnail:
-        'http://http2.mlstatic.com/D_660959-MLM48690496527_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_660959-MLM48690496527_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1428589662',
@@ -1785,10 +1624,9 @@ export const mldata = {
       original_price: 9999,
       inventory_id: null,
       category_id: 'MLM189363',
-      thumbnail:
-        'http://http2.mlstatic.com/D_681702-MLM50100341448_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_681702-MLM50100341448_052022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1489256135',
@@ -1797,10 +1635,9 @@ export const mldata = {
       original_price: 1399,
       inventory_id: 'KKGJ31253',
       category_id: 'MLM157905',
-      thumbnail:
-        'http://http2.mlstatic.com/D_952092-MLM51294673289_082022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_952092-MLM51294673289_082022-I.jpg',
       sold_quantity: 50,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM906507755',
@@ -1809,10 +1646,9 @@ export const mldata = {
       original_price: 1799,
       inventory_id: 'VKTG06157',
       category_id: 'MLM189700',
-      thumbnail:
-        'http://http2.mlstatic.com/D_649803-MLM48558105352_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_649803-MLM48558105352_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1431515512',
@@ -1821,10 +1657,9 @@ export const mldata = {
       original_price: 2999,
       inventory_id: null,
       category_id: 'MLM31515',
-      thumbnail:
-        'http://http2.mlstatic.com/D_606514-MLM51456614510_092022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_606514-MLM51456614510_092022-I.jpg',
       sold_quantity: 50,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1358277026',
@@ -1833,10 +1668,9 @@ export const mldata = {
       original_price: 2999,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_759348-MLM49130807763_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_759348-MLM49130807763_022022-I.jpg',
       sold_quantity: 150,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1387148997',
@@ -1845,10 +1679,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: null,
       category_id: 'MLM184818',
-      thumbnail:
-        'http://http2.mlstatic.com/D_882994-MLM49502461472_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_882994-MLM49502461472_032022-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM738100267',
@@ -1857,10 +1690,9 @@ export const mldata = {
       original_price: 2599,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_787622-MLM45760736196_042021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_787622-MLM45760736196_042021-I.jpg',
       sold_quantity: 250,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1428132985',
@@ -1869,10 +1701,9 @@ export const mldata = {
       original_price: 5999,
       inventory_id: null,
       category_id: 'MLM3095',
-      thumbnail:
-        'http://http2.mlstatic.com/D_888763-MLM50090565906_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_888763-MLM50090565906_052022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 200,
+      available_quantity: 200
     },
     {
       id: 'MLM883340163',
@@ -1881,10 +1712,9 @@ export const mldata = {
       original_price: 5999,
       inventory_id: null,
       category_id: 'MLM187264',
-      thumbnail:
-        'http://http2.mlstatic.com/D_770508-MLM48690500752_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_770508-MLM48690500752_122021-I.jpg',
       sold_quantity: 50,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM944513701',
@@ -1893,10 +1723,9 @@ export const mldata = {
       original_price: 4999,
       inventory_id: null,
       category_id: 'MLM3095',
-      thumbnail:
-        'http://http2.mlstatic.com/D_960205-MLM48683526461_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_960205-MLM48683526461_122021-I.jpg',
       sold_quantity: 25,
-      available_quantity: 100,
+      available_quantity: 100
     },
     {
       id: 'MLM1443122204',
@@ -1905,10 +1734,9 @@ export const mldata = {
       original_price: 499,
       inventory_id: null,
       category_id: 'MLM189529',
-      thumbnail:
-        'http://http2.mlstatic.com/D_966849-MLM50057249521_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_966849-MLM50057249521_052022-I.jpg',
       sold_quantity: 100,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1735705157',
@@ -1917,10 +1745,9 @@ export const mldata = {
       original_price: 9999,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_906207-MLM53089861406_122022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_906207-MLM53089861406_122022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM1503008991',
@@ -1929,10 +1756,9 @@ export const mldata = {
       original_price: 2999,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_605963-MLM53667552618_022023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_605963-MLM53667552618_022023-I.jpg',
       sold_quantity: 50,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1489223871',
@@ -1941,10 +1767,9 @@ export const mldata = {
       original_price: 2299,
       inventory_id: 'OZEH30247',
       category_id: 'MLM157905',
-      thumbnail:
-        'http://http2.mlstatic.com/D_850575-MLM51294808078_082022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_850575-MLM51294808078_082022-I.jpg',
       sold_quantity: 25,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM944519066',
@@ -1953,10 +1778,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: null,
       category_id: 'MLM187612',
-      thumbnail:
-        'http://http2.mlstatic.com/D_727386-MLM48578354404_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_727386-MLM48578354404_122021-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM944986188',
@@ -1965,10 +1789,9 @@ export const mldata = {
       original_price: 2299,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_929934-MLM48690453958_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_929934-MLM48690453958_122021-I.jpg',
       sold_quantity: 5,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1365447970',
@@ -1977,10 +1800,9 @@ export const mldata = {
       original_price: null,
       inventory_id: 'UMBB70465',
       category_id: 'MLM118435',
-      thumbnail:
-        'http://http2.mlstatic.com/D_822052-MLM49240611675_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_822052-MLM49240611675_032022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 150,
+      available_quantity: 150
     },
     {
       id: 'MLM1385527474',
@@ -1989,10 +1811,9 @@ export const mldata = {
       original_price: null,
       inventory_id: null,
       category_id: 'MLM118435',
-      thumbnail:
-        'http://http2.mlstatic.com/D_876528-MLM49240696160_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_876528-MLM49240696160_032022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1734586130',
@@ -2001,10 +1822,9 @@ export const mldata = {
       original_price: 1299,
       inventory_id: null,
       category_id: 'MLM123264',
-      thumbnail:
-        'http://http2.mlstatic.com/D_982812-MLM52402232656_112022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_982812-MLM52402232656_112022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1405724232',
@@ -2013,10 +1833,9 @@ export const mldata = {
       original_price: 13199,
       inventory_id: null,
       category_id: 'MLM191366',
-      thumbnail:
-        'http://http2.mlstatic.com/D_865249-MLM50135156599_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_865249-MLM50135156599_052022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 150,
+      available_quantity: 150
     },
     {
       id: 'MLM553017639',
@@ -2025,10 +1844,9 @@ export const mldata = {
       original_price: 2575,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_609640-MLM69392166255_052023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_609640-MLM69392166255_052023-I.jpg',
       sold_quantity: 50,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1365385273',
@@ -2037,10 +1855,9 @@ export const mldata = {
       original_price: 4999,
       inventory_id: 'JIRM71226',
       category_id: 'MLM118435',
-      thumbnail:
-        'http://http2.mlstatic.com/D_778637-MLM49240760109_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_778637-MLM49240760109_032022-I.jpg',
       sold_quantity: 50,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1428598051',
@@ -2049,10 +1866,9 @@ export const mldata = {
       original_price: 9999,
       inventory_id: null,
       category_id: 'MLM189363',
-      thumbnail:
-        'http://http2.mlstatic.com/D_808393-MLM50101503081_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_808393-MLM50101503081_052022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM944515718',
@@ -2061,10 +1877,9 @@ export const mldata = {
       original_price: 2709,
       inventory_id: null,
       category_id: 'MLM187612',
-      thumbnail:
-        'http://http2.mlstatic.com/D_715481-MLM48557872269_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_715481-MLM48557872269_122021-I.jpg',
       sold_quantity: 25,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1373555032',
@@ -2073,10 +1888,9 @@ export const mldata = {
       original_price: 12599,
       inventory_id: 'OJMY86309',
       category_id: 'MLM191366',
-      thumbnail:
-        'http://http2.mlstatic.com/D_903586-MLM50135140506_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_903586-MLM50135140506_052022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 150,
+      available_quantity: 150
     },
     {
       id: 'MLM1470069929',
@@ -2085,10 +1899,9 @@ export const mldata = {
       original_price: 519,
       inventory_id: null,
       category_id: 'MLM437190',
-      thumbnail:
-        'http://http2.mlstatic.com/D_961570-MLM50929204407_072022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_961570-MLM50929204407_072022-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1365353495',
@@ -2097,10 +1910,9 @@ export const mldata = {
       original_price: 6999,
       inventory_id: 'EGNN71482',
       category_id: 'MLM118435',
-      thumbnail:
-        'http://http2.mlstatic.com/D_876528-MLM49240696160_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_876528-MLM49240696160_032022-I.jpg',
       sold_quantity: 25,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM831233670',
@@ -2109,10 +1921,9 @@ export const mldata = {
       original_price: 1799,
       inventory_id: 'GCUB19561',
       category_id: 'MLM156012',
-      thumbnail:
-        'http://http2.mlstatic.com/D_600989-MLM48558105300_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_600989-MLM48558105300_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1744587412',
@@ -2121,10 +1932,9 @@ export const mldata = {
       original_price: 2999,
       inventory_id: null,
       category_id: 'MLM431787',
-      thumbnail:
-        'http://http2.mlstatic.com/D_853713-MLM53180743949_012023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_853713-MLM53180743949_012023-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1413059560',
@@ -2133,10 +1943,9 @@ export const mldata = {
       original_price: 799,
       inventory_id: null,
       category_id: 'MLM4840',
-      thumbnail:
-        'http://http2.mlstatic.com/D_752932-MLM52286466223_112022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_752932-MLM52286466223_112022-I.jpg',
       sold_quantity: 25,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM750168319',
@@ -2145,10 +1954,9 @@ export const mldata = {
       original_price: 549,
       inventory_id: null,
       category_id: 'MLM437190',
-      thumbnail:
-        'http://http2.mlstatic.com/D_967424-MLM48560834478_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_967424-MLM48560834478_122021-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM744366994',
@@ -2157,10 +1965,9 @@ export const mldata = {
       original_price: 1086.63,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_729936-MLM48331777968_112021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_729936-MLM48331777968_112021-I.jpg',
       sold_quantity: 25,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1514805173',
@@ -2169,10 +1976,9 @@ export const mldata = {
       original_price: 1699,
       inventory_id: 'LCNS38788',
       category_id: 'MLM189615',
-      thumbnail:
-        'http://http2.mlstatic.com/D_878229-MLM51699128692_092022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_878229-MLM51699128692_092022-I.jpg',
       sold_quantity: 25,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1501929203',
@@ -2181,10 +1987,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: null,
       category_id: 'MLM31515',
-      thumbnail:
-        'http://http2.mlstatic.com/D_949747-MLM54128665560_032023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_949747-MLM54128665560_032023-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1431611700',
@@ -2193,10 +1998,9 @@ export const mldata = {
       original_price: 499,
       inventory_id: 'AGXO25061',
       category_id: 'MLM187127',
-      thumbnail:
-        'http://http2.mlstatic.com/D_926512-MLM50175477931_062022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_926512-MLM50175477931_062022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1974519716',
@@ -2205,10 +2009,9 @@ export const mldata = {
       original_price: 1599,
       inventory_id: null,
       category_id: 'MLM31568',
-      thumbnail:
-        'http://http2.mlstatic.com/D_988996-MLM48690333937_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_988996-MLM48690333937_122021-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1302906728',
@@ -2217,10 +2020,9 @@ export const mldata = {
       original_price: 2999,
       inventory_id: null,
       category_id: 'MLM437180',
-      thumbnail:
-        'http://http2.mlstatic.com/D_997904-MLM44181752283_112020-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_997904-MLM44181752283_112020-I.jpg',
       sold_quantity: 50,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1514549148',
@@ -2229,10 +2031,9 @@ export const mldata = {
       original_price: 1299,
       inventory_id: 'LNRL38420',
       category_id: 'MLM189615',
-      thumbnail:
-        'http://http2.mlstatic.com/D_982885-MLM51699076467_092022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_982885-MLM51699076467_092022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1385293289',
@@ -2241,10 +2042,9 @@ export const mldata = {
       original_price: 4999,
       inventory_id: null,
       category_id: 'MLM187612',
-      thumbnail:
-        'http://http2.mlstatic.com/D_773264-MLM48557847294_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_773264-MLM48557847294_122021-I.jpg',
       sold_quantity: 25,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1736830748',
@@ -2253,10 +2053,9 @@ export const mldata = {
       original_price: 5999,
       inventory_id: null,
       category_id: 'MLM2531',
-      thumbnail:
-        'http://http2.mlstatic.com/D_913289-MLM49471976434_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_913289-MLM49471976434_032022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM884120889',
@@ -2265,10 +2064,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: 'BXFX24674',
       category_id: 'MLM178299',
-      thumbnail:
-        'http://http2.mlstatic.com/D_848563-MLM49077694296_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_848563-MLM49077694296_022022-I.jpg',
       sold_quantity: 250,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM1436104715',
@@ -2277,10 +2075,9 @@ export const mldata = {
       original_price: 499,
       inventory_id: null,
       category_id: 'MLM189529',
-      thumbnail:
-        'http://http2.mlstatic.com/D_945040-MLM50057316205_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_945040-MLM50057316205_052022-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1372800820',
@@ -2289,10 +2086,9 @@ export const mldata = {
       original_price: 9999,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_982091-MLM48995222455_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_982091-MLM48995222455_022022-I.jpg',
       sold_quantity: 25,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1685354105',
@@ -2301,10 +2097,9 @@ export const mldata = {
       original_price: 3999,
       inventory_id: null,
       category_id: 'MLM11041',
-      thumbnail:
-        'http://http2.mlstatic.com/D_843249-MLM52771733025_122022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_843249-MLM52771733025_122022-I.jpg',
       sold_quantity: 25,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM848612722',
@@ -2313,10 +2108,9 @@ export const mldata = {
       original_price: 5999,
       inventory_id: null,
       category_id: 'MLM8961',
-      thumbnail:
-        'http://http2.mlstatic.com/D_942732-MLM49077576458_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_942732-MLM49077576458_022022-I.jpg',
       sold_quantity: 150,
-      available_quantity: 200,
+      available_quantity: 200
     },
     {
       id: 'MLM1857678114',
@@ -2325,10 +2119,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: null,
       category_id: 'MLM31558',
-      thumbnail:
-        'http://http2.mlstatic.com/D_721630-MLM53691190740_022023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_721630-MLM53691190740_022023-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1736811488',
@@ -2337,10 +2130,9 @@ export const mldata = {
       original_price: 4199,
       inventory_id: null,
       category_id: 'MLM2531',
-      thumbnail:
-        'http://http2.mlstatic.com/D_671049-MLM49447549990_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_671049-MLM49447549990_032022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 100,
+      available_quantity: 100
     },
     {
       id: 'MLM1736811300',
@@ -2349,10 +2141,9 @@ export const mldata = {
       original_price: 4999,
       inventory_id: null,
       category_id: 'MLM2531',
-      thumbnail:
-        'http://http2.mlstatic.com/D_611491-MLM49459419670_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_611491-MLM49459419670_032022-I.jpg',
       sold_quantity: 3,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM684183015',
@@ -2361,10 +2152,9 @@ export const mldata = {
       original_price: null,
       inventory_id: null,
       category_id: 'MLM4605',
-      thumbnail:
-        'http://http2.mlstatic.com/D_838861-MLM48683542326_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_838861-MLM48683542326_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM835548431',
@@ -2373,10 +2163,9 @@ export const mldata = {
       original_price: 6999,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_655967-MLM48645315457_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_655967-MLM48645315457_122021-I.jpg',
       sold_quantity: 50,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM906459149',
@@ -2385,10 +2174,9 @@ export const mldata = {
       original_price: 15999,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_676076-MLM48645268866_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_676076-MLM48645268866_122021-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM824676769',
@@ -2397,10 +2185,9 @@ export const mldata = {
       original_price: 899,
       inventory_id: null,
       category_id: 'MLM187612',
-      thumbnail:
-        'http://http2.mlstatic.com/D_655878-MLM48578314553_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_655878-MLM48578314553_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1355174558',
@@ -2409,10 +2196,9 @@ export const mldata = {
       original_price: 10999,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_871603-MLM49264871077_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_871603-MLM49264871077_032022-I.jpg',
       sold_quantity: 100,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1405813222',
@@ -2421,10 +2207,9 @@ export const mldata = {
       original_price: 12999,
       inventory_id: null,
       category_id: 'MLM191366',
-      thumbnail:
-        'http://http2.mlstatic.com/D_834223-MLM50135199352_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_834223-MLM50135199352_052022-I.jpg',
       sold_quantity: 2,
-      available_quantity: 150,
+      available_quantity: 150
     },
     {
       id: 'MLM1665200308',
@@ -2433,10 +2218,9 @@ export const mldata = {
       original_price: 3999,
       inventory_id: null,
       category_id: 'MLM437196',
-      thumbnail:
-        'http://http2.mlstatic.com/D_610741-MLM52701727254_122022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_610741-MLM52701727254_122022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1393667622',
@@ -2445,10 +2229,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: null,
       category_id: 'MLM184769',
-      thumbnail:
-        'http://http2.mlstatic.com/D_800292-MLM49401694597_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_800292-MLM49401694597_032022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1478776661',
@@ -2457,10 +2240,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: null,
       category_id: 'MLM31515',
-      thumbnail:
-        'http://http2.mlstatic.com/D_719233-MLM54270313190_032023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_719233-MLM54270313190_032023-I.jpg',
       sold_quantity: 5,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM931500452',
@@ -2469,10 +2251,9 @@ export const mldata = {
       original_price: 1437,
       inventory_id: null,
       category_id: 'MLM120507',
-      thumbnail:
-        'http://http2.mlstatic.com/D_957992-MLM50056190396_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_957992-MLM50056190396_052022-I.jpg',
       sold_quantity: 50,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1398289616',
@@ -2481,10 +2262,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: null,
       category_id: 'MLM187612',
-      thumbnail:
-        'http://http2.mlstatic.com/D_655878-MLM48578314553_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_655878-MLM48578314553_122021-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1734574627',
@@ -2493,10 +2273,9 @@ export const mldata = {
       original_price: 1399,
       inventory_id: null,
       category_id: 'MLM157905',
-      thumbnail:
-        'http://http2.mlstatic.com/D_952092-MLM51294673289_082022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_952092-MLM51294673289_082022-I.jpg',
       sold_quantity: 4,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1494217414',
@@ -2505,10 +2284,9 @@ export const mldata = {
       original_price: 3999,
       inventory_id: null,
       category_id: 'MLM180929',
-      thumbnail:
-        'http://http2.mlstatic.com/D_797349-MLM51467678144_092022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_797349-MLM51467678144_092022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 150,
+      available_quantity: 150
     },
     {
       id: 'MLM1428628334',
@@ -2517,10 +2295,9 @@ export const mldata = {
       original_price: 3999,
       inventory_id: null,
       category_id: 'MLM184818',
-      thumbnail:
-        'http://http2.mlstatic.com/D_741508-MLM49502425547_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_741508-MLM49502425547_032022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1398289023',
@@ -2529,10 +2306,9 @@ export const mldata = {
       original_price: 1099,
       inventory_id: null,
       category_id: 'MLM187612',
-      thumbnail:
-        'http://http2.mlstatic.com/D_655878-MLM48578314553_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_655878-MLM48578314553_122021-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1393706385',
@@ -2541,10 +2317,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: null,
       category_id: 'MLM184769',
-      thumbnail:
-        'http://http2.mlstatic.com/D_604353-MLM49401584764_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_604353-MLM49401584764_032022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM942607983',
@@ -2553,10 +2328,9 @@ export const mldata = {
       original_price: 6499,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_878244-MLM48645357265_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_878244-MLM48645357265_122021-I.jpg',
       sold_quantity: 5,
-      available_quantity: 200,
+      available_quantity: 200
     },
     {
       id: 'MLM1385299729',
@@ -2565,10 +2339,9 @@ export const mldata = {
       original_price: 3999,
       inventory_id: null,
       category_id: 'MLM187612',
-      thumbnail:
-        'http://http2.mlstatic.com/D_773264-MLM48557847294_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_773264-MLM48557847294_122021-I.jpg',
       sold_quantity: 50,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1400011628',
@@ -2577,10 +2350,9 @@ export const mldata = {
       original_price: 2299,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_798628-MLM49544740614_042022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_798628-MLM49544740614_042022-I.jpg',
       sold_quantity: 25,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM931502792',
@@ -2589,10 +2361,9 @@ export const mldata = {
       original_price: 5999,
       inventory_id: null,
       category_id: 'MLM187264',
-      thumbnail:
-        'http://http2.mlstatic.com/D_796061-MLM48690504686_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_796061-MLM48690504686_122021-I.jpg',
       sold_quantity: 5,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1385508185',
@@ -2601,10 +2372,9 @@ export const mldata = {
       original_price: 6299,
       inventory_id: null,
       category_id: 'MLM118435',
-      thumbnail:
-        'http://http2.mlstatic.com/D_876528-MLM49240696160_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_876528-MLM49240696160_032022-I.jpg',
       sold_quantity: 4,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1857787004',
@@ -2613,10 +2383,9 @@ export const mldata = {
       original_price: 1699,
       inventory_id: null,
       category_id: 'MLM189615',
-      thumbnail:
-        'http://http2.mlstatic.com/D_878229-MLM51699128692_092022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_878229-MLM51699128692_092022-I.jpg',
       sold_quantity: 3,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1427282385',
@@ -2625,10 +2394,9 @@ export const mldata = {
       original_price: 499,
       inventory_id: null,
       category_id: 'MLM4605',
-      thumbnail:
-        'http://http2.mlstatic.com/D_600280-MLM50056983118_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_600280-MLM50056983118_052022-I.jpg',
       sold_quantity: 4,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM744263258',
@@ -2637,10 +2405,9 @@ export const mldata = {
       original_price: 4999,
       inventory_id: null,
       category_id: 'MLM187264',
-      thumbnail:
-        'http://http2.mlstatic.com/D_697542-MLM48643810787_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_697542-MLM48643810787_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM840100414',
@@ -2649,10 +2416,9 @@ export const mldata = {
       original_price: 3999,
       inventory_id: null,
       category_id: 'MLM187264',
-      thumbnail:
-        'http://http2.mlstatic.com/D_764778-MLM46264966263_062021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_764778-MLM46264966263_062021-I.jpg',
       sold_quantity: 150,
-      available_quantity: 200,
+      available_quantity: 200
     },
     {
       id: 'MLM1470142724',
@@ -2661,10 +2427,9 @@ export const mldata = {
       original_price: 2999,
       inventory_id: null,
       category_id: 'MLM31515',
-      thumbnail:
-        'http://http2.mlstatic.com/D_915930-MLM50928946616_072022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_915930-MLM50928946616_072022-I.jpg',
       sold_quantity: 25,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1679329210',
@@ -2673,10 +2438,9 @@ export const mldata = {
       original_price: 2699,
       inventory_id: null,
       category_id: 'MLM158540',
-      thumbnail:
-        'http://http2.mlstatic.com/D_996714-MLM52216563344_102022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_996714-MLM52216563344_102022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM831018916',
@@ -2685,10 +2449,9 @@ export const mldata = {
       original_price: 899,
       inventory_id: null,
       category_id: 'MLM49283',
-      thumbnail:
-        'http://http2.mlstatic.com/D_774176-MLM49303202970_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_774176-MLM49303202970_032022-I.jpg',
       sold_quantity: 250,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM1470082824',
@@ -2697,10 +2460,9 @@ export const mldata = {
       original_price: 799,
       inventory_id: null,
       category_id: 'MLM437190',
-      thumbnail:
-        'http://http2.mlstatic.com/D_792048-MLM50929240419_072022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_792048-MLM50929240419_072022-I.jpg',
       sold_quantity: 250,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM1428591912',
@@ -2709,10 +2471,9 @@ export const mldata = {
       original_price: 3999,
       inventory_id: null,
       category_id: 'MLM118435',
-      thumbnail:
-        'http://http2.mlstatic.com/D_822052-MLM49240611675_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_822052-MLM49240611675_032022-I.jpg',
       sold_quantity: 1,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM826765360',
@@ -2721,10 +2482,9 @@ export const mldata = {
       original_price: 2999,
       inventory_id: null,
       category_id: 'MLM437180',
-      thumbnail:
-        'http://http2.mlstatic.com/D_997904-MLM44181752283_112020-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_997904-MLM44181752283_112020-I.jpg',
       sold_quantity: 500,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1736817972',
@@ -2733,10 +2493,9 @@ export const mldata = {
       original_price: 4999,
       inventory_id: null,
       category_id: 'MLM2531',
-      thumbnail:
-        'http://http2.mlstatic.com/D_611491-MLM49459419670_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_611491-MLM49459419670_032022-I.jpg',
       sold_quantity: 1,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1387203679',
@@ -2745,10 +2504,9 @@ export const mldata = {
       original_price: 4999,
       inventory_id: null,
       category_id: 'MLM184818',
-      thumbnail:
-        'http://http2.mlstatic.com/D_783605-MLM49502389806_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_783605-MLM49502389806_032022-I.jpg',
       sold_quantity: 100,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM944520214',
@@ -2757,10 +2515,9 @@ export const mldata = {
       original_price: 549,
       inventory_id: null,
       category_id: 'MLM159150',
-      thumbnail:
-        'http://http2.mlstatic.com/D_726606-MLM46235210479_062021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_726606-MLM46235210479_062021-I.jpg',
       sold_quantity: 25,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM944524846',
@@ -2769,10 +2526,9 @@ export const mldata = {
       original_price: 6960,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_888576-MLM48645382141_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_888576-MLM48645382141_122021-I.jpg',
       sold_quantity: 3,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1719617339',
@@ -2781,10 +2537,9 @@ export const mldata = {
       original_price: 1699,
       inventory_id: null,
       category_id: 'MLM189615',
-      thumbnail:
-        'http://http2.mlstatic.com/D_878229-MLM51699128692_092022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_878229-MLM51699128692_092022-I.jpg',
       sold_quantity: 2,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM835960173',
@@ -2793,10 +2548,9 @@ export const mldata = {
       original_price: 4078.98,
       inventory_id: null,
       category_id: 'MLM187264',
-      thumbnail:
-        'http://http2.mlstatic.com/D_702223-MLM49307239443_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_702223-MLM49307239443_032022-I.jpg',
       sold_quantity: 50,
-      available_quantity: 200,
+      available_quantity: 200
     },
     {
       id: 'MLM848403507',
@@ -2805,10 +2559,9 @@ export const mldata = {
       original_price: 3999,
       inventory_id: null,
       category_id: 'MLM187612',
-      thumbnail:
-        'http://http2.mlstatic.com/D_982239-MLM48557856291_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_982239-MLM48557856291_122021-I.jpg',
       sold_quantity: 250,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1378650982',
@@ -2817,10 +2570,9 @@ export const mldata = {
       original_price: 499,
       inventory_id: null,
       category_id: 'MLM4605',
-      thumbnail:
-        'http://http2.mlstatic.com/D_616094-MLM49106650510_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_616094-MLM49106650510_022022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1427282712',
@@ -2829,10 +2581,9 @@ export const mldata = {
       original_price: 399,
       inventory_id: null,
       category_id: 'MLM4605',
-      thumbnail:
-        'http://http2.mlstatic.com/D_900996-MLM50057136591_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_900996-MLM50057136591_052022-I.jpg',
       sold_quantity: 2,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1515113027',
@@ -2841,10 +2592,9 @@ export const mldata = {
       original_price: 3199,
       inventory_id: null,
       category_id: 'MLM69806',
-      thumbnail:
-        'http://http2.mlstatic.com/D_857596-MLM52130674966_102022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_857596-MLM52130674966_102022-I.jpg',
       sold_quantity: 1,
-      available_quantity: 200,
+      available_quantity: 200
     },
     {
       id: 'MLM1869228411',
@@ -2853,10 +2603,9 @@ export const mldata = {
       original_price: 1599,
       inventory_id: null,
       category_id: 'MLM31568',
-      thumbnail:
-        'http://http2.mlstatic.com/D_988996-MLM48690333937_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_988996-MLM48690333937_122021-I.jpg',
       sold_quantity: 1,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM839645113',
@@ -2865,10 +2614,9 @@ export const mldata = {
       original_price: 3199,
       inventory_id: null,
       category_id: 'MLM187612',
-      thumbnail:
-        'http://http2.mlstatic.com/D_773264-MLM48557847294_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_773264-MLM48557847294_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1886203844',
@@ -2877,10 +2625,9 @@ export const mldata = {
       original_price: 1499,
       inventory_id: null,
       category_id: 'MLM437196',
-      thumbnail:
-        'http://http2.mlstatic.com/D_653845-MLM54272476898_032023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_653845-MLM54272476898_032023-I.jpg',
       sold_quantity: 5,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM944515201',
@@ -2889,10 +2636,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: null,
       category_id: 'MLM11041',
-      thumbnail:
-        'http://http2.mlstatic.com/D_777994-MLM48601601605_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_777994-MLM48601601605_122021-I.jpg',
       sold_quantity: 5,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM1387149134',
@@ -2901,10 +2647,9 @@ export const mldata = {
       original_price: 4999,
       inventory_id: null,
       category_id: 'MLM184818',
-      thumbnail:
-        'http://http2.mlstatic.com/D_964163-MLM49502514261_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_964163-MLM49502514261_032022-I.jpg',
       sold_quantity: 50,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1759980843',
@@ -2913,10 +2658,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: null,
       category_id: 'MLM31515',
-      thumbnail:
-        'http://http2.mlstatic.com/D_694400-MLM69241502010_052023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_694400-MLM69241502010_052023-I.jpg',
       sold_quantity: 5,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1401331807',
@@ -2925,10 +2669,9 @@ export const mldata = {
       original_price: 599,
       inventory_id: null,
       category_id: 'MLM185257',
-      thumbnail:
-        'http://http2.mlstatic.com/D_660035-MLM49581187614_042022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_660035-MLM49581187614_042022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM944513246',
@@ -2937,10 +2680,9 @@ export const mldata = {
       original_price: 1809,
       inventory_id: null,
       category_id: 'MLM437180',
-      thumbnail:
-        'http://http2.mlstatic.com/D_832399-MLM48558169436_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_832399-MLM48558169436_122021-I.jpg',
       sold_quantity: 4,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM830643027',
@@ -2949,10 +2691,9 @@ export const mldata = {
       original_price: 191,
       inventory_id: null,
       category_id: 'MLM185257',
-      thumbnail:
-        'http://http2.mlstatic.com/D_874012-MLM43819444552_102020-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_874012-MLM43819444552_102020-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1387190670',
@@ -2961,10 +2702,9 @@ export const mldata = {
       original_price: 2499,
       inventory_id: null,
       category_id: 'MLM184818',
-      thumbnail:
-        'http://http2.mlstatic.com/D_687647-MLM49502487474_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_687647-MLM49502487474_032022-I.jpg',
       sold_quantity: 25,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM1401380664',
@@ -2973,10 +2713,9 @@ export const mldata = {
       original_price: null,
       inventory_id: null,
       category_id: 'MLM185257',
-      thumbnail:
-        'http://http2.mlstatic.com/D_819725-MLM49581248697_042022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_819725-MLM49581248697_042022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1430819364',
@@ -2985,10 +2724,9 @@ export const mldata = {
       original_price: null,
       inventory_id: null,
       category_id: 'MLM6777',
-      thumbnail:
-        'http://http2.mlstatic.com/D_993690-MLM50158207385_062022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_993690-MLM50158207385_062022-I.jpg',
       sold_quantity: 2,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM861134220',
@@ -2997,10 +2735,9 @@ export const mldata = {
       original_price: 499,
       inventory_id: null,
       category_id: 'MLM167994',
-      thumbnail:
-        'http://http2.mlstatic.com/D_752393-MLM44548135235_012021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_752393-MLM44548135235_012021-I.jpg',
       sold_quantity: 5,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1737158077',
@@ -3009,10 +2746,9 @@ export const mldata = {
       original_price: 4655.55,
       inventory_id: null,
       category_id: 'MLM2531',
-      thumbnail:
-        'http://http2.mlstatic.com/D_758713-MLM49773674577_042022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_758713-MLM49773674577_042022-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1881931245',
@@ -3021,10 +2757,9 @@ export const mldata = {
       original_price: null,
       inventory_id: null,
       category_id: 'MLM191366',
-      thumbnail:
-        'http://http2.mlstatic.com/D_688008-MLM54964251245_042023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_688008-MLM54964251245_042023-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM944512541',
@@ -3033,10 +2768,9 @@ export const mldata = {
       original_price: 1599,
       inventory_id: null,
       category_id: 'MLM156012',
-      thumbnail:
-        'http://http2.mlstatic.com/D_956707-MLM48557989928_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_956707-MLM48557989928_122021-I.jpg',
       sold_quantity: 0,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1428598265',
@@ -3045,10 +2779,9 @@ export const mldata = {
       original_price: null,
       inventory_id: null,
       category_id: 'MLM118435',
-      thumbnail:
-        'http://http2.mlstatic.com/D_778637-MLM49240760109_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_778637-MLM49240760109_032022-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1369477297',
@@ -3057,10 +2790,9 @@ export const mldata = {
       original_price: 1699,
       inventory_id: null,
       category_id: 'MLM184818',
-      thumbnail:
-        'http://http2.mlstatic.com/D_872263-MLM49502480357_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_872263-MLM49502480357_032022-I.jpg',
       sold_quantity: 200,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1720147535',
@@ -3069,10 +2801,9 @@ export const mldata = {
       original_price: 1299,
       inventory_id: null,
       category_id: 'MLM189615',
-      thumbnail:
-        'http://http2.mlstatic.com/D_982885-MLM51699076467_092022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_982885-MLM51699076467_092022-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1428202667',
@@ -3081,10 +2812,9 @@ export const mldata = {
       original_price: 6299,
       inventory_id: null,
       category_id: 'MLM3095',
-      thumbnail:
-        'http://http2.mlstatic.com/D_966470-MLA47613710899_092021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_966470-MLA47613710899_092021-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1762064611',
@@ -3093,10 +2823,9 @@ export const mldata = {
       original_price: 999,
       inventory_id: null,
       category_id: 'MLM31515',
-      thumbnail:
-        'http://http2.mlstatic.com/D_991793-MLM53290616266_012023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_991793-MLM53290616266_012023-I.jpg',
       sold_quantity: 0,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1857929808',
@@ -3105,10 +2834,9 @@ export const mldata = {
       original_price: 2298.85,
       inventory_id: null,
       category_id: 'MLM157905',
-      thumbnail:
-        'http://http2.mlstatic.com/D_850575-MLM51294808078_082022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_850575-MLM51294808078_082022-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1664932271',
@@ -3117,10 +2845,9 @@ export const mldata = {
       original_price: 799,
       inventory_id: null,
       category_id: 'MLM157905',
-      thumbnail:
-        'http://http2.mlstatic.com/D_628474-MLM54901493418_042023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_628474-MLM54901493418_042023-I.jpg',
       sold_quantity: 0,
-      available_quantity: 250,
+      available_quantity: 250
     },
     {
       id: 'MLM1857927996',
@@ -3129,10 +2856,9 @@ export const mldata = {
       original_price: 1299,
       inventory_id: null,
       category_id: 'MLM189615',
-      thumbnail:
-        'http://http2.mlstatic.com/D_982885-MLM51699076467_092022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_982885-MLM51699076467_092022-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1891255197',
@@ -3141,10 +2867,9 @@ export const mldata = {
       original_price: null,
       inventory_id: null,
       category_id: 'MLM180940',
-      thumbnail:
-        'http://http2.mlstatic.com/D_929861-MLM69316737900_052023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_929861-MLM69316737900_052023-I.jpg',
       sold_quantity: 1,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM2008405210',
@@ -3153,10 +2878,9 @@ export const mldata = {
       original_price: 499,
       inventory_id: null,
       category_id: 'MLM6777',
-      thumbnail:
-        'http://http2.mlstatic.com/D_619162-MLM50157911957_062022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_619162-MLM50157911957_062022-I.jpg',
       sold_quantity: 0,
-      available_quantity: 500,
+      available_quantity: 500
     },
     {
       id: 'MLM1891254693',
@@ -3165,10 +2889,9 @@ export const mldata = {
       original_price: null,
       inventory_id: null,
       category_id: 'MLM180940',
-      thumbnail:
-        'http://http2.mlstatic.com/D_917812-MLM69316638068_052023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_917812-MLM69316638068_052023-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM2168082472',
@@ -3177,10 +2900,9 @@ export const mldata = {
       original_price: null,
       inventory_id: null,
       category_id: 'MLM180940',
-      thumbnail:
-        'http://http2.mlstatic.com/D_929861-MLM69316737900_052023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_929861-MLM69316737900_052023-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM2168082242',
@@ -3189,10 +2911,9 @@ export const mldata = {
       original_price: null,
       inventory_id: null,
       category_id: 'MLM180940',
-      thumbnail:
-        'http://http2.mlstatic.com/D_929861-MLM69316737900_052023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_929861-MLM69316737900_052023-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1362428730',
@@ -3201,10 +2922,9 @@ export const mldata = {
       original_price: null,
       inventory_id: null,
       category_id: 'MLM185257',
-      thumbnail:
-        'http://http2.mlstatic.com/D_846410-MLM48753125355_012022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_846410-MLM48753125355_012022-I.jpg',
       sold_quantity: 0,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM2167956626',
@@ -3213,10 +2933,9 @@ export const mldata = {
       original_price: null,
       inventory_id: null,
       category_id: 'MLM180940',
-      thumbnail:
-        'http://http2.mlstatic.com/D_636628-MLM54991789942_052023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_636628-MLM54991789942_052023-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1891262123',
@@ -3225,10 +2944,9 @@ export const mldata = {
       original_price: null,
       inventory_id: null,
       category_id: 'MLM180940',
-      thumbnail:
-        'http://http2.mlstatic.com/D_917812-MLM69316638068_052023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_917812-MLM69316638068_052023-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM2168070414',
@@ -3237,10 +2955,9 @@ export const mldata = {
       original_price: null,
       inventory_id: null,
       category_id: 'MLM180940',
-      thumbnail:
-        'http://http2.mlstatic.com/D_917812-MLM69316638068_052023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_917812-MLM69316638068_052023-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1881910273',
@@ -3249,10 +2966,9 @@ export const mldata = {
       original_price: 4999,
       inventory_id: null,
       category_id: 'MLM184818',
-      thumbnail:
-        'http://http2.mlstatic.com/D_638948-MLA51046034541_082022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_638948-MLA51046034541_082022-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1355177251',
@@ -3261,10 +2977,9 @@ export const mldata = {
       original_price: 12799,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_705266-MLM48560558373_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_705266-MLM48560558373_122021-I.jpg',
       sold_quantity: 25,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM887038138',
@@ -3273,10 +2988,9 @@ export const mldata = {
       original_price: 14999,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_972061-MLM48645268835_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_972061-MLM48645268835_122021-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM872900664',
@@ -3285,10 +2999,9 @@ export const mldata = {
       original_price: 13999,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_970962-MLM48645348156_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_970962-MLM48645348156_122021-I.jpg',
       sold_quantity: 50,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM944517388',
@@ -3297,10 +3010,9 @@ export const mldata = {
       original_price: 18499,
       inventory_id: null,
       category_id: 'MLM81144',
-      thumbnail:
-        'http://http2.mlstatic.com/D_769845-MLM48600384572_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_769845-MLM48600384572_122021-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1428903879',
@@ -3309,10 +3021,9 @@ export const mldata = {
       original_price: 5999,
       inventory_id: null,
       category_id: 'MLM3095',
-      thumbnail:
-        'http://http2.mlstatic.com/D_893453-MLM49130014405_022022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_893453-MLM49130014405_022022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1428145393',
@@ -3321,10 +3032,9 @@ export const mldata = {
       original_price: 5799,
       inventory_id: null,
       category_id: 'MLM3095',
-      thumbnail:
-        'http://http2.mlstatic.com/D_905442-MLM50091117380_052022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_905442-MLM50091117380_052022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1494237116',
@@ -3333,10 +3043,9 @@ export const mldata = {
       original_price: 3599,
       inventory_id: null,
       category_id: 'MLM180929',
-      thumbnail:
-        'http://http2.mlstatic.com/D_634457-MLM51393245732_092022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_634457-MLM51393245732_092022-I.jpg',
       sold_quantity: 1,
-      available_quantity: 150,
+      available_quantity: 150
     },
     {
       id: 'MLM933759816',
@@ -3345,10 +3054,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: null,
       category_id: 'MLM128037',
-      thumbnail:
-        'http://http2.mlstatic.com/D_751296-MLM48692147386_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_751296-MLM48692147386_122021-I.jpg',
       sold_quantity: 500,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1382390263',
@@ -3357,10 +3065,9 @@ export const mldata = {
       original_price: 3499,
       inventory_id: null,
       category_id: 'MLM2531',
-      thumbnail:
-        'http://http2.mlstatic.com/D_671049-MLM49447549990_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_671049-MLM49447549990_032022-I.jpg',
       sold_quantity: 200,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1568107247',
@@ -3369,10 +3076,9 @@ export const mldata = {
       original_price: 1099,
       inventory_id: null,
       category_id: 'MLM118812',
-      thumbnail:
-        'http://http2.mlstatic.com/D_626977-MLM50972674133_082022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_626977-MLM50972674133_082022-I.jpg',
       sold_quantity: 150,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1385553250',
@@ -3381,10 +3087,9 @@ export const mldata = {
       original_price: 6999,
       inventory_id: 'WJIT86592',
       category_id: 'MLM118435',
-      thumbnail:
-        'http://http2.mlstatic.com/D_822052-MLM49240611675_032022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_822052-MLM49240611675_032022-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1489234562',
@@ -3393,10 +3098,9 @@ export const mldata = {
       original_price: 2599,
       inventory_id: null,
       category_id: 'MLM417640',
-      thumbnail:
-        'http://http2.mlstatic.com/D_894496-MLM51293505835_082022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_894496-MLM51293505835_082022-I.jpg',
       sold_quantity: 250,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM912753072',
@@ -3405,10 +3109,9 @@ export const mldata = {
       original_price: 899,
       inventory_id: null,
       category_id: 'MLM123325',
-      thumbnail:
-        'http://http2.mlstatic.com/D_909953-MLA43711395321_102020-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_909953-MLA43711395321_102020-I.jpg',
       sold_quantity: 5,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM808656970',
@@ -3417,10 +3120,9 @@ export const mldata = {
       original_price: null,
       inventory_id: null,
       category_id: 'MLM185257',
-      thumbnail:
-        'http://http2.mlstatic.com/D_816254-MLM48485162985_122021-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_816254-MLM48485162985_122021-I.jpg',
       sold_quantity: 25,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM2148139640',
@@ -3429,10 +3131,9 @@ export const mldata = {
       original_price: 799,
       inventory_id: null,
       category_id: 'MLM31515',
-      thumbnail:
-        'http://http2.mlstatic.com/D_649479-MLM69241201402_052023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_649479-MLM69241201402_052023-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM1881908225',
@@ -3441,10 +3142,9 @@ export const mldata = {
       original_price: 1699,
       inventory_id: null,
       category_id: 'MLM184818',
-      thumbnail:
-        'http://http2.mlstatic.com/D_846383-MLA50416843897_062022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_846383-MLA50416843897_062022-I.jpg',
       sold_quantity: 0,
-      available_quantity: 1,
+      available_quantity: 1
     },
     {
       id: 'MLM2148090228',
@@ -3453,10 +3153,9 @@ export const mldata = {
       original_price: 899,
       inventory_id: null,
       category_id: 'MLM31515',
-      thumbnail:
-        'http://http2.mlstatic.com/D_677659-MLM69241357898_052023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_677659-MLM69241357898_052023-I.jpg',
       sold_quantity: 0,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM2169292696',
@@ -3465,10 +3164,9 @@ export const mldata = {
       original_price: 1999,
       inventory_id: null,
       category_id: 'MLM31515',
-      thumbnail:
-        'http://http2.mlstatic.com/D_985178-MLM69328815169_052023-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_985178-MLM69328815169_052023-I.jpg',
       sold_quantity: 0,
-      available_quantity: 50,
+      available_quantity: 50
     },
     {
       id: 'MLM1622710153',
@@ -3477,62 +3175,61 @@ export const mldata = {
       original_price: 3199,
       inventory_id: null,
       category_id: 'MLM69806',
-      thumbnail:
-        'http://http2.mlstatic.com/D_857596-MLM52130674966_102022-I.jpg',
+      thumbnail: 'http://http2.mlstatic.com/D_857596-MLM52130674966_102022-I.jpg',
       sold_quantity: 0,
-      available_quantity: 200,
-    },
+      available_quantity: 200
+    }
   ],
   categories: [
     {
       id: 'MLM1574',
       name: 'Hogar, Muebles y Jardín',
-      results: 87,
+      results: 87
     },
     {
       id: 'MLM1575',
       name: 'Electrodomésticos',
-      results: 76,
+      results: 76
     },
     {
       id: 'MLM1276',
       name: 'Deportes y Fitness',
-      results: 53,
+      results: 53
     },
     {
       id: 'MLM1499',
       name: 'Industrias y Oficinas',
-      results: 31,
+      results: 31
     },
     {
       id: 'MLM187772',
       name: 'Salud y Equipamiento Médico',
-      results: 24,
+      results: 24
     },
     {
       id: 'MLM1246',
       name: 'Belleza y Cuidado Personal',
-      results: 15,
+      results: 15
     },
     {
       id: 'MLM1648',
       name: 'Computación',
-      results: 15,
+      results: 15
     },
     {
       id: 'MLM1144',
       name: 'Consolas y Videojuegos',
-      results: 15,
+      results: 15
     },
     {
       id: 'MLM186863',
       name: 'Herramientas',
-      results: 11,
+      results: 11
     },
     {
       id: 'MLM1039',
       name: 'Cámaras y Accesorios',
-      results: 3,
-    },
-  ],
-};
+      results: 3
+    }
+  ]
+}

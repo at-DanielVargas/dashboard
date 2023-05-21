@@ -1,16 +1,11 @@
-import { Injectable } from '@angular/core';
-import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { catchError, map, of, switchMap, withLatestFrom } from 'rxjs';
-import { Store, select } from '@ngrx/store';
-import { IAppState } from '../../../../shared/interfaces/app';
-import { OrdersService } from '../../../services/orders.service';
-import {
-  getSellsProfitError,
-  getSellsProfitSuccess,
-  getTopSells,
-  getTopSellsSuccess,
-} from './home.actions';
-import { ProductsService } from '../../../services/products.service';
+import { Injectable } from '@angular/core'
+import { Actions, createEffect, ofType } from '@ngrx/effects'
+import { catchError, map, of, switchMap, withLatestFrom } from 'rxjs'
+import { Store, select } from '@ngrx/store'
+import { IAppState } from '../../../../shared/interfaces/app'
+import { OrdersService } from '../../../services/orders.service'
+import { getSellsProfitError, getSellsProfitSuccess, getTopSells, getTopSellsSuccess } from './home.actions'
+import { ProductsService } from '../../../services/products.service'
 
 @Injectable()
 export class HomeEffects {
@@ -31,7 +26,7 @@ export class HomeEffects {
         )
       )
     )
-  );
+  )
 
   getSellsProfit$ = createEffect(() =>
     this.actions$.pipe(
@@ -42,12 +37,12 @@ export class HomeEffects {
             getSellsProfitSuccess({
               profit: response.totalProfit,
               sells: response.totalSells,
-              products: response.total,
+              products: response.total
             })
           ),
           catchError((error) => of(getSellsProfitError(error)))
         )
       )
     )
-  );
+  )
 }

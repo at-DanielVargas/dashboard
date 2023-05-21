@@ -1,45 +1,38 @@
-import {
-  Component,
-  Directive,
-  ElementRef,
-  Output,
-  EventEmitter,
-  HostListener,
-} from '@angular/core';
+import { Component, Directive, ElementRef, Output, EventEmitter, HostListener } from '@angular/core'
 
 @Component({
   selector: 'goc-dropdown',
   templateUrl: './dropdown.component.html',
-  styleUrls: ['./dropdown.component.scss'],
+  styleUrls: ['./dropdown.component.scss']
 })
 export class DropdownComponent {
-  isOpen = false;
+  isOpen = false
 
   toggleMenu(e: any) {
-    e.preventDefault();
-    e.stopPropagation();
-    this.isOpen = !this.isOpen;
-    console.log(this.isOpen);
+    e.preventDefault()
+    e.stopPropagation()
+    this.isOpen = !this.isOpen
+    console.log(this.isOpen)
   }
 
   closeMenu() {
-    this.isOpen = false;
+    this.isOpen = false
   }
 }
 
 @Directive({
-  selector: '[gocClickOutside]',
+  selector: '[gocClickOutside]'
 })
 export class GocClickOutsideDirective {
-  @Output() clickOutside = new EventEmitter();
+  @Output() clickOutside = new EventEmitter()
 
   constructor(private el: ElementRef) {}
 
   @HostListener('document:click', ['$event.target'])
   onClick(target: any) {
-    const isClickedInside = this.el.nativeElement.contains(target);
+    const isClickedInside = this.el.nativeElement.contains(target)
     if (!isClickedInside) {
-      this.clickOutside.emit(null);
+      this.clickOutside.emit(null)
     }
   }
 }

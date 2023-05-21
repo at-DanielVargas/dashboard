@@ -1,6 +1,6 @@
-import { IClient } from './app';
-import { IProduct } from './product';
-import { ITracking } from './tracking';
+import { IClient } from './app'
+import { IProduct } from './product'
+import { ITracking } from './tracking'
 
 export enum EOrderKind {
   REFUND = 'refund',
@@ -8,23 +8,23 @@ export enum EOrderKind {
   WARRANTY = 'warranty',
   ADDITION = 'addition',
   PROMO = 'promo',
-  SALE = 'sale',
+  SALE = 'sale'
 }
 
 export interface IOrder {
-  _id?: string;
-  kind: string;
-  status: string;
-  items: IOrderItem[];
-  client: IClient;
-  createdAt: string;
-  updatedAt: string;
-  sendTracking?: ITracking;
-  collectTracking?: ITracking;
+  _id?: string
+  kind: string
+  status: string
+  items: IOrderItem[]
+  client: IClient
+  createdAt: string
+  updatedAt: string
+  sendTracking?: ITracking
+  collectTracking?: ITracking
 }
 
 export interface IOrderItem {
-  _id?: string;
-  item: IProduct;
-  quantity: number;
+  _id?: string
+  item: IProduct
+  quantity: number
 }

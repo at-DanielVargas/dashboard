@@ -1,21 +1,21 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { StoreComponent } from './store.component';
+import { StoreComponent } from './store.component'
 
 describe('StoreComponent', () => {
-  let component: StoreComponent;
-  let fixture: ComponentFixture<StoreComponent>;
+  let component: StoreComponent
+  let fixture: ComponentFixture<StoreComponent>
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [StoreComponent]
-    });
-    fixture = TestBed.createComponent(StoreComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    })
+    fixture = TestBed.createComponent(StoreComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

@@ -38,5 +38,11 @@
         "{workspaceRoot}/.eslintignore"
       ]
     }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/workspace",
+    "environment": {
+      "source": "shared.env"
+    }
   }
 }

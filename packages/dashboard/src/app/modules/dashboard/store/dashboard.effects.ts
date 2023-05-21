@@ -1,22 +1,14 @@
-import { Injectable } from '@angular/core';
-import { Actions, createEffect, ofType } from '@ngrx/effects';
-import {
-  getOrderDetails,
-  getOrderDetailsError,
-  getOrderDetailsSuccess,
-} from './dashboard.actions';
-import { catchError, map, of, switchMap, withLatestFrom } from 'rxjs';
-import { OrdersService } from '../services/orders.service';
-import { Store, select } from '@ngrx/store';
-import { IAppState } from '../../shared/interfaces/app';
+import { Injectable } from '@angular/core'
+import { Actions, createEffect, ofType } from '@ngrx/effects'
+import { getOrderDetails, getOrderDetailsError, getOrderDetailsSuccess } from './dashboard.actions'
+import { catchError, map, of, switchMap, withLatestFrom } from 'rxjs'
+import { OrdersService } from '../services/orders.service'
+import { Store, select } from '@ngrx/store'
+import { IAppState } from '../../shared/interfaces/app'
 
 @Injectable()
 export class DashboardEffects {
-  constructor(
-    private actions$: Actions,
-    private ordersService: OrdersService,
-    private store: Store<IAppState>
-  ) {}
+  constructor(private actions$: Actions, private ordersService: OrdersService, private store: Store<IAppState>) {}
 
   getOrderDetails$ = createEffect(() =>
     this.actions$.pipe(
@@ -28,5 +20,5 @@ export class DashboardEffects {
         )
       )
     )
-  );
+  )
 }

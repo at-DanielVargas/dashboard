@@ -86,14 +86,11 @@
             <td>{{ product?.name }}</td>
             <td>{{ product?.price | currency }}</td>
             <td>
-              {{
-              (product?.price || 0) - (product?.supplierPrice || 0) | currency
-              }}
+              {{ (product?.price || 0) - (product?.supplierPrice || 0) | currency }}
             </td>
             <td>{{ product?.supplierPrice | currency }}</td>
             <td>
-              <span routerLink="/dashboard/categories" class="badge text-bg-primary">{{ product?.category?.name
-                }}</span>
+              <span routerLink="/dashboard/categories" class="badge text-bg-primary">{{ product?.category?.name }}</span>
             </td>
             <td>{{ product?.purchases }}</td>
             <td>

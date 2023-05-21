@@ -4,5 +4,5 @@ export const OrderLabel: Record<string, string> = {
   promo: 'Promoción',
   warranty: 'Garantias',
   sale: 'Venta regular',
-  addition: 'Adición',
-};
+  addition: 'Adición'
+}

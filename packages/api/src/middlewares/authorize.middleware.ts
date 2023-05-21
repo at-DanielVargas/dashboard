@@ -1,36 +1,27 @@
-import { Request, Response, NextFunction } from 'express';
+import { Request, Response, NextFunction } from 'express'
 
 // Función para verificar si el usuario tiene un token de acceso válido
-export const authenticate = (
-  req: Request,
-  res: Response,
-  next: NextFunction
-): void => {
-  const token = req.header('Authorization');
+export const authenticate = (req: Request, res: Response, next: NextFunction): void => {
+  const token = req.header('Authorization')
   // pendiente logica de validacion de token y api_key
   if (token === 'FLDSMDFR') {
-    next();
+    next()
   } else {
-    res.status(401).json({ error: 'Unauthorized.' });
+    res.status(401).json({ error: 'Unauthorized.' })
   }
-};
+}
 
 export const authorize = (permissions: string[]) => {
   return (req: Request, res: Response, next: NextFunction): void => {
     // pendiente implementar logica de obtencion de permisos
-    const userPermissions: string[] = [
-      'admin',
-      'super_admin',
-    ];
+    const userPermissions: string[] = ['admin', 'super_admin']
 
-    const hasPermission = permissions.some((permission) =>
-      userPermissions.includes(permission)
-    );
+    const hasPermission = permissions.some((permission) => userPermissions.includes(permission))
 
     if (hasPermission) {
-      next();
+      next()
     } else {
-      res.status(403).json({ error: 'Not access.' });
+      res.status(403).json({ error: 'Not access.' })
     }
-  };
-};
+  }
+}

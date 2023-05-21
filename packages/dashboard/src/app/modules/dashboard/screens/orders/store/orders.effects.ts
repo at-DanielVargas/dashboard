@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { Actions, createEffect, ofType } from '@ngrx/effects';
+import { Injectable } from '@angular/core'
+import { Actions, createEffect, ofType } from '@ngrx/effects'
 import {
   getOrderDetails,
   getOrderDetailsError,
@@ -14,20 +14,16 @@ import {
   getOrdersStatsError,
   getOrdersStatsSuccess,
   getOrdersSuccess,
-  setKindFilter,
-} from './orders.actions';
-import { catchError, map, of, switchMap, withLatestFrom } from 'rxjs';
-import { Store, select } from '@ngrx/store';
-import { IAppState } from '../../../../shared/interfaces/app';
-import { OrdersService } from '../../../services/orders.service';
+  setKindFilter
+} from './orders.actions'
+import { catchError, map, of, switchMap, withLatestFrom } from 'rxjs'
+import { Store, select } from '@ngrx/store'
+import { IAppState } from '../../../../shared/interfaces/app'
+import { OrdersService } from '../../../services/orders.service'
 
 @Injectable()
 export class OrdersEffects {
-  constructor(
-    private actions$: Actions,
-    private ordersService: OrdersService,
-    private store: Store<IAppState>
-  ) {}
+  constructor(private actions$: Actions, private ordersService: OrdersService, private store: Store<IAppState>) {}
 
   getOrders$ = createEffect(() =>
     this.actions$.pipe(
@@ -43,14 +39,14 @@ export class OrdersEffects {
         this.ordersService.getOrders({ kind, page }).pipe(
           map((items) =>
             getOrdersSuccess({
-              items,
+              items
             })
           ),
           catchError((error) => of(getOrdersError({ error })))
         )
       )
     )
-  );
+  )
 
   getOrdersStats$ = createEffect(() =>
     this.actions$.pipe(
@@ -59,14 +55,14 @@ export class OrdersEffects {
         this.ordersService.getOrdersStats().pipe(
           map((response) =>
             getOrdersStatsSuccess({
-              stats: response,
+              stats: response
             })
           ),
           catchError((error) => of(getOrdersStatsError({ error })))
         )
       )
     )
-  );
+  )
 
   getOrderDetails$ = createEffect(() =>
     this.actions$.pipe(
@@ -78,7 +74,7 @@ export class OrdersEffects {
         )
       )
     )
-  );
+  )
 
   getOrderTracking$ = createEffect(() =>
     this.actions$.pipe(
@@ -90,5 +86,5 @@ export class OrdersEffects {
         )
       )
     )
-  );
+  )
 }

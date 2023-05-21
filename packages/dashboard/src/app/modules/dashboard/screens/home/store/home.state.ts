@@ -1,9 +1,9 @@
-import { IProduct } from '../../../../shared/interfaces/product';
+import { IProduct } from '../../../../shared/interfaces/product'
 
 export interface IHomeState {
-  tops: IProduct[] | undefined;
-  sells: number;
-  products: number;
-  profit: number;
-  errors: any;
+  tops: IProduct[] | undefined
+  sells: number
+  products: number
+  profit: number
+  errors: any
 }

@@ -1,21 +1,13 @@
 <nav>
   <ul class="pagination">
     <li class="page-item">
-      <button
-        class="page-link"
-        (click)="changePage.emit(paginationData?.prevPage)"
-        aria-label="Previous"
-      >
+      <button class="page-link" (click)="changePage.emit(paginationData?.prevPage)" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
       </button>
     </li>
 
     <li class="page-item" *ngFor="let page of getPages()">
-      <button
-        class="page-link"
-        [class.active]="paginationData?.page === page"
-        (click)="changePage.emit(page)"
-      >
+      <button class="page-link" [class.active]="paginationData?.page === page" (click)="changePage.emit(page)">
         {{ page }}
       </button>
     </li>

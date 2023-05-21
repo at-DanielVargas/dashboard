@@ -1,41 +1,38 @@
 export interface SourceObject {
-  [key: string]: any;
+  [key: string]: any
 }
 
 export function createNestedObject(source: SourceObject): SourceObject {
-  const result: SourceObject = {};
+  const result: SourceObject = {}
 
   for (const key in source) {
     // eslint-disable-next-line no-prototype-builtins
     if (source.hasOwnProperty(key)) {
-      const value = source[key];
-      const keys = key.split('.');
+      const value = source[key]
+      const keys = key.split('.')
 
-      let currentObj = result;
+      let currentObj = result
       for (let i = 0; i < keys.length; i++) {
-        const currentKey = keys[i];
+        const currentKey = keys[i]
         if (i === keys.length - 1) {
-          currentObj[currentKey] = value;
+          currentObj[currentKey] = value
         } else {
-          currentObj[currentKey] = currentObj[currentKey] || {};
-          currentObj = currentObj[currentKey];
+          currentObj[currentKey] = currentObj[currentKey] || {}
+          currentObj = currentObj[currentKey]
         }
       }
     }
   }
 
-  return result;
+  return result
 }
 
-export function excludeProperties<
-  T extends Record<string, any>,
-  K extends keyof T
->(obj: T, exclude: K[]): Omit<T, K> {
-  const result = { ...obj };
+export function excludeProperties<T extends Record<string, any>, K extends keyof T>(obj: T, exclude: K[]): Omit<T, K> {
+  const result = { ...obj }
 
   exclude.forEach((prop) => {
-    delete result[prop];
-  });
+    delete result[prop]
+  })
 
-  return result;
+  return result
 }

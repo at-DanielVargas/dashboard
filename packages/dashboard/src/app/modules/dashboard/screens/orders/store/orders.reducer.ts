@@ -1,5 +1,5 @@
-import { createReducer, on } from '@ngrx/store';
-import { IOrdersState } from './orders.state';
+import { createReducer, on } from '@ngrx/store'
+import { IOrdersState } from './orders.state'
 import {
   getOrderDetailsSuccess,
   getOrderTrackingSuccess,
@@ -7,9 +7,9 @@ import {
   getOrdersStatsSuccess,
   getOrdersSuccess,
   resetOrders,
-  setKindFilter,
-} from './orders.actions';
-import { OrderLabel } from '../../../../shared/constants';
+  setKindFilter
+} from './orders.actions'
+import { OrderLabel } from '../../../../shared/constants'
 
 export const initialState: IOrdersState = {
   kindFilter: 'refund',
@@ -25,25 +25,25 @@ export const initialState: IOrdersState = {
   hasPrevPage: false,
   hasNextPage: false,
   prevPage: 0,
-  nextPage: 0,
-};
+  nextPage: 0
+}
 
 export const ordersReducer = createReducer(
   initialState,
   on(getOrdersSuccess, (state, action) => ({
     ...state,
-    ...action.items,
+    ...action.items
   })),
   on(getOrderDetailsSuccess, (state, action) => ({
     ...state,
-    currentOrder: action.order,
+    currentOrder: action.order
   })),
 
   on(getOrderTrackingSuccess, (state, action) => {
     return {
       ...state,
-      currentOrder: action.order,
-    };
+      currentOrder: action.order
+    }
   }),
 
   on(getOrdersPage, (state, action) => ({ ...state, page: action.page })),
@@ -51,21 +51,21 @@ export const ordersReducer = createReducer(
   on(setKindFilter, (state, action) => ({
     ...state,
     kindFilter: action.kind,
-    page: 1,
+    page: 1
   })),
 
   on(getOrdersStatsSuccess, (state, action) => {
     const stats = Object.entries(action.stats).map(([key, value]) => ({
       count: String(value),
       label: OrderLabel[key],
-      key,
-    }));
+      key
+    }))
 
     return {
       ...state,
-      stats,
-    };
+      stats
+    }
   }),
 
   on(resetOrders, (state, action) => ({ ...state, ...initialState }))
-);
+)
