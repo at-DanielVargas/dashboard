@@ -7,7 +7,7 @@ import { Shape } from '../interfaces'
 export interface IRole {
   name: string
   description: string
-  permissions: string[]
+  permissions: any
   paginate?: PaginateModel<IRole>
 }
 
@@ -21,14 +21,11 @@ const RoleSchema = new Schema(
     description: {
       type: Schema.Types.String
     },
-    permissions: {
-      type: [
-        {
-          type: Schema.Types.ObjectId,
-          ref: 'permissions'
-        }
-      ]
-    }
+    permissions: [
+      {
+        type: Schema.Types.String
+      }
+    ]
   },
   { timestamps: false, versionKey: false }
 )
@@ -43,11 +40,5 @@ export const CategoryModel = model<RoleDocument, PaginateModel<RoleDocument>>('r
 export const CreateRoleDto = object().shape<Shape<IRole>>({
   name: string().required(),
   description: string().optional(),
-  permissions: array().of(string())
+  permissions: array().of(string()).required()
 })
-
-const buildPermissions = (modules: string[], actions: string[]): string[] => {
-  return modules.reduce((acc, current) => {
-    return [...acc, ...[`create_${current}`, `update_${current}`, `read_${current}`, `destroy_${current}`]]
-  }, [])
-}
