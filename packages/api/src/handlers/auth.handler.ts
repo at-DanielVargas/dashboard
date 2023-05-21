@@ -8,7 +8,13 @@ export class AuthHandler {
   }
 
   // metodo para la generacion de los tokens de acceso y refresco
-  public authorize = async (req: Request, res: Response) => {}
+  public authorize = async (req: Request, res: Response) => {
+    const { error, data } = await this.repository.authorize(req.body)
+    if (error) {
+      return res.status(error.statusCode).json({ error: error.details })
+    }
+    return res.send(data)
+  }
   // metodo para el registro de nuevos usuarios en la plataforma
   public register = async (req: Request, res: Response) => {
     const { error, data } = await this.repository.registerUser(req.body)

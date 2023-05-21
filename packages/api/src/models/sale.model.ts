@@ -6,7 +6,9 @@ export interface ISale {
   items: Omit<ISale, 'items'>[]
   client: any
   status: ESaleStatus
+  products: any[]
   paginate?: PaginateModel<ISale>
+  store: any
   created_at: Date
   updated_at: Date
 }
@@ -24,19 +26,21 @@ const SaleSchema = new Schema<ISale>({
     enum: ESaleStatus,
     default: ESaleStatus.DUE
   },
-  items: {
-    type: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: 'sale_item',
-        autopopulate: true
-      }
-    ]
-  },
+  products: [
+    {
+      item: { type: Schema.Types.ObjectId, ref: 'products', autopopulate: true },
+      quantity: Schema.Types.Number
+    }
+  ],
   client: {
     type: Schema.Types.ObjectId,
     ref: 'users',
     autopopulate: { select: 'firstname lastname email' }
+  },
+  store: {
+    type: Schema.Types.ObjectId,
+    ref: 'stores',
+    autopopulate: true
   }
 })
 
@@ -45,4 +49,4 @@ SaleSchema.plugin(autopopulate)
 
 interface SaleDocument extends Document, ISale {}
 
-export const SaleModel = model<SaleDocument, PaginateModel<SaleDocument>>('orders', SaleSchema)
+export const SaleModel = model<SaleDocument, PaginateModel<SaleDocument>>('sales', SaleSchema)

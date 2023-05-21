@@ -14,5 +14,6 @@ passport.use(
     } else {
       return done(null, false)
     }
+    return done(null, false)
   })
 )

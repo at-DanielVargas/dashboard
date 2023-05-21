@@ -1,15 +1,15 @@
 import { HTTP_STATUS } from '../constants/http'
 import { RepositoryResult } from '../helpers/RepositoryResult'
 import { AppServiceOptions } from '../interfaces'
-import { CategoryModel, ICategory } from '../models/category.model'
+import { ISale, SaleModel } from '../models/sale.model'
 import { Repository } from './Repository'
 
-export class CategoryRepository extends Repository<typeof CategoryModel> {
+export class SalesRepository extends Repository<typeof SaleModel> {
   constructor() {
-    super(CategoryModel)
+    super(SaleModel)
   }
 
-  public index = async (props: AppServiceOptions): Promise<RepositoryResult> => {
+  public async index(props: AppServiceOptions): Promise<RepositoryResult> {
     try {
       const data = await this.model.paginate(
         {
@@ -29,16 +29,9 @@ export class CategoryRepository extends Repository<typeof CategoryModel> {
     }
   }
 
-  public show = async (id: string): Promise<RepositoryResult> => {
+  public async create(sale: ISale): Promise<RepositoryResult> {
     try {
-      const data = await this.model.findById(id)
-      if (!data) {
-        return new RepositoryResult(null, {
-          statusCode: HTTP_STATUS.NOT_FOUND,
-          details: 'Not Found'
-        })
-      }
-      return new RepositoryResult(data)
+      return new RepositoryResult(await this.model.create(sale), null)
     } catch (error) {
       return new RepositoryResult(null, {
         statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,
@@ -47,10 +40,17 @@ export class CategoryRepository extends Repository<typeof CategoryModel> {
     }
   }
 
-  public create = async (data: ICategory | ICategory[]): Promise<RepositoryResult> => {
+  public async show(id: string): Promise<RepositoryResult> {
     try {
-      const categories = Array.isArray(data) ? [...data] : [data]
-      return new RepositoryResult(await this.model.insertMany(categories))
+      const data = await this.model.findById(id)
+      if (data) {
+        return new RepositoryResult(data)
+      } else {
+        return new RepositoryResult(null, {
+          statusCode: HTTP_STATUS.NOT_FOUND,
+          details: 'Not found'
+        })
+      }
     } catch (error) {
       return new RepositoryResult(null, {
         statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,
@@ -58,7 +58,8 @@ export class CategoryRepository extends Repository<typeof CategoryModel> {
       })
     }
   }
-  public update = async (id: string, data): Promise<RepositoryResult> => {
+
+  public async update(id: string, data: ISale): Promise<RepositoryResult> {
     try {
       return new RepositoryResult(await this.model.findByIdAndUpdate(id, { $set: data }, { new: true }))
     } catch (error) {
@@ -68,7 +69,8 @@ export class CategoryRepository extends Repository<typeof CategoryModel> {
       })
     }
   }
-  public destroy = async (id: string) => {
+
+  public async destroy(id: string): Promise<RepositoryResult> {
     try {
       return new RepositoryResult(await this.model.deleteOne({ _id: id }, { new: true }))
     } catch (error) {
@@ -77,5 +79,12 @@ export class CategoryRepository extends Repository<typeof CategoryModel> {
         details: error
       })
     }
+  }
+
+  public async seed(): Promise<RepositoryResult> {
+    return new RepositoryResult(null, {
+      statusCode: HTTP_STATUS.IM_A_TEAPOT,
+      details: { message: 'wip' }
+    })
   }
 }

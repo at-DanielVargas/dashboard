@@ -44,7 +44,8 @@ export const users = new Array<IUser>(20)
     firstname: '',
     lastname: '',
     email: '',
-    password: ''
+    password: '',
+    permissions: []
   })
   .map(() => {
     const firstname = faker.person.firstName()

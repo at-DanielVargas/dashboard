@@ -1,6 +1,7 @@
 import { HTTP_STATUS } from './constants/http'
 import { Request } from 'express'
 import * as yup from 'yup'
+import { IUser } from './models/user.model'
 
 export interface AppRequest<T = undefined> extends Request {
   filters?: Record<string, string>
@@ -9,7 +10,7 @@ export interface AppRequest<T = undefined> extends Request {
     page: number
     limit: number
   }
-  dto?: T
+  user?: IUser;
 }
 
 export interface Handler {

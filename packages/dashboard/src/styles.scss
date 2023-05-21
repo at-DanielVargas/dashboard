@@ -6,4 +6,7 @@ $card-title-spacer-y: 0.5rem;
 $card-border-radius: 6px;
 $card-border-with: 0px;
 $card-bg: transparent;
+$nav-link-color: #c0c0c0;
+$nav-tabs-link-active-color: #c11e30;
+$nav-pills-link-active-color: $nav-tabs-link-active-color;
 @import 'node_modules/bootstrap/scss/bootstrap';
