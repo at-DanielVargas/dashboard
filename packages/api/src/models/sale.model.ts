@@ -1,16 +1,17 @@
 import autopopulate from 'mongoose-autopopulate'
 import mongoosePaginate from 'mongoose-paginate-v2'
 import { PaginateModel, Schema, model } from 'mongoose'
+import { Shape } from '../interfaces'
+import { array, date, mixed, number, object, string } from 'yup'
 
 export interface ISale {
-  items: Omit<ISale, 'items'>[]
   client: any
-  status: ESaleStatus
-  products: any[]
+  status: string
+  products: any
   paginate?: PaginateModel<ISale>
   store: any
-  created_at: Date
-  updated_at: Date
+  createdAt: any
+  updatedAt?: any
 }
 
 export enum ESaleStatus {
@@ -28,7 +29,7 @@ const SaleSchema = new Schema<ISale>({
   },
   products: [
     {
-      item: { type: Schema.Types.ObjectId, ref: 'products', autopopulate: true },
+      item: { type: Schema.Types.ObjectId, ref: 'products', autopopulate: {select: 'price name sku'} },
       quantity: Schema.Types.Number
     }
   ],
@@ -42,7 +43,7 @@ const SaleSchema = new Schema<ISale>({
     ref: 'stores',
     autopopulate: true
   }
-})
+}, {timestamps: true, versionKey: false})
 
 SaleSchema.plugin(mongoosePaginate)
 SaleSchema.plugin(autopopulate)
@@ -50,3 +51,14 @@ SaleSchema.plugin(autopopulate)
 interface SaleDocument extends Document, ISale {}
 
 export const SaleModel = model<SaleDocument, PaginateModel<SaleDocument>>('sales', SaleSchema)
+
+export const CreateSaleDto = object().shape<Shape<ISale>>({
+  client: string().required(),
+  status: string().optional(),
+  store: string(),
+  products: array(object().shape({
+    item: mixed().required(),
+    quantity: number().positive().required()
+  })).required().min(1),
+  createdAt: date()
+})

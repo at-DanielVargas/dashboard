@@ -4,8 +4,6 @@ import cors from 'cors'
 import morgan from 'morgan'
 import { ApiRouter } from './routers/index'
 import mongoose from 'mongoose'
-import passport from 'passport'
-import './helpers/passport'
 
 const host = process.env.HOST ?? 'localhost'
 const port = process.env.PORT ? Number(process.env.PORT) : 3001
@@ -24,7 +22,6 @@ class App {
     this.app.use(express.urlencoded({ extended: true }))
     this.app.use(morgan('dev'))
     this.app.use(cors())
-    this.app.use(passport.initialize())
   }
 
   private setupRouters() {

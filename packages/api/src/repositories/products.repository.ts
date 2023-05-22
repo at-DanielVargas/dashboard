@@ -2,7 +2,6 @@ import { HTTP_STATUS } from '../constants/http'
 import { RepositoryResult } from '../helpers/RepositoryResult'
 import { AppServiceOptions } from '../interfaces'
 import { IProduct, ProductModel } from '../models/product.model'
-import { categories } from '../seed'
 import { Repository } from './Repository'
 
 export class ProductsRepository extends Repository<typeof ProductModel> {

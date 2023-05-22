@@ -5,6 +5,10 @@ import { Repository } from './Repository'
 import { HTTP_STATUS } from '../constants/http'
 import { compareSync } from 'bcrypt'
 import { sign } from 'jsonwebtoken'
+import { buildPermissions } from '../helpers/permissionsBuilder'
+import { EModule } from '../constants/app'
+import axios from 'axios'
+import { conekta } from '../helpers/conekta'
 
 export class AuthRepository extends Repository<typeof UserModel> {
   constructor() {
@@ -13,7 +17,16 @@ export class AuthRepository extends Repository<typeof UserModel> {
 
   public async registerUser(user: IUser): Promise<RepositoryResult> {
     try {
-      return new RepositoryResult(await this.model.create(user), null)
+      user.permissions = buildPermissions([EModule.SALES, EModule.PAYMENTS])
+
+      const conektaData = await (
+        await conekta('customers')
+      ).post({ email: user.email, name: `${user.firstname} ${user.lastname}`, phone: user.phone })
+
+      user.conektaCustomerId = conektaData.id
+
+      const { _id, firstname, lastname, email, phone } = await this.model.create(user)
+      return new RepositoryResult({ _id, firstname, lastname, email, phone }, null)
     } catch (error) {
       return new RepositoryResult(null, {
         statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,

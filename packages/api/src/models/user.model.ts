@@ -10,8 +10,11 @@ export interface IUser {
   lastname: string
   email: string
   password: string
-  permissions: any
+  phone: string;
+  permissions?: any
   paginate?: PaginateModel<IUser>
+  conektaCustomerId?: string
+  paymentMethods?: any
 }
 
 export type ICredentials = Pick<IUser, 'email' | 'password'>
@@ -26,6 +29,10 @@ const UserSchema = new Schema<IUser>(
       type: Schema.Types.String,
       required: true
     },
+    phone: {
+      type: Schema.Types.String,
+      required: true
+    },
     email: {
       type: Schema.Types.String,
       unique: true
@@ -37,6 +44,16 @@ const UserSchema = new Schema<IUser>(
     permissions: [
       {
         type: Schema.Types.String
+      }
+    ],
+    conektaCustomerId: {
+      type: Schema.Types.String,
+      required: true
+    },
+    paymentMethods: [
+      {
+        paymentMethodId: { type: Schema.Types.String, required: true },
+        alias: { type: Schema.Types.String }
       }
     ]
   },
@@ -61,7 +78,8 @@ const passwordRules = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}$/
 export const CreateUserDto = object().shape<Shape<IUser>>({
   firstname: string().required(),
   lastname: string().required(),
+  phone: string().required(),
   email: string().required().email().min(8),
   password: string().required().matches(passwordRules, { message: 'Please create a stronger password' }),
-  permissions: array().of(string()).required()
+  // permissions: array().of(string()).required()
 })

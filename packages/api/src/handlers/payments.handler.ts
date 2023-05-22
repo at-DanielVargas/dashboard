@@ -1,12 +1,11 @@
 import { Request, Response } from 'express'
-import { SalesRepository } from '../repositories/sales.repository'
 import { AppRequest } from '../interfaces'
 
-export class SalesHandler {
-  private repository: SalesRepository
+export class PaymentsHandler {
+  private repository: PaymentsRepository
 
   constructor() {
-    this.repository = new SalesRepository()
+    this.repository = new PaymentsRepository()
   }
 
   public index = async (req: AppRequest, res: Response) => {

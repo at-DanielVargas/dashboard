@@ -5,7 +5,9 @@ export enum EModule {
   FINANCIAL = 'financial',
   USERS = 'users',
   TRACKING = 'tracking',
-  STORES = 'stores'
+  STORES = 'stores',
+  PAYMENTS = 'payments',
+  ORDERS = 'orders'
 }
 
 export enum EPermissionAction {
