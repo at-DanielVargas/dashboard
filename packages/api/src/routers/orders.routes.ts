@@ -15,7 +15,7 @@ export class OrdersRouter {
     this.router.get('/', this.ordersHandler.getOrders)
     this.router.get('/stats', this.ordersHandler.getOrdersStats)
     this.router.get('/with-tracking', this.ordersHandler.getOrdersWithTracking)
-    this.router.get('/:orderId', this.ordersHandler.getOrder)
     this.router.get('/:orderId/tracking', this.ordersHandler.track)
+    this.router.get('/:orderId', this.ordersHandler.getOrder)
   }
 }

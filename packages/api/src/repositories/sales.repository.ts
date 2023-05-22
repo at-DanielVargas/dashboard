@@ -1,11 +1,18 @@
+import { OrderModel } from './../models/order.model'
+import { IUser } from './../models/user.model'
 import mongoose, { Schema } from 'mongoose'
 import { HTTP_STATUS } from '../constants/http'
 import { RepositoryResult } from '../helpers/RepositoryResult'
 import { AppServiceOptions } from '../interfaces'
-import { ISale, SaleModel } from '../models/sale.model'
+import { ESaleStatus, ISale, SaleModel } from '../models/sale.model'
 import { Repository } from './Repository'
+import { IPayment, PaymentModel } from '../models/payments.model'
+import { ProductModel } from '../models/product.model'
 
 export class SalesRepository extends Repository<typeof SaleModel> {
+  private ordersModel = OrderModel
+  private productsModel = ProductModel
+  private paymentsModel = PaymentModel
   constructor() {
     super(SaleModel)
   }
@@ -32,10 +39,6 @@ export class SalesRepository extends Repository<typeof SaleModel> {
 
   public async create(sale: ISale): Promise<RepositoryResult> {
     try {
-      // crea la venta,
-
-      // crea el pago si se a completado el pago total de la venta (actualizar stock de los productos vendidos)
-
       return new RepositoryResult(await this.model.create(sale), null)
     } catch (error) {
       return new RepositoryResult(null, {
@@ -113,10 +116,27 @@ export class SalesRepository extends Repository<typeof SaleModel> {
     }
   }
 
-  public async seed(): Promise<RepositoryResult> {
-    return new RepositoryResult(null, {
-      statusCode: HTTP_STATUS.IM_A_TEAPOT,
-      details: { message: 'wip' }
-    })
+  public async registerPayment(saleId: string, payment: IPayment, user: IUser): Promise<RepositoryResult> {
+    try {
+      const sale = await this.model.findOne({ _id: saleId })
+
+      const saleTotal = sale.products.reduce((acc, current) => acc + current.item.price * current.quantity * 100, 0)
+
+      if (saleTotal === payment.amount) {
+        sale.status = ESaleStatus.PAYED
+        this.ordersModel.create({})
+      }
+
+      if (saleTotal < saleTotal) {
+        sale.status = ESaleStatus.PENDING
+      }
+
+      return new RepositoryResult({ sale, saleTotal })
+    } catch (error) {
+      return new RepositoryResult(null, {
+        statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,
+        details: error
+      })
+    }
   }
 }

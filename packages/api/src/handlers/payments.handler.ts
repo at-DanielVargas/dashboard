@@ -1,5 +1,6 @@
 import { Request, Response } from 'express'
 import { AppRequest } from '../interfaces'
+import { PaymentsRepository } from '../repositories/payments.repository'
 
 export class PaymentsHandler {
   private repository: PaymentsRepository
@@ -43,5 +44,13 @@ export class PaymentsHandler {
 
   public destroy = async (req: Request, res: Response) => {
     res.json({ message: 'Hello from Sales handler destroy method' })
+  }
+
+  public cardToken = async (req: Request, res: Response) => {
+    const { error, data } = await this.repository.tokenCard(req.body)
+    if (error) {
+      return res.status(error.statusCode).json({ details: error.details })
+    }
+    return res.send(data)
   }
 }

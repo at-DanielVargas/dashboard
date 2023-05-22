@@ -10,7 +10,7 @@ async function updateDocuments() {
   try {
     await client.connect()
     const db: Db = client.db(databaseName)
-    const collection = db.collection('orders')
+    const collection = db.collection('tracking')
 
     const batchSize = 100
     const totalDocuments = await collection.countDocuments()

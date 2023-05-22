@@ -1,8 +1,16 @@
 import axios from 'axios'
 
-export const conekta = async (resource: string) => {
+export const conekta = async (path: string, pattern?: string, replace?: string) => {
+  const buildUrl = () => {
+    const url = new URL(`https://api.conekta.io/${path}`)
+    const basePath = url.pathname
+    const newPath = basePath.replace(pattern, replace)
+    url.pathname = newPath
+    return url.toString()
+  }
+
   const options = {
-    url: `https://api.conekta.io/${resource}`,
+    url: buildUrl(),
     headers: {
       'accept': 'application/vnd.conekta-v2.1.0+json',
       'Accept-Language': 'es',

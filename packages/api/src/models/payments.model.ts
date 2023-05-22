@@ -5,8 +5,8 @@ import { array, number, object, string } from 'yup'
 import { Shape } from '../interfaces'
 
 export interface IPayment {
-  amout: number
-  sale: any // -> referencia a conekta u otro servicio
+  amount: number
+  sale?: any
   client: any
   paginate?: PaginateModel<IPayment>
   createdAt?: Date
@@ -15,9 +15,13 @@ export interface IPayment {
 
 const PaymentSchema = new Schema(
   {
-    amout: {
+    amount: {
       type: Schema.Types.Number,
       required: true
+    },
+    sale: {
+      type: Schema.Types.ObjectId,
+      ref: 'payments'
     },
     client: {
       type: Schema.Types.ObjectId,
@@ -38,7 +42,14 @@ interface PaymentDocument extends Document, IPayment {}
 export const PaymentModel = model<PaymentDocument, PaginateModel<PaymentDocument>>('payments', PaymentSchema)
 
 export const CreatePaymentDto = object().shape<Shape<IPayment>>({
-  amout: number().required(),
-  client: string().required(),
-  sale: string().required()
+  amount: number().required(),
+  client: string().required()
+})
+
+export const CreateCardTokenDto = object().shape({
+  cvc: string().required(),
+  expMonth: number().required().max(12),
+  expYear: number().required(),
+  name: string().required(),
+  number: string().required()
 })

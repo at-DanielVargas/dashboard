@@ -27,14 +27,6 @@ export enum EOrderStatus {
   PENDING = 'pending'
 }
 
-/**
- * La orden se genera por cada venta, dependiendo del estatus de la venta
- * 1.- si la venta esta totalmente pagada en automatico se genera una orden de tipo DELIVERY para realizar el envio de los items comprados al cliente, en este punto se debe solicitar una guia de recoleccion para el envio de
- *
- * 2.- si la venta es cancelada, se debe modificar la orden generada en la venta
- *
- * 3.-
- */
 const OrderSchema = new Schema<IOrder>(
   {
     kind: {
@@ -68,24 +60,3 @@ OrderSchema.plugin(autopopulate)
 interface OrderDocument extends Document, IOrder {}
 
 export const OrderModel = model<OrderDocument, PaginateModel<OrderDocument>>('orders', OrderSchema)
-
-export interface IOrderItem {
-  item: any
-  quantity: number
-}
-
-const OrderItemSchema = new Schema<IOrderItem>(
-  {
-    item: {
-      type: Schema.Types.ObjectId,
-      ref: 'products',
-      autopopulate: true
-    },
-    quantity: { type: Schema.Types.Number }
-  },
-  { versionKey: false }
-)
-
-OrderItemSchema.plugin(autopopulate)
-
-export const OrderItemModel = model('order_items', OrderItemSchema)

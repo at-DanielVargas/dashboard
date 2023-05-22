@@ -38,11 +38,11 @@ export class SalesHandler {
     return res.send(data)
   }
 
-  public update = async (req: Request, res: Response) => {
-    res.json({ message: 'Hello from Sales handler update method' })
-  }
-
-  public destroy = async (req: Request, res: Response) => {
-    res.json({ message: 'Hello from Sales handler destroy method' })
+  public registerPayment = async (req: AppRequest, res: Response) => {
+    const { error, data } = await this.repository.registerPayment(req.params.id, req.body, req.user)
+    if (error) {
+      return res.status(error.statusCode).json({ details: error.details })
+    }
+    return res.send(data)
   }
 }

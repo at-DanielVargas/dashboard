@@ -7,7 +7,8 @@ export enum EModule {
   TRACKING = 'tracking',
   STORES = 'stores',
   PAYMENTS = 'payments',
-  ORDERS = 'orders'
+  ORDERS = 'orders',
+  CART = 'cart'
 }
 
 export enum EPermissionAction {
@@ -16,15 +17,4 @@ export enum EPermissionAction {
   UPDATE = 'update',
   DESTROY = 'destrow',
   MANAGE = 'manage'
-}
-
-export const Roles = {
-  // rol por defecto al registrar un usuario por api o plataforma web
-  client: {},
-  // rol asignado al dueno del market por defecto super_admin
-  owner: {},
-  // rol por debajo del owner, solo puede modificar no eliminar
-  manager: {},
-  // rol por defecto para soporte
-  support: {}
 }
