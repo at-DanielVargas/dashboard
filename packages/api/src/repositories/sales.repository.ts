@@ -1,4 +1,4 @@
-import { OrderModel } from './../models/order.model'
+import { EOrderKind, OrderModel } from './../models/order.model'
 import { IUser } from './../models/user.model'
 import mongoose, { Schema } from 'mongoose'
 import { HTTP_STATUS } from '../constants/http'
@@ -117,21 +117,32 @@ export class SalesRepository extends Repository<typeof SaleModel> {
   }
 
   public async registerPayment(saleId: string, payment: IPayment, user: IUser): Promise<RepositoryResult> {
+    // TODO: implementar validacion de pagos (no se puede pagar mas de la cantidad pendiente)
     try {
       const sale = await this.model.findOne({ _id: saleId })
-
       const saleTotal = sale.products.reduce((acc, current) => acc + current.item.price * current.quantity * 100, 0)
 
+      // la orden se a pagado en su totalidad
       if (saleTotal === payment.amount) {
         sale.status = ESaleStatus.PAYED
-        this.ordersModel.create({})
+
+        this.ordersModel.create({
+          kind: EOrderKind.COLLECT
+        })
       }
 
+      // la orden se queda pendiente
       if (saleTotal < saleTotal) {
         sale.status = ESaleStatus.PENDING
       }
 
-      return new RepositoryResult({ sale, saleTotal })
+      const insertedPayment = await this.paymentsModel.create({
+        client: user._id,
+        sale: sale._id,
+        amount: payment.amount
+      })
+      await sale.save()
+      return new RepositoryResult({ insertedPayment })
     } catch (error) {
       return new RepositoryResult(null, {
         statusCode: HTTP_STATUS.INTERNAL_SERVER_ERROR,

@@ -17,7 +17,7 @@ export class ProductsRouter {
   }
 
   private setupRoutes() {
-    this.router.get('/seed', [authorize(buildPermissions([], [], true))], this.productsHandler.seed)
+    
     // ruta para la busqueda de productos por nombre
     this.router.get('/q', this.productsHandler.search)
     // Ruta para la creacion de productos

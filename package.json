@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev:api": "nx serve api --skip-nx-cache=true",
-    "dev:front": "nx serve dashboard --skip-nx-cache=true",
-    "dev:tracker": "nx serve tracker",
+    "dev:api": "node_modules/.bin/nx serve api --skip-nx-cache=true",
+    "dev:front": "node_modules/.bin/nx serve dashboard --skip-nx-cache=true",
+    "dev:tracker": "node_modules/.bin/nx serve tracker",
     "format": "prettier --write packages/*"
   },
   "private": true,

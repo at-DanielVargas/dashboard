@@ -6,6 +6,7 @@ import { Shape } from '../interfaces'
 import { hashSync } from 'bcrypt'
 
 export interface IUser {
+  _id?: string;
   firstname: string
   lastname: string
   email: string

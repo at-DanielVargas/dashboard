@@ -3,6 +3,7 @@ import autopopulate from 'mongoose-autopopulate'
 import { model, PaginateModel, Schema } from 'mongoose'
 
 export interface IOrder {
+  _id?: string
   kind: string
   status: string
   sendTracking: any

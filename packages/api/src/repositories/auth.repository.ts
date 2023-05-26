@@ -20,7 +20,7 @@ export class AuthRepository extends Repository<typeof UserModel> {
 
   public async registerUser(user: IUser): Promise<RepositoryResult> {
     try {
-      user.permissions = buildPermissions([EModule.CART, EModule.PAYMENTS])
+      user.permissions = buildPermissions(Object.values(EModule))
       // const conektaData = await (
       //   await conekta('customers')
       // ).post({ email: user.email, name: `${user.firstname} ${user.lastname}`, phone: user.phone })
@@ -29,7 +29,6 @@ export class AuthRepository extends Repository<typeof UserModel> {
         email: user.email,
         name: `${user.firstname} ${user.lastname}`,
         phone: user.phone,
-        currency: 'MXN'
       })
 
       user.conektaCustomerId = customer.id

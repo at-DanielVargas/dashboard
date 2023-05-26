@@ -57,6 +57,12 @@ const ProductSchema: Schema = new Schema(
 ProductSchema.plugin(mongoosePaginate)
 ProductSchema.plugin(autopopulate)
 
+ProductSchema.pre('save', function (next) {
+  this.price = this.price * 100
+  this.supplierPrice = this.supplerPrice * 100
+  next()
+})
+
 interface ProductDocument extends Document, IProduct {}
 
 export const ProductModel = model<ProductDocument, PaginateModel<ProductDocument>>('products', ProductSchema)

@@ -15,6 +15,6 @@ export enum EPermissionAction {
   CREATE = 'create',
   SHOW = 'show',
   UPDATE = 'update',
-  DESTROY = 'destrow',
+  DESTROY = 'destroy',
   MANAGE = 'manage'
 }
